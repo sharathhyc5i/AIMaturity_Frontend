@@ -28,6 +28,10 @@ import './components/access.css'
     url.searchParams.delete('period') // the header then picks the API's default month
     changed = true
   }
+  if (url.searchParams.has('sku')) {
+    url.searchParams.delete('sku') // old name of the lob parameter; the header sets lob
+    changed = true
+  }
   if (changed) window.history.replaceState(window.history.state, '', url)
 }
 

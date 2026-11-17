@@ -26,7 +26,7 @@ interface FilterState {
 
 const Ctx = createContext<FilterState | null>(null);
 
-/** Header filters live in the URL (?retailer=&market=&period=&sku=) so any view can be shared as a link. */
+/** Header filters live in the URL (?retailer=&market=&period=&lob=) so any view can be shared as a link. */
 export function FiltersProvider({ children }: { children: ReactNode }) {
   const { data: meta } = useMeta();
   if (meta) registerDimensions(meta.dimensions);
@@ -56,7 +56,7 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
     const okS = meta.skus.filter((s) => !skuDisabled(s.code));
     const pickS = okS.length ? okS : meta.skus;
     const sku =
-      pickS.find((s) => s.code === params.get("sku"))?.code ??
+      pickS.find((s) => s.code === params.get("lob"))?.code ??
       pickS[0]?.code ??
       "";
     return { retailer: r.slug, market: mk.code, period, sku };
@@ -69,13 +69,13 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
       params.get("retailer") !== resolved.retailer ||
       params.get("market") !== resolved.market ||
       params.get("period") !== resolved.period ||
-      (resolved.sku && params.get("sku") !== resolved.sku)
+      (resolved.sku && params.get("lob") !== resolved.sku)
     ) {
       const next = new URLSearchParams(params);
       next.set("retailer", resolved.retailer);
       next.set("market", resolved.market);
       next.set("period", resolved.period);
-      if (resolved.sku) next.set("sku", resolved.sku);
+      if (resolved.sku) next.set("lob", resolved.sku);
       setParams(next, { replace: true });
     }
   }, [resolved, params, setParams]);

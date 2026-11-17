@@ -1,0 +1,527 @@
+{
+ "retailer": "best-buy",
+ "market": "US",
+ "run_label": "Best Buy US run (cut-off 17 Sep 2026)",
+ "sources": [
+  {
+   "code": "S01",
+   "title": "Best Buy Q2 FY27 earnings call transcript",
+   "publisher": "The Motley Fool (transcript of company call)",
+   "date": "27 Aug 2026",
+   "source_type": "Primary (company statement)",
+   "url": "https://www.fool.com/earnings/call-transcripts/2026/08/31/best-buy-bby-q2-2027-earnings-call-transcript/",
+   "dimensions": [
+    "D1",
+    "D2",
+    "D3",
+    "D4"
+   ],
+   "used_for": "Ask Blue launch and phased rollout; data it draws on; hand-off to live specialist; OpenAI commerce integration completed (discover, recommend, buy in ChatGPT)",
+   "citing_rows": 37
+  },
+  {
+   "code": "S02",
+   "title": "Best Buy emphasizes expert support with AI shopping assistant",
+   "publisher": "CX Dive",
+   "date": "Aug 2026",
+   "source_type": "Secondary (trade press)",
+   "url": "https://www.customerexperiencedive.com/news/best-buy-emphasizes-expert-support-ai-shopping-assistant/828958/",
+   "dimensions": [
+    "D3"
+   ],
+   "used_for": "Independent report of Ask Blue phased rollout and capabilities",
+   "citing_rows": 1
+  },
+  {
+   "code": "S03",
+   "title": "Best Buy AI shopping assistant (Ask Blue)",
+   "publisher": "Retail Dive",
+   "date": "Aug 2026",
+   "source_type": "Secondary (trade press)",
+   "url": "https://www.retaildive.com/news/best-buy-ai-shopping-assistant/829049/",
+   "dimensions": [
+    "D3"
+   ],
+   "used_for": "Corroborates Ask Blue rollout",
+   "citing_rows": 9
+  },
+  {
+   "code": "S04",
+   "title": "Best Buy opens up gift-buying and discovery through ChatGPT ahead of holidays",
+   "publisher": "Digital Commerce 360",
+   "date": "16 Sep 2026",
+   "source_type": "Secondary (trade press)",
+   "url": "https://www.digitalcommerce360.com/2026/09/16/best-buy-opens-up-gift-buying-and-discover-through-chatgpt-ahead-of-holidays/",
+   "dimensions": [
+    "D1",
+    "D3"
+   ],
+   "used_for": "14 Sep 2026 Best Buy blog: gift ideas and purchase inside ChatGPT; Gifting Center gift-idea tool; Ask Blue builds on 2024 Google Cloud/Accenture work",
+   "citing_rows": 1
+  },
+  {
+   "code": "S05",
+   "title": "Best Buy Q4 FY26 earnings call transcript",
+   "publisher": "The Motley Fool (transcript of company call)",
+   "date": "3 Mar 2026",
+   "source_type": "Primary (company statement)",
+   "url": "https://www.fool.com/earnings/call-transcripts/2026/03/03/best-buy-bby-q4-2026-earnings-call-transcript/",
+   "dimensions": [
+    "D1",
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "used_for": "Catalog on ChatGPT; Google Universal Commerce Protocol (AI Mode, Gemini); first native checkout with Wizard; making bestbuy.com agent-ready; NPS at 11-quarter high",
+   "citing_rows": 15
+  },
+  {
+   "code": "S06",
+   "title": "Best Buy wants to be at the forefront of agentic AI discovery",
+   "publisher": "Retail Dive",
+   "date": "10 Mar 2026",
+   "source_type": "Secondary (trade press)",
+   "url": "https://www.retaildive.com/news/best-buy-forefront-agentic-ai-discovery/814222/",
+   "dimensions": [
+    "D1",
+    "D3"
+   ],
+   "used_for": "Corroborates agentic commerce plans and partners",
+   "citing_rows": 1
+  },
+  {
+   "code": "S07",
+   "title": "Wizard launches AI shopping agent purpose-built for ecommerce",
+   "publisher": "Wizard (press release)",
+   "date": "11 Feb 2026",
+   "source_type": "Primary (partner statement)",
+   "url": "https://www.wizard.com/press/2026-02-11-wizard-launches-ai-shopping-agent-purpose-built-for-ecommerce",
+   "dimensions": [
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "used_for": "First native checkout integration is with Best Buy: query-to-checkout flow",
+   "citing_rows": 18
+  },
+  {
+   "code": "S08",
+   "title": "Marketplace Briefing: Inside Wizard",
+   "publisher": "Modern Retail",
+   "date": "Feb 2026",
+   "source_type": "Secondary (trade press)",
+   "url": "https://www.modernretail.co/technology/marketplace-briefing-inside-marc-lore-and-melissa-bridgefords-ai-shopping-agent-wizard/",
+   "dimensions": [
+    "D2",
+    "D3"
+   ],
+   "used_for": "Best Buy shoppers can buy inside Wizard; partners supply direct product APIs",
+   "citing_rows": 1
+  },
+  {
+   "code": "S09",
+   "title": "Best Buy customer story",
+   "publisher": "Google Cloud",
+   "date": "Undated (live page)",
+   "source_type": "Vendor case study",
+   "url": "https://cloud.google.com/customers/bestbuy",
+   "dimensions": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "used_for": "Gift Finder assistant; review summarization; Gemini product Q&A from manuals; named Global Head of Applied ML; unquantified benefit claims",
+   "citing_rows": 15
+  },
+  {
+   "code": "S10",
+   "title": "Best Buy to use generative AI for virtual assistant, customer support",
+   "publisher": "Retail Dive",
+   "date": "Apr 2024",
+   "source_type": "Secondary (trade press)",
+   "url": "https://www.retaildive.com/news/best-buy-generative-ai-virtual-assistant-customer-support/712648/",
+   "dimensions": [
+    "D3",
+    "D4"
+   ],
+   "used_for": "Gen-AI support assistant (web, app, phone); care-agent tools; planned store-associate assistant with Google Cloud and Accenture",
+   "citing_rows": 12
+  },
+  {
+   "code": "S11",
+   "title": "Best Buy shares new generative AI strategy for customer support",
+   "publisher": "Digital Commerce 360",
+   "date": "10 Apr 2024",
+   "source_type": "Secondary (trade press)",
+   "url": "https://www.digitalcommerce360.com/2024/04/10/best-buy-generative-ai-strategy-customer-support/",
+   "dimensions": [
+    "D5"
+   ],
+   "used_for": "CEO (Feb 2024): AI improves data-collection accuracy and cuts average agent engagement time by about 5% (historical)",
+   "citing_rows": 8
+  },
+  {
+   "code": "S12",
+   "title": "Best Buy humanizes the customer support experience",
+   "publisher": "Accenture",
+   "date": "Undated",
+   "source_type": "Vendor case study",
+   "url": "https://www.accenture.com/us-en/case-studies/ai-data/best-buy-humanizes-customer-experience-genai",
+   "dimensions": [
+    "D3"
+   ],
+   "used_for": "Virtual assistant hands off to care agents who also use gen-AI tools",
+   "citing_rows": 1
+  },
+  {
+   "code": "S13",
+   "title": "How Best Buy uses AI to transform customer experience",
+   "publisher": "Forbes",
+   "date": "17 Jun 2025",
+   "source_type": "Secondary (press)",
+   "url": "https://www.forbes.com/sites/maribellopez/2025/06/17/how-best-buy-uses-ai-to-transform-customer-experience/",
+   "dimensions": [
+    "D3",
+    "D4"
+   ],
+   "used_for": "Contact centre had 93 applications; AI summarization deployed in 6-8 weeks",
+   "citing_rows": 4
+  },
+  {
+   "code": "S14",
+   "title": "Best Buy announces Executive Team updates",
+   "publisher": "Best Buy Corporate",
+   "date": "14 Jul 2026",
+   "source_type": "Primary (company)",
+   "url": "https://corporate.bestbuy.com/2026/executive-team-updates/",
+   "dimensions": [
+    "D4"
+   ],
+   "used_for": "Current executive structure; Neal Sample confirmed as chief digital and technology officer; four strategic priorities",
+   "citing_rows": 4
+  },
+  {
+   "code": "S15",
+   "title": "Best Buy taps Walgreens CIO to lead its tech organization",
+   "publisher": "CIO Dive",
+   "date": "2025",
+   "source_type": "Secondary (trade press)",
+   "url": "https://www.ciodive.com/news/best-buy-tech-chief-walgreens-generative-ai-tariffs/752005/",
+   "dimensions": [
+    "D4"
+   ],
+   "used_for": "Neal Sample succeeds Brian Tilzer; prior leader describes AI at scale",
+   "citing_rows": 1
+  },
+  {
+   "code": "S16",
+   "title": "8-K: CEO succession plans",
+   "publisher": "SEC EDGAR",
+   "date": "22 Apr 2026",
+   "source_type": "Primary (filing)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000764478/000076447826000012/exhibit991newsrelease422.htm",
+   "dimensions": [
+    "D4"
+   ],
+   "used_for": "Jason Bonfig to succeed Corie Barry; Barry leaves 31 Oct 2026",
+   "citing_rows": 1
+  },
+  {
+   "code": "S17",
+   "title": "8-K: CFO appointment",
+   "publisher": "SEC EDGAR",
+   "date": "3 Aug 2026",
+   "source_type": "Primary (filing)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000764478/000076447826000034/exhibit991newsrelease803.htm",
+   "dimensions": [
+    "D4"
+   ],
+   "used_for": "New CFO effective 19 Aug 2026 (leadership change during assessment window)",
+   "citing_rows": 1
+  },
+  {
+   "code": "S18",
+   "title": "Form 10-K fiscal 2026",
+   "publisher": "SEC EDGAR",
+   "date": "Mar 2026",
+   "source_type": "Primary (filing)",
+   "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447826000009/bby-20260131.htm",
+   "dimensions": [
+    "D4",
+    "D5"
+   ],
+   "used_for": "Risk factors: AI-driven fraud/impersonation, AI privacy and security risk, shopping through AI services",
+   "citing_rows": 3
+  },
+  {
+   "code": "S19",
+   "title": "Best Buy 10-K summary (risk factors)",
+   "publisher": "StockTitan",
+   "date": "Mar 2026",
+   "source_type": "Secondary (filing summary)",
+   "url": "https://www.stocktitan.net/sec-filings/BBY/10-k-best-buy-co-inc-files-annual-report-9e1c20067eb2.html",
+   "dimensions": [
+    "D4"
+   ],
+   "used_for": "Extract of AI-related risk language",
+   "citing_rows": 1
+  },
+  {
+   "code": "S20",
+   "title": "Best Buy APIs overview",
+   "publisher": "Best Buy Developer",
+   "date": "Live page",
+   "source_type": "Primary (company)",
+   "url": "https://developers.bestbuy.com/apis",
+   "dimensions": [
+    "D1",
+    "D2"
+   ],
+   "used_for": "Public Products API: 1M+ current/historical products, pricing, availability, specs; mostly near real-time",
+   "citing_rows": 4
+  },
+  {
+   "code": "S21",
+   "title": "Products API documentation",
+   "publisher": "Best Buy Developer",
+   "date": "Live page",
+   "source_type": "Primary (company)",
+   "url": "https://developer.bestbuy.com/documentation/products-api",
+   "dimensions": [
+    "D1",
+    "D2"
+   ],
+   "used_for": "API structure, facets, stores and availability queries",
+   "citing_rows": 2
+  },
+  {
+   "code": "S22",
+   "title": "Windows Copilot+ PCs Laptops (category page)",
+   "publisher": "bestbuy.com",
+   "date": "Observed Sep 2026",
+   "source_type": "Direct observation",
+   "url": "https://www.bestbuy.com/site/laptop-computers/windows-copilot-pc-laptops/pcmcat1715801616808.c?id=pcmcat1715801616808",
+   "dimensions": [
+    "D1",
+    "D3"
+   ],
+   "used_for": "Dedicated Copilot+ category (667 laptops listed); facets; Compare across brands",
+   "citing_rows": 9
+  },
+  {
+   "code": "S23",
+   "title": "AI Laptops and Copilot+ PCs (shop page)",
+   "publisher": "bestbuy.com",
+   "date": "Observed Sep 2026",
+   "source_type": "Direct observation",
+   "url": "https://www.bestbuy.com/site/shop/ai-laptops-and-copilot-plus-pcs",
+   "dimensions": [
+    "D1",
+    "D3"
+   ],
+   "used_for": "Landing page explaining on-device AI benefits",
+   "citing_rows": 2
+  },
+  {
+   "code": "S24",
+   "title": "Copilot+ PCs for Students",
+   "publisher": "bestbuy.com",
+   "date": "Observed Sep 2026",
+   "source_type": "Direct observation",
+   "url": "https://www.bestbuy.com/site/shop/copilot-plus-pcs-for-students",
+   "dimensions": [
+    "D1",
+    "D3"
+   ],
+   "used_for": "Use-case page with FAQ an answer engine could cite",
+   "citing_rows": 4
+  },
+  {
+   "code": "S25",
+   "title": "HP Copilot+ PC 24\" All-in-One (product page)",
+   "publisher": "bestbuy.com",
+   "date": "Fetched 17 Sep 2026",
+   "source_type": "Direct observation",
+   "url": "https://www.bestbuy.com/product/hp-copilot-pc-24-full-hd-touch-screen-all-in-one-w-adjustable-height-amd-ryzen-ai-5-340-2025-16gb-ddr5-512gb-ssd-jet-black/JJGQJRKG9P",
+   "dimensions": [
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "used_for": "Server response contained title, SKU, specs, price, ZIP delivery date; AI-labelled review summary and Q&A; M365 cross-sell; search-index snapshot showed different SKU/price; alt text mismatched",
+   "citing_rows": 33
+  },
+  {
+   "code": "S26",
+   "title": "Search results: 'copilot pc'",
+   "publisher": "bestbuy.com",
+   "date": "Observed Sep 2026",
+   "source_type": "Direct observation",
+   "url": "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=copilot+pc",
+   "dimensions": [
+    "D1"
+   ],
+   "used_for": "Keyword search returns 590 relevant results with sponsored placements",
+   "citing_rows": 5
+  },
+  {
+   "code": "S27",
+   "title": "Best Buy wants AI to offer fewer but more relevant search results",
+   "publisher": "Retail Dive",
+   "date": "May 2025",
+   "source_type": "Secondary (trade press)",
+   "url": "https://www.retaildive.com/news/best-buy-search-experience-online-app/749652",
+   "dimensions": [
+    "D1",
+    "D4"
+   ],
+   "used_for": "AI-powered search rollout planned for site/app; department-based associate training (not AI-specific)",
+   "citing_rows": 2
+  },
+  {
+   "code": "S28",
+   "title": "Best Buy adds generative AI to its customer service toolkit",
+   "publisher": "Retail TouchPoints",
+   "date": "Apr 2024",
+   "source_type": "Secondary (trade press)",
+   "url": "https://www.retailtouchpoints.com/news/best-buy-adds-generative-ai-to-its-customer-service-toolkit/142136/",
+   "dimensions": [
+    "D3"
+   ],
+   "used_for": "Gemini, Vertex AI and Contact Center AI underpin the tools",
+   "citing_rows": 1
+  },
+  {
+   "code": "S29",
+   "title": "Best Buy holiday 2024 announcement",
+   "publisher": "Business Wire",
+   "date": "16 Sep 2024",
+   "source_type": "Primary (company, historical)",
+   "url": "https://www.businesswire.com/news/home/20240916553217/en",
+   "dimensions": [
+    "D3"
+   ],
+   "used_for": "40+ Copilot+ models; exclusive retail partner for about 40%",
+   "citing_rows": 1
+  },
+  {
+   "code": "S30",
+   "title": "Best Buy holiday 2025 calendar",
+   "publisher": "Business Wire",
+   "date": "20 Oct 2025",
+   "source_type": "Primary (company)",
+   "url": "https://www.businesswire.com/news/home/20251020811034/en/Best",
+   "dimensions": [
+    "D3"
+   ],
+   "used_for": "In-store Copilot+ PC demos and immersive experiences",
+   "citing_rows": 2
+  },
+  {
+   "code": "S31",
+   "title": "Best Buy wants to be the hub for AI-powered hardware",
+   "publisher": "Digiday",
+   "date": "Mar 2026",
+   "source_type": "Secondary (trade press)",
+   "url": "https://digiday.com/marketing/best-buy-wants-to-be-the-hub-for-ai-powered-hardware-like-glasses-laptops/",
+   "dimensions": [
+    "D3"
+   ],
+   "used_for": "Corroborates OpenAI, Google UCP and Wizard partnerships",
+   "citing_rows": 1
+  },
+  {
+   "code": "S32",
+   "title": "Wizard partners with Stripe on ACP",
+   "publisher": "Business Wire",
+   "date": "10 Mar 2026",
+   "source_type": "Primary (partner statement)",
+   "url": "https://www.businesswire.com/news/home/20260310680976/en",
+   "dimensions": [
+    "D2",
+    "D3"
+   ],
+   "used_for": "Wizard native checkout catalog available through Best Buy",
+   "citing_rows": 1
+  },
+  {
+   "code": "S33",
+   "title": "Copilot+ PCs on sale (promo page)",
+   "publisher": "bestbuy.com",
+   "date": "Observed Sep 2026",
+   "source_type": "Direct observation",
+   "url": "https://www.bestbuy.com/site/promo/copilotpcs-onsale",
+   "dimensions": [
+    "D3"
+   ],
+   "used_for": "Dedicated Copilot+ promotion page",
+   "citing_rows": 4
+  },
+  {
+   "code": "S34",
+   "title": "Select Windows Copilot+ laptops (promo page)",
+   "publisher": "bestbuy.com",
+   "date": "Observed 2026",
+   "source_type": "Direct observation",
+   "url": "https://www.bestbuy.com/site/promo/select-windows-copilot-laptops",
+   "dimensions": [
+    "D2",
+    "D3"
+   ],
+   "used_for": "Promotion page; store pickup and delivery dates shown",
+   "citing_rows": 3
+  },
+  {
+   "code": "S35",
+   "title": "Search results: 'copilot'",
+   "publisher": "bestbuy.com",
+   "date": "Observed Sep 2026",
+   "source_type": "Direct observation",
+   "url": "https://www.bestbuy.com/site/searchpage.jsp?st=copilot+&id=pcat17071",
+   "dimensions": [
+    "D3"
+   ],
+   "used_for": "Microsoft 365 device offer banner on Copilot search",
+   "citing_rows": 2
+  },
+  {
+   "code": "S36",
+   "title": "Best Buy public API profile",
+   "publisher": "API Evangelist (GitHub)",
+   "date": "2026",
+   "source_type": "Secondary (third-party)",
+   "url": "https://github.com/api-evangelist/best-buy",
+   "dimensions": [
+    "D2"
+   ],
+   "used_for": "Commerce API for authorized partners: availability, shipping, order creation",
+   "citing_rows": 1
+  },
+  {
+   "code": "S37",
+   "title": "Best Buy bets on agentic AI",
+   "publisher": "eCommerce North America",
+   "date": "31 May 2025",
+   "source_type": "Secondary (low-authority blog)",
+   "url": "https://www.ecommercenorthamerica.org/2025/05/31/best-buy-agentic-ai-customer-service-2025/",
+   "dimensions": [
+    "D3"
+   ],
+   "used_for": "Claims in-store staff use AI tools (unverified; used only as a lead)",
+   "citing_rows": 2
+  },
+  {
+   "code": "S38",
+   "title": "Best Buy names Jason Bonfig as new CEO",
+   "publisher": "CNBC",
+   "date": "22 Apr 2026",
+   "source_type": "Secondary (press)",
+   "url": "https://www.cnbc.com/2026/04/22/best-buy-jason-bonfig-ceo-corie-barry.html",
+   "dimensions": [
+    "D4"
+   ],
+   "used_for": "Leadership transition context",
+   "citing_rows": 1
+  }
+ ]
+}

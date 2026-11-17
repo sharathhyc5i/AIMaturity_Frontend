@@ -1,0 +1,13 @@
+﻿{
+    "name":  "retail-ai-frontend-host",
+    "private":  true,
+    "version":  "1.0.0",
+    "type":  "module",
+    "description":  "Serves the built React app (frontend/dist) on Azure App Service",
+    "engines":  {
+                    "node":  "\u003e=20"
+                },
+    "scripts":  {
+                    "start":  "node server.js"
+                }
+}

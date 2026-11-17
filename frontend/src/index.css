@@ -1,0 +1,135 @@
+/* =========================================================
+   Retail AI Readiness — design tokens and base styles
+   Type: Segoe UI Variable (Fluent 2 type ramp). Colour: Fluent
+   brand blue with one hue per dimension; status hues validated
+   for colour-vision deficiency and always paired with a label.
+   ========================================================= */
+
+/* Segoe UI from Microsoft's Fluent CDN (as Fluent UI registers it), so Mac and mobile viewers
+   see the same type as Windows, where the installed Segoe UI is used first */
+@font-face { font-family: "Segoe UI Web (West European)"; font-weight: 400; font-display: swap;
+  src: local("Segoe UI"), url("https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/assets/fonts/segoeui-westeuropean/segoeui-regular.woff2") format("woff2"); }
+@font-face { font-family: "Segoe UI Web (West European)"; font-weight: 600; font-display: swap;
+  src: local("Segoe UI Semibold"), url("https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff2") format("woff2"); }
+@font-face { font-family: "Segoe UI Web (West European)"; font-weight: 700; font-display: swap;
+  src: local("Segoe UI Bold"), url("https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/assets/fonts/segoeui-westeuropean/segoeui-bold.woff2") format("woff2"); }
+
+:root {
+  color-scheme: light;
+  /* Fluent 2 web font stack */
+  --font: "Segoe UI Variable Text", "Segoe UI Variable", "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  --font-display: "Segoe UI Variable Display", "Segoe UI Variable", "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  --font-mono: "Cascadia Code", "Cascadia Mono", Consolas, ui-monospace, Menlo, monospace;
+
+  /* Fluent 2 type ramp (sizes 10/12/14/16/20/24/28/32/40/68 with their line heights) */
+  --t-caption2: 10px/14px;
+  --t-caption: 12px/16px;
+  --t-caption1: 14px/20px;
+  --t-body: 14px/20px;
+  --t-body2: 16px/22px;
+  --t-body3: 12px/16px;
+  --t-subtitle: 20px/28px;
+  --t-title3: 24px/32px;
+  --t-title2: 28px/36px;
+  --t-title4: 20px/28px;
+  --t-title1: 32px/40px;
+  --t-large: 40px/52px;
+  --t-display: 68px/92px;
+
+  /* Neutrals */
+  --ink: #242424;
+  --ink-2: #424242;
+  --muted: #616161;
+  --subtle: #8a8886;
+  --line: #e3e6ea;
+  --line-strong: #d1d5db;
+  --surface: rgba(255, 255, 255, 0.84);
+  --surface-solid: #ffffff;
+  --surface-2: #f6f8fb;
+  --surface-hover: #f0f4f9;
+
+  /* Brand */
+  --brand: #0f6cbd;
+  --brand-hover: #115ea3;
+  --brand-press: #0c3b5e;
+  --brand-tint: #ebf3fc;
+  --brand-tint-2: #cfe4fa;
+  --focus: #0f6cbd;
+
+  /* Dimension hues */
+  --d1: #68c0a9;
+  --d2: #3586ab;
+  --d3: #8374b5;
+  --d4: #c864a6;
+
+  --warn: #8a5a00;
+  --warn-tint: #fdf3dc;
+  --danger: #b10e1c;
+  --danger-tint: #fde7e9;
+  --ok: #0e700e;
+  --ok-tint: #e7f4e4;
+
+  /* Elevation (Fluent shadow 2/4/8/16/28) */
+  --sh-2: 0 0 2px rgba(0, 0, 0, .10), 0 1px 2px rgba(0, 0, 0, .12);
+  --sh-4: 0 0 2px rgba(0, 0, 0, .08), 0 2px 4px rgba(0, 0, 0, .08);
+  --sh-8: 0 0 2px rgba(0, 0, 0, .08), 0 4px 8px rgba(0, 0, 0, .10);
+  --sh-16: 0 0 2px rgba(0, 0, 0, .08), 0 8px 16px rgba(0, 0, 0, .10);
+  --sh-28: 0 0 8px rgba(0, 0, 0, .10), 0 14px 28px rgba(0, 0, 0, .14);
+
+  --r-sm: 4px;
+  --r-md: 6px;
+  --r-lg: 10px;
+  --r-xl: 14px;
+  --r-2xl: 20px;
+
+  --header-h: 52px;
+  --sidebar-w: 272px;
+  --rail-w: 64px;
+  --ease: cubic-bezier(.33, 0, .1, 1);
+  --ease-out: cubic-bezier(0, 0, 0, 1);
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  font: var(--t-body) var(--font);
+  color: var(--ink);
+  background-color: #f5f8fc;
+  background-image:
+    radial-gradient(900px 520px at 8% -6%, rgba(15, 108, 189, .13), transparent 60%),
+    radial-gradient(760px 520px at 100% 4%, rgba(0, 183, 195, .10), transparent 60%),
+    radial-gradient(900px 640px at 92% 100%, rgba(135, 100, 184, .10), transparent 62%),
+    linear-gradient(180deg, #f7f9fd 0%, #eef3fa 52%, #f3f2fa 100%);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 { margin: 0; font-family: var(--font-display); color: var(--ink); text-wrap: balance; }
+p { margin: 0; text-wrap: pretty; }
+/* Fluent emphasis is semibold (600), not the browser's bold (700) */
+b, strong { font-weight: 600; }
+a { color: var(--brand); text-decoration: none; }
+a:hover { text-decoration: underline; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: var(--r-sm); }
+::selection { background: var(--brand-tint-2); }
+
+.mono { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0; }
+.muted { color: var(--muted); }
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.nowrap { white-space: nowrap; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
+}
+
+/* Thin, quiet scrollbars */
+* { scrollbar-width: thin; scrollbar-color: #c4c9d0 transparent; }

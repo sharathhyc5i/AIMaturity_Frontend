@@ -1,0 +1,3448 @@
+{
+ "questions": [
+  {
+   "qid": "D1-L1-1",
+   "dimension": "D1",
+   "level": 1,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Do Retailers products pages return HTTP 200 (OK) status codes?"
+  },
+  {
+   "qid": "D1-L1-2",
+   "dimension": "D1",
+   "level": 1,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Do sampled product pages that return HTTP 200 show real product content (title and price), rather than an error or \"not found\" page (soft-404)?"
+  },
+  {
+   "qid": "D1-L1-3",
+   "dimension": "D1",
+   "level": 1,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Do sampled product URLs resolve in no more than one redirect, with no loops or 4xx/5xx hops?"
+  },
+  {
+   "qid": "D1-L1-4",
+   "dimension": "D1",
+   "level": 1,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Does the canonical tag on each sampled product page point to that page's own final URL (ignoring tracking parameters)?"
+  },
+  {
+   "qid": "D1-L1-5",
+   "dimension": "D1",
+   "level": 1,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Is the product title present in the initial server HTML of sampled product pages (no JavaScript)?"
+  },
+  {
+   "qid": "D1-L1-6",
+   "dimension": "D1",
+   "level": 1,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Is the product price present in the initial server HTML of sampled product pages (no JavaScript)?"
+  },
+  {
+   "qid": "D1-L1-7",
+   "dimension": "D1",
+   "level": 1,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Are key specifications (processor, RAM, storage, screen size) present in the initial server HTML of sampled product pages (no JavaScript)?"
+  },
+  {
+   "qid": "D1-L1-8",
+   "dimension": "D1",
+   "level": 1,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Is availability / stock status present in the initial server HTML of sampled product pages (no JavaScript)?"
+  },
+  {
+   "qid": "D1-L1-9",
+   "dimension": "D1",
+   "level": 1,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Does robots.txt explicitly allow or block named AI-crawler user agents (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, Amazonbot, CCBot)?"
+  },
+  {
+   "qid": "D1-L1-10",
+   "dimension": "D1",
+   "level": 1,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Does the retailer publish an XML sitemap that includes product and category page URLs?"
+  },
+  {
+   "qid": "D1-L1-11",
+   "dimension": "D1",
+   "level": 1,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "What is the median age, in days, of lastmod dates for product URLs in the sitemap?"
+  },
+  {
+   "qid": "D1-L1-12",
+   "dimension": "D1",
+   "level": 1,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "In a 20-SKU sample (10 [VENDOR], 10 [COMPETING VENDORS]), what proportion of product content depends on client-side JavaScript rendering?"
+  },
+  {
+   "qid": "D1-L1-13",
+   "dimension": "D1",
+   "level": 1,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "For each sampled model name, how many distinct live product URLs does site search return for the same model and configuration?"
+  },
+  {
+   "qid": "D1-L1-14",
+   "dimension": "D1",
+   "level": 1,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Where more than one URL exists for the same model and configuration, do all of them carry a canonical tag pointing to the same URL?"
+  },
+  {
+   "qid": "D1-L1-15",
+   "dimension": "D1",
+   "level": 1,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Do sampled out-of-stock product pages show an explicit \"Sold out\" / \"Out of stock\" label?"
+  },
+  {
+   "qid": "D1-L1-16",
+   "dimension": "D1",
+   "level": 1,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Do sampled discontinued (end-of-life) product pages show an explicit \"No longer available\" or equivalent label, rather than a 404 or a silent redirect?"
+  },
+  {
+   "qid": "D1-L1-17",
+   "dimension": "D1",
+   "level": 1,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Do any of the out-of-stock or discontinued pages above wrongly show \"In stock\" or an active add-to-cart button?"
+  },
+  {
+   "qid": "D1-L1-18",
+   "dimension": "D1",
+   "level": 1,
+   "lens": "Competitive · retailer",
+   "stage": "Crawl",
+   "text": "Does the retailer publish an /llms.txt file?"
+  },
+  {
+   "qid": "D1-L1-19",
+   "dimension": "D1",
+   "level": 1,
+   "lens": "Competitive · retailer",
+   "stage": "Crawl",
+   "text": "Do the retailer's terms of use contain a clause on AI use, automated access or content licensing?"
+  },
+  {
+   "qid": "D1-L1-20",
+   "dimension": "D1",
+   "level": 1,
+   "lens": "Competitive · retailer",
+   "stage": "Crawl",
+   "text": "Can a scripted browser session go from a product page to the cart without a CAPTCHA, challenge page or rate-limit block?"
+  },
+  {
+   "qid": "D1-L1-21",
+   "dimension": "D1",
+   "level": 1,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "What percentage of product images on sampled pages have non-empty alt text?"
+  },
+  {
+   "qid": "D1-L1-22",
+   "dimension": "D1",
+   "level": 1,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "What percentage of non-empty alt texts correctly describe the product shown (brand, model, product type)?"
+  },
+  {
+   "qid": "D1-L2-1",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · retailer",
+   "stage": "Crawl",
+   "text": "Do sampled product pages pass Core Web Vitals on mobile (LCP ≤ 2.5 s, INP ≤ 200 ms, CLS ≤ 0.1, field data)?"
+  },
+  {
+   "qid": "D1-L2-2",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Do SKU, price and review count in the page's structured data (JSON-LD) match the values shown on the rendered page?"
+  },
+  {
+   "qid": "D1-L2-3",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Does the product markup pass schema validation with no critical errors?"
+  },
+  {
+   "qid": "D1-L2-4",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Does the retailer make product data available in a feed or listing that answer engines can ingest (for example Google free listings / Merchant Center, a public product API)?"
+  },
+  {
+   "qid": "D1-L2-5",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Is pricing consistent between the product page, site search results and any public feed or API?"
+  },
+  {
+   "qid": "D1-L2-6",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Across sampled SKUs, does each key spec (processor, RAM, storage, screen size, battery life) use the same field name and unit?"
+  },
+  {
+   "qid": "D1-L2-7",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "In the sitemap, are lastmod dates for [VENDOR] SKUs as recent as those for [COMPETING VENDORS] SKUs?"
+  },
+  {
+   "qid": "D1-L2-8",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Do product pages expose universal identifiers (GTIN/UPC, MPN, model number) in machine-readable form, so an AI engine can match the same product across retailers?"
+  },
+  {
+   "qid": "D1-L2-9",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · retailer",
+   "stage": "Crawl",
+   "text": "Do sampled product pages expose store-level pickup or local availability in structured data (for example availableAtOrFrom or local-inventory markup)?"
+  },
+  {
+   "qid": "D1-L2-10",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "Does the retailer have a dedicated brand store or shop-in-shop page for {brand}?"
+  },
+  {
+   "qid": "D1-L2-11",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "How many clicks does it take to reach the {brand} brand destination from the homepage?"
+  },
+  {
+   "qid": "D1-L2-12",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "In the default sort of the main laptop category, what share of the first 12 results belongs to each brand?"
+  },
+  {
+   "qid": "D1-L2-13",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "At what position does the first {vendor_ai_device} appear in the default sort of the main laptop category?"
+  },
+  {
+   "qid": "D1-L2-14",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "At what position does the first {vendor_first_party_device} appear in the default sort of the main laptop category?"
+  },
+  {
+   "qid": "D1-L2-15",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "For each fixed need-based site search (\"laptop for students\", \"laptop for work\", \"laptop for video editing\"), what is the rank of the first [COMPETING VENDORS] result and the first [VENDOR] {vendor_ai_device} result?"
+  },
+  {
+   "qid": "D1-L2-16",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "Over the month, how many homepage and category banner placements feature [COMPETING VENDORS] devices versus [VENDOR] devices?"
+  },
+  {
+   "qid": "D1-L2-17",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "For each of 10 predefined natural-language queries, what percentage of the top 5 site-search results match the query's product category and stated need?"
+  },
+  {
+   "qid": "D1-L2-18",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "For 5 misspelled queries, what percentage of the top 10 results overlap with the results for the correctly spelled query?"
+  },
+  {
+   "qid": "D1-L2-19",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "For 5 synonym or colloquial queries (e.g. \"laptop for gaming\" vs \"gaming laptop\"), what percentage of the top 10 results overlap with the standard query?"
+  },
+  {
+   "qid": "D1-L2-20",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "Which facet filters are available on the main laptop category page?"
+  },
+  {
+   "qid": "D1-L2-21",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "Is there a dedicated filter for {vendor_ai_device} on the laptop category page?"
+  },
+  {
+   "qid": "D1-L2-22",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "Is there a dedicated filter for {competitor_silicon} on the laptop category page?"
+  },
+  {
+   "qid": "D1-L2-23",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "Can a [VENDOR] {vendor_ai_device} and a [COMPETING VENDORS] flagship laptop be added to the same comparison in the compare tool?"
+  },
+  {
+   "qid": "D1-L2-24",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "Which {vendor_ai_device} attributes (for example NPU TOPS, Copilot+ badge) appear in that comparison?"
+  },
+  {
+   "qid": "D1-L2-25",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "Does the retailer publish a laptop buying guide?"
+  },
+  {
+   "qid": "D1-L2-26",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "Does that guide compare [VENDOR] and [COMPETING VENDORS] devices (for example Windows vs Mac)?"
+  },
+  {
+   "qid": "D1-L2-27",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "Are the {vendor_ai_device} feature claims in that guide accurate against Microsoft documentation?"
+  },
+  {
+   "qid": "D1-L2-28",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "What is the publication or last-updated date of that guide?"
+  },
+  {
+   "qid": "D1-L2-29",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "In the first 20 results of the laptop category page, what percentage carry a sponsored label, per brand?"
+  },
+  {
+   "qid": "D1-L2-30",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "In the first 20 site-search results for \"laptop\", what percentage carry a sponsored label, per brand?"
+  },
+  {
+   "qid": "D1-L2-31",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "What percentage of sampled {brand} product pages show customer reviews?"
+  },
+  {
+   "qid": "D1-L2-32",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "What percentage of sampled {brand} product pages show a product rating (stars / score)?"
+  },
+  {
+   "qid": "D1-L2-33",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "What percentage of sampled {brand} product pages show a customer Q&A module?"
+  },
+  {
+   "qid": "D1-L2-34",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "What percentage of sampled {brand} product pages carry AggregateRating / Review structured data?"
+  },
+  {
+   "qid": "D1-L2-35",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "What percentage of sampled {brand} product pages carry Q&A structured data (QAPage / Question)?"
+  },
+  {
+   "qid": "D1-L2-36",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "What percentage of sampled {brand} SKUs with an on-page promotion also show that price in Offer structured data?"
+  },
+  {
+   "qid": "D1-L2-37",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "Is a trade-in offer shown on sampled {brand} product pages?"
+  },
+  {
+   "qid": "D1-L2-38",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "Is a bundle offer shown on sampled {brand} product pages?"
+  },
+  {
+   "qid": "D1-L2-39",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "For sampled SKUs, do title, price and key specs on {channel} match the retailer's own product page?"
+  },
+  {
+   "qid": "D1-L2-40",
+   "dimension": "D1",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Does the retailer offer a public product API or data feed that external AI engines could use to ground answers?"
+  },
+  {
+   "qid": "D1-L3-1",
+   "dimension": "D1",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Which AI surfaces (own-site assistant, Google AI Overviews, ChatGPT, Perplexity, Microsoft Copilot) has the retailer been directly observed on for this market?"
+  },
+  {
+   "qid": "D1-L3-2",
+   "dimension": "D1",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Does the retailer's own AI tool reflect live price and availability at the moment of the query, rather than cached data?"
+  },
+  {
+   "qid": "D1-L3-3",
+   "dimension": "D1",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Is the AI assistant's output in the correct local language and currency for the stated market?"
+  },
+  {
+   "qid": "D1-L3-4",
+   "dimension": "D1",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Can the AI tool handle a multi-turn conversation, refining a recommendation on budget, use case or compatibility?"
+  },
+  {
+   "qid": "D1-L3-5",
+   "dimension": "D1",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Does the AI tool disclose uncertainty or hand off to search or a human when it cannot answer, rather than guessing?"
+  },
+  {
+   "qid": "D1-L3-6",
+   "dimension": "D1",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Is the on-site AI assistant available on desktop web?"
+  },
+  {
+   "qid": "D1-L3-7",
+   "dimension": "D1",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Is the on-site AI assistant available on mobile web?"
+  },
+  {
+   "qid": "D1-L3-8",
+   "dimension": "D1",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Is the AI assistant available in the native app?"
+  },
+  {
+   "qid": "D1-L3-9",
+   "dimension": "D1",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Does the AI discovery experience cover the category end-to-end (browse, compare, purchase), rather than acting as a narrow FAQ bot?"
+  },
+  {
+   "qid": "D1-L3-10",
+   "dimension": "D1",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "When AI engines are asked which laptop to buy at {Retailer}, which brands are named, in what order?"
+  },
+  {
+   "qid": "D1-L3-11",
+   "dimension": "D1",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "In the same answers, is a {Retailer} page cited as a source?"
+  },
+  {
+   "qid": "D1-L3-12",
+   "dimension": "D1",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "When AI engines are asked whether {Retailer} sells {vendor_ai_device}s, is the answer accurate?"
+  },
+  {
+   "qid": "D1-L3-13",
+   "dimension": "D1",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "Where the answer is wrong, what is the most likely cause (blocked crawler, thin content, stale index, other)?"
+  },
+  {
+   "qid": "D1-L3-14",
+   "dimension": "D1",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Is AI-generated product content (review summaries, Q&A, descriptions) labelled as AI-generated?"
+  },
+  {
+   "qid": "D1-L3-15",
+   "dimension": "D1",
+   "level": 3,
+   "lens": "Competitive · retailer",
+   "stage": "Walk",
+   "text": "Across a fixed panel of PC buying prompts ('best laptop for college', 'best Copilot+ PC under $1,000'), how often does each AI engine name the retailer, and how often does it name [PEER RETAILERS]?"
+  },
+  {
+   "qid": "D1-L3-16",
+   "dimension": "D1",
+   "level": 3,
+   "lens": "Competitive · retailer",
+   "stage": "Walk",
+   "text": "When an AI engine is asked where to buy a specific PC or accessory, how often is the retailer named first or in the top three, versus [PEER RETAILERS]?"
+  },
+  {
+   "qid": "D1-L3-17",
+   "dimension": "D1",
+   "level": 3,
+   "lens": "Competitive · retailer",
+   "stage": "Walk",
+   "text": "When AI engines state the retailer's price position against [PEER RETAILERS] (cheaper, equal, pricier), is the claim correct on the day it is checked?"
+  },
+  {
+   "qid": "D1-L3-18",
+   "dimension": "D1",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Do AI engines state the retailer's policies and services (return window, price match, delivery cut-offs, installation and support services) correctly?"
+  },
+  {
+   "qid": "D1-L3-19",
+   "dimension": "D1",
+   "level": 3,
+   "lens": "Competitive · retailer",
+   "stage": "Walk",
+   "text": "When the on-site assistant is asked whether {Retailer} will price-match a named peer offer, does it state the price-match policy correctly?"
+  },
+  {
+   "qid": "D1-L3-20",
+   "dimension": "D1",
+   "level": 3,
+   "lens": "Competitive · retailer",
+   "stage": "Walk",
+   "text": "When the assistant is asked to compare {Retailer}'s price with a named peer for a specific SKU, is the comparison correct on the day?"
+  },
+  {
+   "qid": "D2-L1-1",
+   "dimension": "D2",
+   "level": 1,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Can a product record be found for each SKU in a fixed 30-SKU sample (10 [VENDOR], 10 [COMPETING VENDORS], 10 other)?"
+  },
+  {
+   "qid": "D2-L1-2",
+   "dimension": "D2",
+   "level": 1,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "On sampled product pages, how many of 4 market signals are correct for {Region}: currency, language, delivery options to {ZIP}, local terms link?"
+  },
+  {
+   "qid": "D2-L2-1",
+   "dimension": "D2",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "What percentage of required fields (product ID, key specs, price, return terms, availability) are populated on sampled {brand} SKUs?"
+  },
+  {
+   "qid": "D2-L2-2",
+   "dimension": "D2",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "How many AI attributes are present as structured spec fields on sampled {brand} SKUs (for example NPU TOPS, Copilot+ badge, Windows version / {competitor_silicon}, Apple Intelligence)?"
+  },
+  {
+   "qid": "D2-L2-3",
+   "dimension": "D2",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "Which expected AI attributes are missing on [VENDOR] SKUs?"
+  },
+  {
+   "qid": "D2-L2-4",
+   "dimension": "D2",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Is structured data or schema markup present on product pages?"
+  },
+  {
+   "qid": "D2-L2-5",
+   "dimension": "D2",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Do sampled product pages show a delivery date for {ZIP}?"
+  },
+  {
+   "qid": "D2-L2-6",
+   "dimension": "D2",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Do sampled product pages show a store pickup option with timing?"
+  },
+  {
+   "qid": "D2-L2-7",
+   "dimension": "D2",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "On SKUs offering several conditions (new, open-box, refurbished), is each condition a selectable option on the product page?"
+  },
+  {
+   "qid": "D2-L2-8",
+   "dimension": "D2",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "When a different condition is selected, do the price and warranty shown change to match it?"
+  },
+  {
+   "qid": "D2-L2-9",
+   "dimension": "D2",
+   "level": 2,
+   "lens": "Competitive · retailer",
+   "stage": "Crawl",
+   "text": "Do sampled product pages carry return-policy structured data (MerchantReturnPolicy or equivalent)?"
+  },
+  {
+   "qid": "D2-L2-10",
+   "dimension": "D2",
+   "level": 2,
+   "lens": "Competitive · retailer",
+   "stage": "Crawl",
+   "text": "Does that structured return window match the published return-policy page?"
+  },
+  {
+   "qid": "D2-L2-11",
+   "dimension": "D2",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "How many rich-media assets (images, video, 360/3D) are attached per SKU, and how does that compare between [VENDOR] and [COMPETING VENDORS] SKUs?"
+  },
+  {
+   "qid": "D2-L2-12",
+   "dimension": "D2",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "How do review counts and ratings coverage compare between [VENDOR] SKUs and [COMPETING VENDORS] SKUs in the same price band?"
+  },
+  {
+   "qid": "D2-L2-13",
+   "dimension": "D2",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "Which attach offers (accessories, protection plan, software subscription) are shown on sampled {brand} product pages?"
+  },
+  {
+   "qid": "D2-L3-1",
+   "dimension": "D2",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "On sampled product pages, how many of 4 relationship types are linked: variants, compatible accessories, bundles, successor model?"
+  },
+  {
+   "qid": "D2-L3-2",
+   "dimension": "D2",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Is there a live workflow combining two or more data types (product with stock, order, support or pricing)?"
+  },
+  {
+   "qid": "D2-L3-3",
+   "dimension": "D2",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "What is the observed lag between a price or content change and its appearance in site search, the feed and external channels?"
+  },
+  {
+   "qid": "D2-L3-4",
+   "dimension": "D2",
+   "level": 3,
+   "lens": "Competitive · retailer",
+   "stage": "Walk",
+   "text": "When a peer retailer changes the price of a matched product, how many days does {Retailer} take to respond?"
+  },
+  {
+   "qid": "D3-L2-1",
+   "dimension": "D3",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "In the last 12 months, has the retailer published dated, forward-looking AI or agentic plans (earnings calls, investor presentations, newsroom)?"
+  },
+  {
+   "qid": "D3-L2-2",
+   "dimension": "D3",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "Does the retailer have a dedicated {vendor_ai_device} category page?"
+  },
+  {
+   "qid": "D3-L2-3",
+   "dimension": "D3",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "How many SKUs are listed in that category?"
+  },
+  {
+   "qid": "D3-L2-4",
+   "dimension": "D3",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "How many {vendor_first_party_device} SKUs are listed?"
+  },
+  {
+   "qid": "D3-L2-5",
+   "dimension": "D3",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "Does the retailer have a dedicated {vendor_ai_device} landing page?"
+  },
+  {
+   "qid": "D3-L2-6",
+   "dimension": "D3",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "Are [VENDOR] AI PCs included in current seasonal or gift-guide content?"
+  },
+  {
+   "qid": "D3-L3-1",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Is at least one AI capability observable live today, or confirmed live by a primary company source dated within 12 months?"
+  },
+  {
+   "qid": "D3-L3-2",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "How many distinct AI use cases are currently live across customer-facing and employee workflows?"
+  },
+  {
+   "qid": "D3-L3-3",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Does the retailer use AI in production for back-end operations (demand forecasting, pricing, inventory allocation, fulfilment, fraud or returns), according to primary sources?"
+  },
+  {
+   "qid": "D3-L3-4",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Does the retailer provide an AI shopping assistant or virtual sales advisor?"
+  },
+  {
+   "qid": "D3-L3-5",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Can customers use natural-language queries to identify the right product?"
+  },
+  {
+   "qid": "D3-L3-6",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Does the AI support comparison of products, specifications, features or use cases?"
+  },
+  {
+   "qid": "D3-L3-7",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Does the AI recommend products based on a stated customer need?"
+  },
+  {
+   "qid": "D3-L3-8",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Does the assistant change its recommendations when the shopper states a different preference in the same session?"
+  },
+  {
+   "qid": "D3-L3-9",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Does the assistant explain 3 named technical features accurately and without unexplained jargon?"
+  },
+  {
+   "qid": "D3-L3-10",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Is AI integrated into the website, app or digital commerce experience rather than a standalone tool?"
+  },
+  {
+   "qid": "D3-L3-11",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · retailer",
+   "stage": "Walk",
+   "text": "Do sampled product pages show an AI-generated review summary or \"what customers say\" module?"
+  },
+  {
+   "qid": "D3-L3-12",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · retailer",
+   "stage": "Walk",
+   "text": "Where shown, is the AI summary visible without scrolling (above the fold) on desktop?"
+  },
+  {
+   "qid": "D3-L3-13",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · retailer",
+   "stage": "Walk",
+   "text": "Does the retailer offer visual or camera-based product search?"
+  },
+  {
+   "qid": "D3-L3-14",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · retailer",
+   "stage": "Walk",
+   "text": "How many of 3 post-purchase tasks (order status, start a return, warranty claim) can the assistant complete or route correctly?"
+  },
+  {
+   "qid": "D3-L3-15",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Does the AI assistant take membership status and benefits into account in price, delivery or recommendation answers?"
+  },
+  {
+   "qid": "D3-L3-16",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Are sponsored or retail-media placements inside the AI assistant disclosed to the shopper?"
+  },
+  {
+   "qid": "D3-L3-17",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Can the assistant quote a trade-in value during a PC purchase journey?"
+  },
+  {
+   "qid": "D3-L3-18",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Can the assistant present financing options during a PC purchase journey?"
+  },
+  {
+   "qid": "D3-L3-19",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Can the assistant present protection-plan options during a PC purchase journey?"
+  },
+  {
+   "qid": "D3-L3-20",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Does the assistant support occasion-led journeys (back-to-school, holiday gifting, home-office setup) with bundled recommendations?"
+  },
+  {
+   "qid": "D3-L3-21",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "Across 5 need-based questions put to the retailer's own assistant, which brands are recommended and in what order – [COMPETING VENDORS] versus [VENDOR]?"
+  },
+  {
+   "qid": "D3-L3-22",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "When asked about {vendor_ai_features}, does the assistant explain them accurately? Record any errors verbatim."
+  },
+  {
+   "qid": "D3-L3-23",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "When a {brand} PC is selected in the assistant, does it offer {brand_subscription}?"
+  },
+  {
+   "qid": "D3-L3-24",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "When a {brand} PC is selected in the assistant, does it suggest accessories?"
+  },
+  {
+   "qid": "D3-L3-25",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Does the retailer deploy AI agents in live customer or employee workflows?"
+  },
+  {
+   "qid": "D3-L3-26",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Can AI agents execute multi-step tasks rather than only generating responses?"
+  },
+  {
+   "qid": "D3-L3-27",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Can agents check inventory or availability?"
+  },
+  {
+   "qid": "D3-L3-28",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Can agents initiate or support a purchase journey?"
+  },
+  {
+   "qid": "D3-L3-29",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Can shoppers buy the retailer's catalogue inside third-party AI agents (agentic checkout)?"
+  },
+  {
+   "qid": "D3-L3-30",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Is the own-site AI assistant generally available, or still in phased rollout?"
+  },
+  {
+   "qid": "D3-L3-31",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Does the retailer support open agentic-commerce standards (ACP, AP2, MCP or equivalent) that let third-party agents discover and transact with its catalogue?"
+  },
+  {
+   "qid": "D3-L3-32",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Are store associates equipped with AI tools to support customer interactions, and is the deployment current?"
+  },
+  {
+   "qid": "D3-L3-33",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Do primary sources dated within 12 months describe an associate-facing AI tool that answers product questions in real time?"
+  },
+  {
+   "qid": "D3-L3-34",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Are employees provided with enterprise generative-AI assistants?"
+  },
+  {
+   "qid": "D3-L3-35",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Is AI used for product training or employee learning?"
+  },
+  {
+   "qid": "D3-L3-36",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "How many laptop SKUs are listed per brand, and what share of the category does each brand hold?"
+  },
+  {
+   "qid": "D3-L3-37",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "Is there evidence dated within 12 months of in-store {vendor_ai_device} displays?"
+  },
+  {
+   "qid": "D3-L3-38",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "How many content modules does the {brand} landing / brand page contain?"
+  },
+  {
+   "qid": "D3-L3-39",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "How many media assets (images, videos) does the {brand} page contain?"
+  },
+  {
+   "qid": "D3-L3-40",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "What is the visible last-updated date of the {brand} page?"
+  },
+  {
+   "qid": "D3-L3-41",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "Do the AI PC category page and sampled product pages state at least one specific consumer benefit of on-device AI (for example battery life, privacy, a named feature)?"
+  },
+  {
+   "qid": "D3-L3-42",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "Does the retailer offer an online demonstration (video or interactive) of {vendor_ai_device} capabilities?"
+  },
+  {
+   "qid": "D3-L3-43",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "Is there evidence dated within 12 months of in-store {vendor_ai_device} demonstrations?"
+  },
+  {
+   "qid": "D3-L3-44",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "Does the retailer differentiate AI PCs by use case (productivity, creativity, gaming, education)?"
+  },
+  {
+   "qid": "D3-L3-45",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "How many distinct promotions or campaign pages featuring [VENDOR] AI PCs were live during the cycle?"
+  },
+  {
+   "qid": "D3-L3-46",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "Are {brand_subscription} offers merchandised alongside {brand} AI PCs (product page, cart or promo page)?"
+  },
+  {
+   "qid": "D3-L3-47",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "How does promotional discount depth on [VENDOR] AI PCs compare with comparable [COMPETING VENDORS] devices in the same period?"
+  },
+  {
+   "qid": "D3-L3-48",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "In that content, what is the position of the first [VENDOR] AI PC and the first [COMPETING VENDORS] device?"
+  },
+  {
+   "qid": "D3-L3-49",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "What percentage of sampled {brand} SKUs state AI capability figures (NPU TOPS, chip) that match the manufacturer's spec sheet?"
+  },
+  {
+   "qid": "D3-L3-50",
+   "dimension": "D3",
+   "level": 3,
+   "lens": "Competitive · retailer",
+   "stage": "Walk",
+   "text": "In app-store reviews from the last 90 days that mention the AI assistant, what share is positive?"
+  },
+  {
+   "qid": "D3-L4-1",
+   "dimension": "D3",
+   "level": 4,
+   "lens": "Competitive · vendor",
+   "stage": "Run",
+   "text": "Is the AI PC assortment expanding, judged by SKU count movement between assessment cycles?"
+  },
+  {
+   "qid": "D3-L4-2",
+   "dimension": "D3",
+   "level": 4,
+   "lens": "Competitive · vendor",
+   "stage": "Run",
+   "text": "Does the retailer give equivalent merchandising treatment (landing page, display, demo, campaign) to [VENDOR] and [COMPETING VENDORS] AI-enabled devices?"
+  },
+  {
+   "qid": "D4-L1-1",
+   "dimension": "D4",
+   "level": 1,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Does the retailer distinguish AI-attributable results from general business performance?"
+  },
+  {
+   "qid": "D4-L2-1",
+   "dimension": "D4",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Is there a named AI owner or accountable leader for AI activity in the assessed market?"
+  },
+  {
+   "qid": "D4-L2-2",
+   "dimension": "D4",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Which external technology partners, AI vendors or consulting firms are publicly named as working with the retailer on AI?"
+  },
+  {
+   "qid": "D4-L2-3",
+   "dimension": "D4",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Has the named AI leader or AI-accountable executive changed during the assessment window?"
+  },
+  {
+   "qid": "D4-L2-4",
+   "dimension": "D4",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "How many AI, ML, data and agent-related roles are open on the careers site this cycle, and how does that compare with last cycle?"
+  },
+  {
+   "qid": "D4-L2-5",
+   "dimension": "D4",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "For live AI capabilities, do primary sources show in-house AI roles, named external partners, or both?"
+  },
+  {
+   "qid": "D4-L2-6",
+   "dimension": "D4",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Is there a publicly described AI training or upskilling programme for employees?"
+  },
+  {
+   "qid": "D4-L2-7",
+   "dimension": "D4",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Has any quantified AI outcome been disclosed in the last 12 months?"
+  },
+  {
+   "qid": "D4-L2-8",
+   "dimension": "D4",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "Is each disclosed result tied to a specific, named AI use case rather than an aggregate 'AI performance' figure?"
+  },
+  {
+   "qid": "D4-L2-9",
+   "dimension": "D4",
+   "level": 2,
+   "lens": "Maturity",
+   "stage": "Crawl",
+   "text": "How many AI-related public communications (press releases, blog posts, executive commentary) were issued in the last 90 days?"
+  },
+  {
+   "qid": "D4-L2-10",
+   "dimension": "D4",
+   "level": 2,
+   "lens": "Competitive · retailer",
+   "stage": "Crawl",
+   "text": "How many AI mentions were made per earnings call in the last two calls?"
+  },
+  {
+   "qid": "D4-L2-11",
+   "dimension": "D4",
+   "level": 2,
+   "lens": "Competitive · retailer",
+   "stage": "Crawl",
+   "text": "How many named AI use cases were mentioned in those calls?"
+  },
+  {
+   "qid": "D4-L2-12",
+   "dimension": "D4",
+   "level": 2,
+   "lens": "Competitive · retailer",
+   "stage": "Crawl",
+   "text": "How many quantified AI claims were made in those calls?"
+  },
+  {
+   "qid": "D4-L2-13",
+   "dimension": "D4",
+   "level": 2,
+   "lens": "Competitive · vendor",
+   "stage": "Crawl",
+   "text": "Does the retailer publicly report computing or AI-PC category performance (units, growth, share)?"
+  },
+  {
+   "qid": "D4-L3-1",
+   "dimension": "D4",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Of AI pilots the retailer announced 12–24 months ago, how many are now live?"
+  },
+  {
+   "qid": "D4-L3-2",
+   "dimension": "D4",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Does the retailer publish an AI principles, responsible-AI or AI governance statement?"
+  },
+  {
+   "qid": "D4-L3-3",
+   "dimension": "D4",
+   "level": 3,
+   "lens": "Competitive · retailer",
+   "stage": "Walk",
+   "text": "How many dated AI-related engineering blog posts did the retailer publish in the trailing 12 months?"
+  },
+  {
+   "qid": "D4-L3-4",
+   "dimension": "D4",
+   "level": 3,
+   "lens": "Competitive · retailer",
+   "stage": "Walk",
+   "text": "How many AI-related conference talks by retailer staff are listed in the trailing 12 months?"
+  },
+  {
+   "qid": "D4-L3-5",
+   "dimension": "D4",
+   "level": 3,
+   "lens": "Competitive · retailer",
+   "stage": "Walk",
+   "text": "How many public AI-related code repositories does the retailer maintain?"
+  },
+  {
+   "qid": "D4-L3-6",
+   "dimension": "D4",
+   "level": 3,
+   "lens": "Competitive · retailer",
+   "stage": "Walk",
+   "text": "How many AI-related patents were granted to the retailer in the trailing 12 months?"
+  },
+  {
+   "qid": "D4-L3-7",
+   "dimension": "D4",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Does the retailer disclose AI-related privacy, consent or risk language in its filings?"
+  },
+  {
+   "qid": "D4-L3-8",
+   "dimension": "D4",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Does the disclosed AI result state what is counted (the metric definition)?"
+  },
+  {
+   "qid": "D4-L3-9",
+   "dimension": "D4",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Does it state the population measured?"
+  },
+  {
+   "qid": "D4-L3-10",
+   "dimension": "D4",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Does it state the measurement period?"
+  },
+  {
+   "qid": "D4-L3-11",
+   "dimension": "D4",
+   "level": 3,
+   "lens": "Competitive · vendor",
+   "stage": "Walk",
+   "text": "Does executive commentary name [VENDOR] partnership activity, and how does that compare with [COMPETING VENDORS] partnership mentions in the same period?"
+  },
+  {
+   "qid": "D4-L3-12",
+   "dimension": "D4",
+   "level": 3,
+   "lens": "Competitive · retailer",
+   "stage": "Walk",
+   "text": "Which AI-enabled shopping capabilities present at [PEER RETAILERS] are absent or less developed at this retailer?"
+  },
+  {
+   "qid": "D4-L3-13",
+   "dimension": "D4",
+   "level": 3,
+   "lens": "Maturity",
+   "stage": "Walk",
+   "text": "Is there a public record of AI-related incidents (wrong prices, inaccurate answers, customer complaints, regulatory attention) and how the retailer responded?"
+  },
+  {
+   "qid": "D4-L3-14",
+   "dimension": "D4",
+   "level": 3,
+   "lens": "Competitive · retailer",
+   "stage": "Walk",
+   "text": "Has the retailer publicly explained how AI will affect its associates and roles (reskilling, redeployment, headcount)?"
+  },
+  {
+   "qid": "D4-L4-1",
+   "dimension": "D4",
+   "level": 4,
+   "lens": "Maturity",
+   "stage": "Run",
+   "text": "Has the retailer publicly committed funding or capex to scaling AI?"
+  },
+  {
+   "qid": "D4-L4-2",
+   "dimension": "D4",
+   "level": 4,
+   "lens": "Competitive · retailer",
+   "stage": "Run",
+   "text": "How many AI-related acquisitions, venture investments or equity partnerships has the retailer made in the last 24 months?"
+  },
+  {
+   "qid": "D4-L4-3",
+   "dimension": "D4",
+   "level": 4,
+   "lens": "Competitive · retailer",
+   "stage": "Run",
+   "text": "How many months, on average, have the retailer's announced AI pilots taken to reach general availability?"
+  },
+  {
+   "qid": "D4-L4-4",
+   "dimension": "D4",
+   "level": 4,
+   "lens": "Maturity",
+   "stage": "Run",
+   "text": "Is cost or return reported alongside the benefit, rather than gross benefit only?"
+  }
+ ],
+ "retailers": {
+  "best-buy": {
+   "D1-L1-1": {
+    "score": 1.0,
+    "answer": "Yes – 4/4 return HTTP 200 (Microsoft 3/3, Apple 1/1); 1.7–2.3 s each.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Raw fetch of the 4 product URLs"
+   },
+   "D1-L1-2": {
+    "score": 1.0,
+    "answer": "Yes – 4/4 show real product content (title + price in raw HTML).",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Raw fetch"
+   },
+   "D1-L1-3": {
+    "score": 1.0,
+    "answer": "Yes – 0 redirects on all 4 /product/ URLs.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Raw fetch"
+   },
+   "D1-L1-4": {
+    "score": 0.5,
+    "answer": "Partial – 2/4 match. On the two URLs that include /sku/{id} (6623677, 6677314) the canonical drops the /sku/ part and points to the product-family URL (…/JJGXPXT3FW). Consistent by design; that canonical URL is the one listed in the sitemap.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. <link rel=canonical> in raw HTML"
+   },
+   "D1-L1-5": {
+    "score": 1.0,
+    "answer": "Yes – 4/4 (h1 + JSON-LD name).",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Raw HTML"
+   },
+   "D1-L1-6": {
+    "score": 1.0,
+    "answer": "Yes – 4/4 (visible price + JSON-LD offers.price).",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Raw HTML"
+   },
+   "D1-L1-7": {
+    "score": 1.0,
+    "answer": "Yes – 4/4 (screen, processor, RAM, storage in raw spec highlights).",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Raw HTML"
+   },
+   "D1-L1-8": {
+    "score": 0.5,
+    "answer": "Partial – JSON-LD availability \"InStock\" on 4/4, but visible pickup/delivery text loads only with JS on Microsoft pages (\"Loading…\" in raw). Apple raw HTML says \"Pre-Order\" while JSON-LD says InStock – mismatch.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Raw HTML + JSON-LD"
+   },
+   "D1-L1-9": {
+    "score": 1.0,
+    "answer": "All named AI bots explicitly ALLOWED. GPTBot, ClaudeBot, PerplexityBot, Google-Extended, Amazonbot (+ OAI-SearchBot, ChatGPT-User, Claude-User, Perplexity-User, Applebot-Extended) each have their own group with \"Allow: /\" and only minor disallows (/nex/, /m/e/*, /browse-api/*). CCBot is named with the same rules as Googlebot (allowed except standard paths). robots.txt has ~40 named user-agent groups.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. https://www.bestbuy.com/robots.txt (200, 15 KB)"
+   },
+   "D1-L1-10": {
+    "score": 1.0,
+    "answer": "Yes – 11 sitemap indexes in robots.txt. Product: sitemaps_bsin (23 files, 1,103,908 /product/ URLs) + legacy sitemaps_pdp (2,714 old /site/…p?skuId= URLs). Category: sitemaps_browse_plps (4,976 URLs). Also search PLPs, promos, Q&A, reviews.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. sitemaps.bestbuy.com/*.xml"
+   },
+   "D1-L1-11": {
+    "score": 0.0,
+    "answer": "Not provided – 0 of ~1.1M product URLs carry a <lastmod>. Only index-level dates: bsin 2026-10-30 (6 days old), browse_plps 2026-03-25.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. sitemaps_bsin.xml + all 23 child files"
+   },
+   "D1-L1-12": {
+    "score": 0.5,
+    "answer": "Microsoft: ~25% of key fields JS-dependent (availability/fulfilment only after JS; title, price, specs in raw). Apple: 0% (all 4 in raw, but availability conflicts – see D1-02-d).",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Raw vs rendered comparison"
+   },
+   "D1-L1-13": {
+    "score": 0.5,
+    "answer": "Each sampled SKU resolves under two live URL forms: the canonical BSIN URL (…/JJGXP38GYW) and the /sku/<id> alias (…/JJGXP38GYW/sku/6677314). Same pattern on all 3 Surface Pro SKUs and the MacBook Pro. 1 canonical + 1 alias = 2 URLs per model/config. Colour variants (Black/Dune/Platinum) sit on one page, not separate URLs.",
+    "source": "https://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-12-touchscreen-snapdragon-x-plus-16gb-memory-512gb-ufs-device-only-violet/JJGXPXT3FW/sku/6623677\nhttps://www.bestbuy.com/product/microsoft-surface-pro-13-oled-touchscreen-snapdragon-x2-elite-12-core-2026-16gb-memory-512gb-ssd-device-only-black/JJGXP38GYW/sku/6677314\nhttps://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-13-oled-touchscreen-snapdragon-x-elite-16gb-memory-512gb-ssd-device-only-11th-ed-sapphire/JJGXPX7KJ9\nhttps://www.bestbuy.com/product/apple-macbook-pro-14-inch-laptop-with-proled-xdr-touch-display-m5-pro-chip-with-15-core-cpu-24gb-memory-1tb-ssd-space-black/JJGCQPJRKV"
+   },
+   "D1-L1-14": {
+    "score": 1.0,
+    "answer": "True for the pages checked. The /sku/ alias URLs of Surface Pro (12\" X Plus; 13\" X2 Elite) carry canonical = the BSIN-only URL, so duplicates consolidate to one URL. Same on the MacBook Pro page.",
+    "source": "https://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-12-touchscreen-snapdragon-x-plus-16gb-memory-512gb-ufs-device-only-violet/JJGXPXT3FW/sku/6623677\nhttps://www.bestbuy.com/product/microsoft-surface-pro-13-oled-touchscreen-snapdragon-x2-elite-12-core-2026-16gb-memory-512gb-ssd-device-only-black/JJGXP38GYW/sku/6677314"
+   },
+   "D1-L1-15": {
+    "score": 0.5,
+    "answer": "Label confirmed by Best Buy policy: when an item is unavailable the Add to Cart button is replaced by a 'Sold Out' button. 3 live out-of-stock SKUs were NOT sampled, so the 3/3 count is unverified.",
+    "source": "https://www.bestbuy.com/site/help-topics/lists/pcmcat204400050054.c"
+   },
+   "D1-L1-16": {
+    "score": 0.5,
+    "answer": "Best Buy help states discontinued/no-longer-available items show a 'Sold Out' button (page stays live rather than 404). The exact 'No longer available' wording, HTTP status and redirect behaviour for 3 EOL SKUs were not tested.",
+    "source": "https://www.bestbuy.com/site/help-topics/lists/pcmcat204400050054.c"
+   },
+   "D1-L1-17": {
+    "score": null,
+    "answer": "Not verified – no out-of-stock/EOL pages were captured, so stale 'In stock'/active add-to-cart could not be counted. All 4 SKUs provided were live, purchasable pages (not stale).",
+    "source": "https://www.bestbuy.com/product/microsoft-surface-pro-13-oled-touchscreen-snapdragon-x2-elite-12-core-2026-16gb-memory-512gb-ssd-device-only-black/JJGXP38GYW/sku/6677314"
+   },
+   "D1-L1-18": {
+    "score": 0.0,
+    "answer": "No – /llms.txt returns 404.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. https://www.bestbuy.com/llms.txt"
+   },
+   "D1-L1-19": {
+    "score": 1.0,
+    "answer": "Yes – Terms say content \"including through the use of chat, may be created or provided to you by artificial intelligence software ('AI')… may not always be accurate\", and prohibit users to \"copy, scrape, frame…\" Content.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. BestBuy.com Terms and Conditions (rendered)"
+   },
+   "D1-L1-20": {
+    "score": 0.0,
+    "answer": "No – blocked. After about 40 normal page loads in one session (product pages, category, help pages, Ask Blue), Best Buy's CDN returned \"Access Denied\" (HTTP 403, Akamai reference 18.bf42c717…) first on site search, then on product pages. Plain scripted requests (Python) were blocked from the start.",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Desktop browser session, 05-Nov ~17:10 IST"
+   },
+   "D1-L1-21": {
+    "score": 0.5,
+    "answer": "Microsoft 34/49 raw images have alt (12/17, 9/14, 13/18); Apple 10/11.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Raw HTML <img alt>"
+   },
+   "D1-L1-22": {
+    "score": 0.5,
+    "answer": "Issue – main \"Front.\" alts are accurate, but SKU 6623677 has a lifestyle image with alt \"Embracing Tasty and Wholesome Zucchini Muffins - A Delight\", and the X Elite 11th Ed page has an OCR-like garbage alt (\"7U Sumy B 1 Q Search a - - 2 e L 1 …\").",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Rendered + raw alt texts"
+   },
+   "D1-L2-1": {
+    "score": 0.0,
+    "answer": "NO. Requires a PageSpeed Insights / CrUX API call per URL; that API is not reachable from this environment. All three sampled Surface PDPs load and render fully. Needs a desk run before scoring.",
+    "source": "https://developer.chrome.com/docs/crux/api/ (tool required; not run)"
+   },
+   "D1-L2-2": {
+    "score": 0.5,
+    "answer": "Partial – SKU, price and review count match on 3/3 Microsoft pages (6623677 $1,149.99/479; 6677314 $1,499.99/43; JJGXPX7KJ9 → sku 10772405 $1,499.99/524). Apple: JSON-LD says InStock + rating 0 / 0 reviews, page says Pre-Order + \"Reviews coming soon\".",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. JSON-LD vs rendered page"
+   },
+   "D1-L2-3": {
+    "score": 0.5,
+    "answer": "Partial – no critical field missing on Microsoft (name, price, currency, availability present). Apple: AggregateRating ratingValue 0 / reviewCount 0 – invalid for rich results. No GTIN anywhere. Full validator.schema.org run not done.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. JSON-LD"
+   },
+   "D1-L2-4": {
+    "score": 1.0,
+    "answer": "Yes. Best Buy runs a public Products API covering 1M+ products with pricing, availability, specs and images; \"most product information is updated near real-time, including product pricing\". Sampled Surface SKU 6623672 carries structured product metadata.",
+    "source": "https://developer.bestbuy.com/apis | https://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-12-touch-screen-snapdragon-x-plus-16gb-memory-512gb-ufs-device-only-platinum/6623672"
+   },
+   "D1-L2-5": {
+    "score": 0.5,
+    "answer": "Partial. Product page analytics price vs displayed price: Surface Pro 12\" = 1149.99 (page range New/Open-Box $1,042.99–$1,149.99); Surface Pro 13\" X2 = 1799.99 (range $1,463.99–$1,799.99); Surface Pro 13\" X Elite = 1799.99 but page shows New $1,499.00–$1,799.99 (save $300.99). Page and category listing show same ratings/titles. Public feed/API price not accessible, so 10-SKU page/search/API comparison not completed.",
+    "source": "https://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-12-touchscreen-snapdragon-x-plus-16gb-memory-512gb-ufs-device-only-violet/JJGXPXT3FW/sku/6623677\nhttps://www.bestbuy.com/product/microsoft-surface-pro-13-oled-touchscreen-snapdragon-x2-elite-12-core-2026-16gb-memory-512gb-ssd-device-only-black/JJGXP38GYW/sku/6677314\nhttps://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-13-oled-touchscreen-snapdragon-x-elite-16gb-memory-512gb-ssd-device-only-11th-ed-sapphire/JJGXPX7KJ9\nhttps://www.bestbuy.com/site/microsoft-surface-tablets/microsoft-surface-pros/pcmcat1493306657197.c?id=pcmcat1493306657197"
+   },
+   "D1-L2-6": {
+    "score": 0.5,
+    "answer": "4 of 5 specs consistent. Field names/units identical across Surface Pro and MacBook Pro PDPs: 'Screen Size' (inches), 'Processor Model', 'System Memory (RAM)' (gigabytes), 'Total Storage Capacity' (gigabytes; MacBook 1TB shows as 1000 gigabytes). Battery life is not in the structured key-spec list (only appears in an AI-generated Q&A: 'up to 14 hours' on P3).",
+    "source": "https://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-12-touchscreen-snapdragon-x-plus-16gb-memory-512gb-ufs-device-only-violet/JJGXPXT3FW/sku/6623677\nhttps://www.bestbuy.com/product/microsoft-surface-pro-13-oled-touchscreen-snapdragon-x2-elite-12-core-2026-16gb-memory-512gb-ssd-device-only-black/JJGXP38GYW/sku/6677314\nhttps://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-13-oled-touchscreen-snapdragon-x-elite-16gb-memory-512gb-ssd-device-only-11th-ed-sapphire/JJGXPX7KJ9\nhttps://www.bestbuy.com/product/apple-macbook-pro-14-inch-laptop-with-proled-xdr-touch-display-m5-pro-chip-with-15-core-cpu-24gb-memory-1tb-ssd-space-black/JJGCQPJRKV"
+   },
+   "D1-L2-7": {
+    "score": null,
+    "answer": "Not answerable – sitemap has no URL-level lastmod. Presence instead: 3/3 Microsoft canonical URLs are in the bsin sitemap; the Apple MacBook Pro (release 11/06/2026) is not yet listed.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. sitemaps_bsin child files"
+   },
+   "D1-L2-8": {
+    "score": 0.0,
+    "answer": "No – 0/4 expose GTIN/UPC or MPN in JSON-LD. Only `model` (EP2-33674, EP2-65141, ZIA-00035, MJ2K4LL/A) and `sku`.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. JSON-LD"
+   },
+   "D1-L2-9": {
+    "score": 0.5,
+    "answer": "Partial – Offer.seller lists availableDeliveryMethod [PICKUP, SHIPPING]; no store-level availability (availableAtOrFrom / local inventory) markup.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. JSON-LD"
+   },
+   "D1-L2-10": {
+    "score": 1.0,
+    "answer": "True. Best Buy has a Microsoft brand page and a Microsoft Surface sub-hub (Surface Laptops, Surface Pro, accessories, refurbished). PDPs also carry a 'Shop Microsoft' link.",
+    "source": "https://www.bestbuy.com/site/brands/microsoft/pcmcat135300050050.c?id=pcmcat135300050050\nhttps://www.bestbuy.com/site/microsoft/microsoft-surface/pcmcat1492808199261.c?id=pcmcat1492808199261\nhttps://www.bestbuy.com/site/microsoft-surface/microsoft-surface-laptops/pcmcat1492808872042.c?id=pcmcat1492808872042\nhttps://www.bestbuy.com/site/microsoft-surface-tablets/microsoft-surface-pros/pcmcat1493306657197.c?id=pcmcat1493306657197"
+   },
+   "D1-L2-11": {
+    "score": 0.5,
+    "answer": "≈3 clicks (inferred from site breadcrumb Best Buy > Name Brands > Microsoft > Microsoft Surface). Homepage menu click-path was not recorded live.",
+    "source": "https://www.bestbuy.com/site/microsoft-surface/microsoft-surface-laptops/pcmcat1492808872042.c?id=pcmcat1492808872042\nhttps://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-12-touchscreen-snapdragon-x-plus-16gb-memory-512gb-ufs-device-only-violet/JJGXPXT3FW/sku/6623677"
+   },
+   "D1-L2-12": {
+    "score": 0.5,
+    "answer": "Default sort = 'Best Selling' on All Laptops (7,012 results). Only the first 4 tiles rendered in capture: HP (Googlebook, sponsored), Lenovo, Lenovo, Acer (Googlebook, sponsored) = HP 25% / Lenovo 50% / Acer 25% of the 4 seen; Microsoft 0%, Apple 0%. Full first-12 breakdown not available.",
+    "source": "https://www.bestbuy.com/site/laptop-computers/all-laptops/pcmcat138500050001.c?id=pcmcat138500050001"
+   },
+   "D1-L2-13": {
+    "score": null,
+    "answer": "Not verified – no Surface Pro/Copilot+ Microsoft device appears in the first 4 rendered tiles of All Laptops (Best Selling); positions 5–12 not rendered. Note: Surface Pro is classified under Tablets (breadcrumb: Computers & Tablets > Tablets > All Tablets).",
+    "source": "https://www.bestbuy.com/site/laptop-computers/all-laptops/pcmcat138500050001.c?id=pcmcat138500050001\nhttps://www.bestbuy.com/product/microsoft-surface-pro-13-oled-touchscreen-snapdragon-x2-elite-12-core-2026-16gb-memory-512gb-ssd-device-only-black/JJGXP38GYW/sku/6677314"
+   },
+   "D1-L2-14": {
+    "score": null,
+    "answer": "Not verified – no Surface device in the first 4 rendered tiles of All Laptops; positions 5–12 not rendered. (Surface Pro sits in the Tablets taxonomy; Surface Laptop has its own hub.)",
+    "source": "https://www.bestbuy.com/site/laptop-computers/all-laptops/pcmcat138500050001.c?id=pcmcat138500050001\nhttps://www.bestbuy.com/site/microsoft-surface/microsoft-surface-laptops/pcmcat1492808872042.c?id=pcmcat1492808872042"
+   },
+   "D1-L2-15": {
+    "score": null,
+    "answer": "Not verified – need-based site searches ('laptop for students/work/video editing') were not executed live.",
+    "source": "—"
+   },
+   "D1-L2-16": {
+    "score": 0.5,
+    "answer": "Snapshot only (monthly tally not possible): Microsoft – retail-media banner 'High performance laptops to create, game…' on the Surface Pro PDP, plus 'Creator pro PC' sponsored feature tiles on the Surface Laptops hub. Apple – no banner/hero observed on pages captured.",
+    "source": "https://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-12-touchscreen-snapdragon-x-plus-16gb-memory-512gb-ufs-device-only-violet/JJGXPXT3FW/sku/6623677\nhttps://www.bestbuy.com/site/microsoft-surface/microsoft-surface-laptops/pcmcat1492808872042.c?id=pcmcat1492808872042"
+   },
+   "D1-L2-17": {
+    "score": null,
+    "answer": "Not verified – the 10 predefined natural-language queries were not run.",
+    "source": "—"
+   },
+   "D1-L2-18": {
+    "score": null,
+    "answer": "Not verified – misspelled-query overlap test not run.",
+    "source": "—"
+   },
+   "D1-L2-19": {
+    "score": null,
+    "answer": "Not verified – synonym-query overlap test not run.",
+    "source": "—"
+   },
+   "D1-L2-20": {
+    "score": 1.0,
+    "answer": "Processor model, brand, RAM, price, OS, screen size, storage, features, GPU, rating, storage type, resolution, colour, display type, model family, graphics type, ports, video memory, condition, deals, sold-by, availability.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. All Laptops (6,978 results)"
+   },
+   "D1-L2-21": {
+    "score": 0.0,
+    "answer": "No dedicated Copilot+ facet on All Laptops – Copilot+ appears only as an \"Explore: Windows Copilot+ PCs\" category link.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. All Laptops facets"
+   },
+   "D1-L2-22": {
+    "score": 1.0,
+    "answer": "Yes – \"Apple\" is a value of the Processor Model facet (no separate Apple-silicon facet needed).",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. All Laptops facets"
+   },
+   "D1-L2-23": {
+    "score": 0.5,
+    "answer": "Partial. A 'Compare' control is present on listing tiles (All Laptops, Surface hubs) for multi-brand results, so a Surface and a MacBook can be queued from a shared listing. However Surface Pro sits in the Tablets taxonomy while MacBook Pro sits in Laptops, and the comparison page itself was not opened.",
+    "source": "https://www.bestbuy.com/site/laptop-computers/all-laptops/pcmcat138500050001.c?id=pcmcat138500050001\nhttps://www.bestbuy.com/site/microsoft-surface-tablets/microsoft-surface-pros/pcmcat1493306657197.c?id=pcmcat1493306657197\nhttps://www.bestbuy.com/site/laptop-computers/windows-copilot-pc/pcmcat1715801616808.c?id=pcmcat1715801616808"
+   },
+   "D1-L2-24": {
+    "score": 0.5,
+    "answer": "Unverified for the compare table. 'Copilot+ PC' is a surfaced attribute on all three Surface Pro PDPs and a filter (Features > Windows Copilot+ PC); NPU TOPS not in key specs. Compare-table rows not captured.",
+    "source": "https://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-12-touchscreen-snapdragon-x-plus-16gb-memory-512gb-ufs-device-only-violet/JJGXPXT3FW/sku/6623677\nhttps://www.bestbuy.com/product/microsoft-surface-pro-13-oled-touchscreen-snapdragon-x2-elite-12-core-2026-16gb-memory-512gb-ssd-device-only-black/JJGXP38GYW/sku/6677314\nhttps://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-13-oled-touchscreen-snapdragon-x-elite-16gb-memory-512gb-ssd-device-only-11th-ed-sapphire/JJGXPX7KJ9"
+   },
+   "D1-L2-25": {
+    "score": 1.0,
+    "answer": "Yes. Best Buy publishes a laptop buying guide covering form factors, operating systems, screens, processors, memory, storage and gaming laptops.",
+    "source": "https://www.bestbuy.com/site/buying-guides/laptop-buying-guide/pcmcat310900050007.c"
+   },
+   "D1-L2-26": {
+    "score": 0.5,
+    "answer": "PARTIAL. An \"Operating systems\" section describes macOS, Windows and Chrome OS side by side, but there is no dedicated head-to-head. Mac framing is favourable: fewer historical virus issues, higher cost.",
+    "source": "https://www.bestbuy.com/site/buying-guides/laptop-buying-guide/pcmcat310900050007.c"
+   },
+   "D1-L2-27": {
+    "score": 0.5,
+    "answer": "PARTIAL. Best Buy's core specifications (Snapdragon X Plus, 45 TOPS NPU, 16GB RAM and 512GB storage) are consistent with Microsoft's documentation. However, some AI feature descriptions, particularly Cocreator and Recall, lack important usage qualifications. Best Buy also incorrectly refers to the device as a Surface Laptop in its description.",
+    "source": "https://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-12-touchscreen-snapdragon-x-plus-16gb-memory-512gb-ufs-device-only-violet/JJGXPXT3FW/sku/6623677 https://www.microsoft.com/en-in/surface/devices/surface-pro"
+   },
+   "D1-L2-28": {
+    "score": 0.0,
+    "answer": "NO DATE. No publication or last-updated date is shown. Only a \"(c) 2026 Best Buy\" site footer, which dates the template, not the guide. Fails the within-12-months test because it cannot be dated.",
+    "source": "https://www.bestbuy.com/site/buying-guides/laptop-buying-guide/pcmcat310900050007.c"
+   },
+   "D1-L2-29": {
+    "score": null,
+    "answer": "Microsoft is the only brand with sponsored grid slots in the first results: Surface Laptop Ultra and Surface Laptop 15\" labelled \"Sponsored\"; Lenovo/HP organic. A Googlebook carousel above the grid is also sponsored.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. All Laptops, default sort, ZIP 90245"
+   },
+   "D1-L2-30": {
+    "score": 0.5,
+    "answer": "Partial snapshot: 2 of the first 4 All Laptops tiles carry a 'Sponsored' label (HP Googlebook, Acer Googlebook); on the Surface Laptops hub the Surface Laptop Ultra tiles are sponsored. Full top-20 for query 'laptop' not captured.",
+    "source": "https://www.bestbuy.com/site/laptop-computers/all-laptops/pcmcat138500050001.c?id=pcmcat138500050001\nhttps://www.bestbuy.com/site/microsoft-surface/microsoft-surface-laptops/pcmcat1492808872042.c?id=pcmcat1492808872042"
+   },
+   "D1-L2-31": {
+    "score": 0.5,
+    "answer": "Microsoft 3/3 show reviews; Apple 0/1 (\"Reviews coming soon\").",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Rendered page"
+   },
+   "D1-L2-32": {
+    "score": 0.5,
+    "answer": "Microsoft 3/3 show a star rating; Apple 0/1.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Rendered page"
+   },
+   "D1-L2-33": {
+    "score": 1.0,
+    "answer": "Yes – 4/4 show a Questions & Answers module (Apple: \"Can it run Microsoft Windows or Office apps?\").",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Rendered page"
+   },
+   "D1-L2-34": {
+    "score": 1.0,
+    "answer": "Yes – 4/4 carry AggregateRating + review markup (Apple placeholder 0/0).",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. JSON-LD"
+   },
+   "D1-L2-35": {
+    "score": 0.0,
+    "answer": "No – 0/4 have QAPage/Question markup, although Q&A is shown on every page (a separate Q&A sitemap exists).",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. JSON-LD"
+   },
+   "D1-L2-36": {
+    "score": 1.0,
+    "answer": "Yes – 2/2 promoted Microsoft SKUs show the sale price ($1,499.99) in Offer markup; the Comp. Value ($1,799.99) is not in markup. SKU 6623677 and Apple have no promotion.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. JSON-LD vs page"
+   },
+   "D1-L2-37": {
+    "score": 0.5,
+    "answer": "Microsoft: Yes (\"Trade in and save – check your trade-in value\" on 6623677 and 6677314). Apple: not shown (pre-order page has no buy box).",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Rendered page"
+   },
+   "D1-L2-38": {
+    "score": 0.0,
+    "answer": "No bundle module on any page; 6677314 shows \"2 free gifts included with purchase\".",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Rendered page"
+   },
+   "D1-L2-39": {
+    "score": null,
+    "answer": "Not verified – Google Shopping/Amazon same-day capture not performed.",
+    "source": "—"
+   },
+   "D1-L2-40": {
+    "score": 1.0,
+    "answer": "Yes. developer.bestbuy.com exposes Products, Categories, Stores, Recommendations and Buying Options APIs. 1M+ current and historical products; pricing refreshed near real-time. A Commerce API exists but is invite-only.",
+    "source": "https://developer.bestbuy.com/apis"
+   },
+   "D1-L3-1": {
+    "score": null,
+    "answer": "Observed on: own-site Ask Blue ✓, Google AI Mode ✓ (Best Buy pages cited), ChatGPT ✓ (Best Buy cited, \"Best Buy +1\"). Not testable logged out: Perplexity (sign-up wall), Microsoft Copilot (sign-in wall).",
+    "source": "AI engines run in the desktop browser, 05-Nov-2026 ~17:20 IST, logged out, new chat per prompt, connection from India (Google with gl=us). Perplexity required sign-up and Microsoft Copilot required sign-in – not tested. Answer-engine panel"
+   },
+   "D1-L3-2": {
+    "score": 0.5,
+    "answer": "Partial – price correct 2/2 ($1,149.99 for 6623677; $2,899.00 for MacBook Pro). Availability wrong 1/2: for the MacBook Pro it said \"available for pickup at stores near ZIP code 55423\" while its own product card said \"Pickup unavailable\" and \"Pre-order\". It also never checked 55423 – cards used Hawthorne / 90245.",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Ask Blue: price & stock prompts"
+   },
+   "D1-L3-3": {
+    "score": 1.0,
+    "answer": "Yes – English and USD in every reply.",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). All Ask Blue replies"
+   },
+   "D1-L3-4": {
+    "score": 1.0,
+    "answer": "Yes – each added constraint changed the picks: \"under $1,300\" swapped in Gigabyte AERO X16, Dell 16S, Acer Swift Go 16; \"must work with my iPhone\" switched entirely to MacBooks (Air M5/M4, refurbished Air/Pro). It also carried context into later questions (the back-to-school answer referenced the iPhone).",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Photo-editing 3-turn conversation"
+   },
+   "D1-L3-5": {
+    "score": 1.0,
+    "answer": "Yes – 0 guesses out of 3. \"Book a flight\" → \"That information isn't available, but Ask Blue can help you find and compare products\"; Dell-from-Costco warranty → \"Ask Blue can't look up warranty details… contact support\"; competitor price comparison → \"cannot compare them against other retailers\". Asking for a person returns a \"Chat with a live agent\" button.",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Out-of-scope prompts"
+   },
+   "D1-L3-6": {
+    "score": 1.0,
+    "answer": "Yes – \"Ask Blue\" button in the desktop header, opens a side chat panel.",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Homepage header"
+   },
+   "D1-L3-7": {
+    "score": 0.5,
+    "answer": "Partial. Best Buy's conversational AI assistant 'Ask Blue' launched 27 Aug 2026 on the website in a phased rollout. Mobile-web availability/entry point not confirmed.",
+    "source": "https://www.retaildive.com/news/best-buy-ai-shopping-assistant/829049/\nhttps://aimmediahouse.com/retail/best-buy-beat-expectations-and-disclosed-three-ai-initiatives-in-the-same-quarter"
+   },
+   "D1-L3-8": {
+    "score": 0.0,
+    "answer": "NOT CONFIRMED. Ask Blue was announced 27 Aug 2026 and is in phased rollout; Best Buy has said AI search is coming to \"website and app\". No primary source confirms it is live in the native app. Needs a human device check.",
+    "source": "https://www.retaildive.com/news/best-buy-ai-shopping-assistant/829049/ | https://www.retaildive.com/news/best-buy-search-experience-online-app/749652"
+   },
+   "D1-L3-9": {
+    "score": 0.5,
+    "answer": "Partial – browse ✓ (grouped recommendations), compare ✓ (qualitative Surface Pro vs MacBook Pro), add to cart ✓ via \"Add to cart\" buttons on its product cards; but the assistant itself says it \"can't add items to your cart or complete checkout just yet\".",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Ask Blue: compare + add-to-cart prompts"
+   },
+   "D1-L3-10": {
+    "score": 0.0,
+    "answer": "NO. Requires live prompting of answer engines in fresh sessions, which cannot be performed from this environment. Needs an analyst or an engine-access tool. No result should be inferred.",
+    "source": "No Source"
+   },
+   "D1-L3-11": {
+    "score": 0.0,
+    "answer": "NO.",
+    "source": "No Source"
+   },
+   "D1-L3-12": {
+    "score": 1.0,
+    "answer": "Yes – both accurate. Google: \"Yes… massive selection\" (HP, ASUS, Samsung, Dell, Lenovo) and links the Windows Copilot+ PCs category; ChatGPT: \"Yes\", lists Microsoft Surface, HP, Lenovo, Dell, ASUS, Samsung, Acer.",
+    "source": "AI engines run in the desktop browser, 05-Nov-2026 ~17:20 IST, logged out, new chat per prompt, connection from India (Google with gl=us). Perplexity required sign-up and Microsoft Copilot required sign-in – not tested. Prompt: \"Does Best Buy sell Copilot+ PCs?\""
+   },
+   "D1-L3-13": {
+    "score": null,
+    "answer": "N/A – no wrong answer to diagnose (both engines answered correctly).",
+    "source": "AI engines run in the desktop browser, 05-Nov-2026 ~17:20 IST, logged out, new chat per prompt, connection from India (Google with gl=us). Perplexity required sign-up and Microsoft Copilot required sign-in – not tested. Derived from D1-40-a"
+   },
+   "D1-L3-14": {
+    "score": 1.0,
+    "answer": "Yes – every AI module observed is labelled: review summaries \"Generated by AI based on customer reviews.\" (3/3 Microsoft), Q&A \"This question and answer was generated by AI\" (6623677).",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Rendered page"
+   },
+   "D1-L3-15": {
+    "score": 0.0,
+    "answer": "NO. Requires a fixed prompt panel executed across answer engines with mention tallies. Cannot be performed from this environment.",
+    "source": "No Source"
+   },
+   "D1-L3-16": {
+    "score": 0.0,
+    "answer": "NO. Requires 15 live \"where to buy\" prompts with rank capture across engines. Cannot be performed from this environment.",
+    "source": "No Source"
+   },
+   "D1-L3-17": {
+    "score": 0.5,
+    "answer": "Partial – Google: Best Buy $2,499 for MacBook Pro 14\" M5 Pro 24GB/1TB (matches Best Buy's listing for the standard-display model seen in Ask Blue); Amazon $2,299 and Walmart ~$2,609 not verified (peer sites not checked); concluded Amazon is cheapest. ChatGPT not run on this prompt.",
+    "source": "AI engines run in the desktop browser, 05-Nov-2026 ~17:20 IST, logged out, new chat per prompt, connection from India (Google with gl=us). Perplexity required sign-up and Microsoft Copilot required sign-in – not tested. Price-position prompt"
+   },
+   "D1-L3-18": {
+    "score": 0.5,
+    "answer": "Mostly correct. Return window 15 days / 60 days for Plus & Total members – correct on both (neither mentions the holiday extension to 15-Jan). Price match vs Amazon (sold by Amazon, identical, new) – correct on both (Thanksgiving-week blackout omitted). Same-day cut-off \"around 3 PM\" (Google) – not verified. ChatGPT said buying from Best Buy inside ChatGPT is \"not currently confirmed\" – check against Best Buy's own announcements (team desk research).",
+    "source": "AI engines run in the desktop browser, 05-Nov-2026 ~17:20 IST, logged out, new chat per prompt, connection from India (Google with gl=us). Perplexity required sign-up and Microsoft Copilot required sign-in – not tested. Policy prompts"
+   },
+   "D1-L3-19": {
+    "score": 1.0,
+    "answer": "Yes – it stated Best Buy matches key online competitors like Amazon for identical, immediately available new products, excluding third-party/Marketplace sellers, clearance, refurbished and open-box. That matches the Price Match Guarantee page. Minor omission: the Thanksgiving-week blackout.",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Ask Blue vs Price Match Guarantee page"
+   },
+   "D1-L3-20": {
+    "score": 0.0,
+    "answer": "No – \"Only current prices are available right now, and Ask Blue cannot compare them against other retailers.\" It declines rather than guessing.",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Ask Blue: Walmart/Amazon price prompt"
+   },
+   "D2-L1-1": {
+    "score": 0.5,
+    "answer": "4/4 provided SKUs have live product pages (Microsoft 3/3, Apple 1/1). The full 30-SKU sample (incl. 'other' group) was not supplied/run. Note MacBook Pro M5 Pro page shows Release Date 11/06/2026 and 'Reviews coming soon'.",
+    "source": "https://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-12-touchscreen-snapdragon-x-plus-16gb-memory-512gb-ufs-device-only-violet/JJGXPXT3FW/sku/6623677\nhttps://www.bestbuy.com/product/microsoft-surface-pro-13-oled-touchscreen-snapdragon-x2-elite-12-core-2026-16gb-memory-512gb-ssd-device-only-black/JJGXP38GYW/sku/6677314\nhttps://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-13-oled-touchscreen-snapdragon-x-elite-16gb-memory-512gb-ssd-device-only-11th-ed-sapphire/JJGXPX7KJ9\nhttps://www.bestbuy.com/product/apple-macbook-pro-14-inch-laptop-with-proled-xdr-touch-display-m5-pro-chip-with-15-core-cpu-24gb-memory-1tb-ssd-space-black/JJGCQPJRKV"
+   },
+   "D2-L1-2": {
+    "score": 0.5,
+    "answer": "P2: 4/4 (USD, English, delivery/pickup to ZIP – 'Get it by Tue, Nov 3 / Pickup at Roseville', Return & Exchange Policy link). P1 and P3: currency, language and policy link present; delivery module not rendered in capture (3/4).",
+    "source": "https://www.bestbuy.com/product/microsoft-surface-pro-13-oled-touchscreen-snapdragon-x2-elite-12-core-2026-16gb-memory-512gb-ssd-device-only-black/JJGXP38GYW/sku/6677314\nhttps://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-12-touchscreen-snapdragon-x-plus-16gb-memory-512gb-ufs-device-only-violet/JJGXPXT3FW/sku/6623677\nhttps://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-13-oled-touchscreen-snapdragon-x-elite-16gb-memory-512gb-ssd-device-only-11th-ed-sapphire/JJGXPX7KJ9"
+   },
+   "D2-L2-1": {
+    "score": 0.5,
+    "answer": "Microsoft 4/5 fields (ID, specs, price, availability – return terms only as a link, no window) = 80%; Apple 4/5 = 80% (availability conflicting).",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Raw HTML + JSON-LD"
+   },
+   "D2-L2-2": {
+    "score": 0.5,
+    "answer": "Microsoft: \"Copilot+ PC\" is a structured highlight field (\"Windows AI: Copilot+ PC\"); NPU TOPS (45 / 80) appears in feature copy and images, not confirmed as a spec-table field. Apple: \"Apple Intelligence\" in copy only. Check the full spec table to confirm.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Rendered spec highlights"
+   },
+   "D2-L2-3": {
+    "score": 0.5,
+    "answer": "Copilot+ PC' badge is present on all 3 Surface Pro PDPs. Not exposed in key specs: NPU/TOPS rating and on-device AI feature list. Full 'See all specifications' tab not captured, so list is indicative.",
+    "source": "https://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-12-touchscreen-snapdragon-x-plus-16gb-memory-512gb-ufs-device-only-violet/JJGXPXT3FW/sku/6623677\nhttps://www.bestbuy.com/product/microsoft-surface-pro-13-oled-touchscreen-snapdragon-x2-elite-12-core-2026-16gb-memory-512gb-ssd-device-only-black/JJGXP38GYW/sku/6677314\nhttps://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-13-oled-touchscreen-snapdragon-x-elite-16gb-memory-512gb-ssd-device-only-11th-ed-sapphire/JJGXPX7KJ9"
+   },
+   "D2-L2-4": {
+    "score": 1.0,
+    "answer": "Yes – 4/4 have Product, Offer, AggregateRating, BreadcrumbList, ItemList.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. JSON-LD"
+   },
+   "D2-L2-5": {
+    "score": 1.0,
+    "answer": "Yes – \"Shipping – FREE Tomorrow\" on Microsoft pages. NOTE: location defaulted to ZIP 90245 / Hawthorne CA, not 55423.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Rendered buy box"
+   },
+   "D2-L2-6": {
+    "score": 1.0,
+    "answer": "Yes – \"Pickup – FREE Today, Ready 1 hour after store opens, Only 2 left\" (Hawthorne). Apple: pre-order, no pickup timing.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Rendered buy box"
+   },
+   "D2-L2-7": {
+    "score": 0.5,
+    "answer": "2 of 3 Surface Pro pages show multiple conditions: P1 'New and Open-Box $1,042.99–$1,149.99', P2 'New and Open-Box $1,463.99–$1,799.99'. P3 shows 'New $1,499.00–$1,799.99' only. Condition facets (New/Open-Box/Refurbished) exist on category pages.",
+    "source": "https://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-12-touchscreen-snapdragon-x-plus-16gb-memory-512gb-ufs-device-only-violet/JJGXPXT3FW/sku/6623677\nhttps://www.bestbuy.com/product/microsoft-surface-pro-13-oled-touchscreen-snapdragon-x2-elite-12-core-2026-16gb-memory-512gb-ssd-device-only-black/JJGXP38GYW/sku/6677314\nhttps://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-13-oled-touchscreen-snapdragon-x-elite-16gb-memory-512gb-ssd-device-only-11th-ed-sapphire/JJGXPX7KJ9\nhttps://www.bestbuy.com/site/microsoft-surface-tablets/microsoft-surface-pros/pcmcat1493306657197.c?id=pcmcat1493306657197"
+   },
+   "D2-L2-8": {
+    "score": 0.5,
+    "answer": "Price changes by condition (ranges above). Warranty/protection plan text per condition not tested.",
+    "source": "https://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-12-touchscreen-snapdragon-x-plus-16gb-memory-512gb-ufs-device-only-violet/JJGXPXT3FW/sku/6623677\nhttps://www.bestbuy.com/product/microsoft-surface-pro-13-oled-touchscreen-snapdragon-x2-elite-12-core-2026-16gb-memory-512gb-ssd-device-only-black/JJGXP38GYW/sku/6677314"
+   },
+   "D2-L2-9": {
+    "score": 0.5,
+    "answer": "Partial – MerchantReturnPolicy on 4/4, but it only holds a URL to the policy page; no merchantReturnDays / returnPolicyCategory.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. JSON-LD"
+   },
+   "D2-L2-10": {
+    "score": 0.0,
+    "answer": "No – the markup has no return window to compare. Policy page: 15 days standard, 60 days for My Best Buy Plus/Total members; holiday extension – most purchases returnable until 15-Jan-2027.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Return & Exchange Policy page"
+   },
+   "D2-L2-11": {
+    "score": null,
+    "answer": "Microsoft: 6623677 ~16 images + 14 videos; 6677314 ~13 images + 1 video; X Elite 11th Ed ~12 images + 13 videos. Apple: ~4 images + 2 videos.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Rendered gallery counts"
+   },
+   "D2-L2-12": {
+    "score": null,
+    "answer": "Microsoft: 4.7 (479), 4.6 (43), 4.6 (524). Apple MacBook Pro: no rating yet (new, release 06-Nov-2026).",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. JSON-LD + page"
+   },
+   "D2-L2-13": {
+    "score": 0.5,
+    "answer": "Microsoft: \"$10 off Microsoft 365 with select device\", Geek Squad protection (\"Protect your tablet\", from $189.99), 25% off Logitech accessories. Apple: no attach offers – instead the page carries a SPONSORED carousel of Microsoft Surface laptops.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Rendered page"
+   },
+   "D2-L3-1": {
+    "score": 0.5,
+    "answer": "3 of 4 present. Variants: yes (colour swatches, 512GB/1000GB selector). Accessories: yes (Surface Slim Pen + Flex Keyboard, Arc Mouse, Office 365). Bundles: yes (Slim Pen + Flex Keyboard bundle, protection plans). Successor model: no explicit link (newer Surface models only in 'similar' carousel; 'Is this the most recent version' Q&A unanswered).",
+    "source": "https://www.bestbuy.com/product/microsoft-surface-pro-13-oled-touchscreen-snapdragon-x2-elite-12-core-2026-16gb-memory-512gb-ssd-device-only-black/JJGXP38GYW/sku/6677314\nhttps://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-13-oled-touchscreen-snapdragon-x-elite-16gb-memory-512gb-ssd-device-only-11th-ed-sapphire/JJGXPX7KJ9\nhttps://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-12-touchscreen-snapdragon-x-plus-16gb-memory-512gb-ufs-device-only-violet/JJGXPXT3FW/sku/6623677"
+   },
+   "D2-L3-2": {
+    "score": 1.0,
+    "answer": "True. PDP joins product with store inventory, delivery date and pickup timing and financing: 'Ready within 1 hour', 'Get it by Tue, Nov 3', 'Pickup at Roseville – only 2 left at your store', 24-month financing, trade-in value.",
+    "source": "https://www.bestbuy.com/product/microsoft-surface-pro-13-oled-touchscreen-snapdragon-x2-elite-12-core-2026-16gb-memory-512gb-ssd-device-only-black/JJGXP38GYW/sku/6677314"
+   },
+   "D2-L3-3": {
+    "score": null,
+    "answer": "Not verified – requires longitudinal tracking of 5 changing SKUs; not measurable from a single snapshot.",
+    "source": "—"
+   },
+   "D2-L3-4": {
+    "score": null,
+    "answer": "Not verified – requires daily price tracking of 10 matched SKUs across retailers; not measurable here.",
+    "source": "—"
+   },
+   "D3-L2-1": {
+    "score": 1.0,
+    "answer": "Yes. Q4 FY26 call (Mar 2026), Corie Barry: \"ensuring our site is ready for AI agents to browse and discover on behalf of our customers\"; support stated for Google's Universal Commerce Protocol. Q2 FY27 (Aug 2026): Ask Blue phased rollout.",
+    "source": "https://www.retaildive.com/news/best-buy-forefront-agentic-ai-discovery/814222/"
+   },
+   "D3-L2-2": {
+    "score": 1.0,
+    "answer": "Yes – \"Windows Copilot+ PCs\" category, linked from All Laptops (Explore row). SKU count not captured yet.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. All Laptops page"
+   },
+   "D3-L2-3": {
+    "score": 1.0,
+    "answer": "705 SKUs in the Windows Copilot+ PCs Laptops category (header '(705)'; listCount 705).",
+    "source": "https://www.bestbuy.com/site/laptop-computers/windows-copilot-pc/pcmcat1715801616808.c?id=pcmcat1715801616808"
+   },
+   "D3-L2-4": {
+    "score": 1.0,
+    "answer": "Surface Pro hub: 76 SKUs (includes Surface Go/open-box/refurb); Surface Laptops hub: 71 SKUs. Hub counts overlap condition variants and are not de-duplicated.",
+    "source": "https://www.bestbuy.com/site/microsoft-surface-tablets/microsoft-surface-pros/pcmcat1493306657197.c?id=pcmcat1493306657197\nhttps://www.bestbuy.com/site/microsoft-surface/microsoft-surface-laptops/pcmcat1492808872042.c?id=pcmcat1492808872042"
+   },
+   "D3-L2-5": {
+    "score": 1.0,
+    "answer": "True. Dedicated 'Windows Copilot+ PCs Laptops' landing/category (705 SKUs, 'Microsoft Surface Pro' model-family facet) plus Surface Pro and Surface Laptops hubs.",
+    "source": "https://www.bestbuy.com/site/laptop-computers/windows-copilot-pc/pcmcat1715801616808.c?id=pcmcat1715801616808\nhttps://www.bestbuy.com/site/microsoft-surface-tablets/microsoft-surface-pros/pcmcat1493306657197.c?id=pcmcat1493306657197\nhttps://www.bestbuy.com/site/microsoft-surface/microsoft-surface-laptops/pcmcat1492808872042.c?id=pcmcat1492808872042"
+   },
+   "D3-L2-6": {
+    "score": 1.0,
+    "answer": "Yes (third-party confirmation). Surface Laptop Copilot+ PCs (13.8\" and 15\", X2 Plus/Elite) are in Best Buy's early Black Friday deals; Best Buy site has a Black Friday hub and 'Black Friday Deal' filter on All Laptops. Gift-guide pages not separately captured.",
+    "source": "https://9to5toys.com/?p=1240186\nhttps://www.bestbuy.com/black-friday\nhttps://www.bestbuy.com/site/laptop-computers/all-laptops/pcmcat138500050001.c?id=pcmcat138500050001"
+   },
+   "D3-L3-1": {
+    "score": 1.0,
+    "answer": "Yes. Several, all within 12 months: Ask Blue conversational assistant (announced 27 Aug 2026); ChatGPT commerce integration (14 Sep 2026); AI-generated review summaries live on sampled Surface PDPs.",
+    "source": "https://s204.q4cdn.com/864376893/files/doc_earnings/2027/q2/transcript/BBY-Q2-Transcript.pdf | https://www.digitalcommerce360.com/2026/09/16/best-buy-opens-up-gift-buying-and-discover-through-chatgpt-ahead-of-holidays/"
+   },
+   "D3-L3-2": {
+    "score": 1.0,
+    "answer": "Yes.SIX confirmed live: (1) Ask Blue assistant, phased; (2) ChatGPT commerce; (3) AI review summaries on PDPs; (4) Google Cloud customer-support virtual assistant; (5) internal employee agent; (6) LLM marketing audience targeting. AI-powered site search is announced, not confirmed live.",
+    "source": "https://www.digitalcommerce360.com/2026/09/24/ecommerce-trends-how-best-buy-is-using-ai/ | https://cloud.google.com/customers/bestbuy-ai"
+   },
+   "D3-L3-3": {
+    "score": 0.5,
+    "answer": "PARTIAL. No named operational AI deployment is disclosed. FY2026 10-K refers only to \"leveraging of new AI technologies in key business processes\"; the CR&S report cites \"data-driven and automated inventory decisions\" without calling it AI.",
+    "source": "https://www.sec.gov/Archives/edgar/data/764478/000076447826000009/bby-20260131.htm"
+   },
+   "D3-L3-4": {
+    "score": 1.0,
+    "answer": "Yes – \"Ask Blue\" entry point in the site header (next to Shop / Deals).",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Rendered header"
+   },
+   "D3-L3-5": {
+    "score": 1.0,
+    "answer": "Yes – 5/5 need-based prompts returned specific SKUs (college, 4K video, business travel, high school, Excel/Teams). Quality issue: the Excel/Teams answer included Googlebooks.",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Ask Blue need prompts"
+   },
+   "D3-L3-6": {
+    "score": 1.0,
+    "answer": "Yes – compared Surface Pro 13\" OLED vs MacBook Pro 14\" on form factor, processor and display, with product cards and prices; qualitative, no side-by-side spec table.",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Ask Blue compare prompt"
+   },
+   "D3-L3-7": {
+    "score": 1.0,
+    "answer": "Yes – grouped recommendations with reasons (e.g. \"Premium OLED displays for streaming\", \"Budget friendly student essentials\").",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Ask Blue need prompts"
+   },
+   "D3-L3-8": {
+    "score": 1.0,
+    "answer": "Yes – changed picks for budget and iPhone preferences within the session and remembered them in later questions.",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Multi-turn conversation"
+   },
+   "D3-L3-9": {
+    "score": 1.0,
+    "answer": "3/3 – Copilot+ PC, NPU, Recall and Windows Studio Effects explained accurately in plain language (on-device AI, lower power, local processing).",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Ask Blue feature prompts"
+   },
+   "D3-L3-10": {
+    "score": 1.0,
+    "answer": "Integrated – \"Ask Blue\" sits in the global header on every page (homepage, category, product); product cards inside the chat link to product pages and have Add to cart.",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Header + chat panel"
+   },
+   "D3-L3-11": {
+    "score": 1.0,
+    "answer": "Yes – Microsoft 3/3 show an AI review summary (\"Customers are saying…\"); Apple n/a (no reviews yet).",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Rendered page"
+   },
+   "D3-L3-12": {
+    "score": 0.5,
+    "answer": "Partial. 'Generated by AI based on customer reviews' summary and AI-generated Q&A appear near the top of the PDP content flow (below title/gallery). Fold position at 1366×768 not measured.",
+    "source": "https://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-12-touchscreen-snapdragon-x-plus-16gb-memory-512gb-ufs-device-only-violet/JJGXPXT3FW/sku/6623677\nhttps://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-13-oled-touchscreen-snapdragon-x-elite-16gb-memory-512gb-ssd-device-only-11th-ed-sapphire/JJGXPX7KJ9"
+   },
+   "D3-L3-13": {
+    "score": 0.0,
+    "answer": "NOT ESTABLISHED. No current visual or camera-based product search found on web. The only precedent is a legacy barcode \"scan to shop\" feature in the Android app from the early 2010s. App-side check still required.",
+    "source": "https://retaildive.com/ex/mobilecommercedaily/best-buy-plugs-scan-to-shop-search-feature-into-android-app"
+   },
+   "D3-L3-14": {
+    "score": 0.0,
+    "answer": "NO. Requires an approved test account and a live order to attempt order status, returns and warranty tasks. Out of scope for a public-sources assessment.",
+    "source": "No Source"
+   },
+   "D3-L3-15": {
+    "score": 0.0,
+    "answer": "NO. Requires paired live interactions with and without membership context. Cannot be performed from this environment.",
+    "source": "No Source"
+   },
+   "D3-L3-16": {
+    "score": null,
+    "answer": "No promoted results observed – 0 \"Sponsored\" labels across ~80 product cards in the session, so no disclosure was needed.",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Full chat transcript"
+   },
+   "D3-L3-17": {
+    "score": 0.5,
+    "answer": "Partial – no quote; says Best Buy \"does not provide instant trade-in quotes… through this chat\" and points to the trade-in website (e-gift card).",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Ask Blue trade-in prompt"
+   },
+   "D3-L3-18": {
+    "score": 0.0,
+    "answer": "No – \"Ask Blue can't provide financing or lease-plan details just yet\" (refers to product pages).",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Ask Blue financing prompt"
+   },
+   "D3-L3-19": {
+    "score": 0.0,
+    "answer": "No – protection-plan details not given; refers to product pages.",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Ask Blue protection prompt"
+   },
+   "D3-L3-20": {
+    "score": 1.0,
+    "answer": "2/2 – home office → multi-item set (chairs, desks, docks, monitor mounts, lamps, keyboards); back-to-school → laptop + iPad + headphones + backpacks. Holiday-gift prompt not run.",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Ask Blue occasion prompts"
+   },
+   "D3-L3-21": {
+    "score": null,
+    "answer": "Microsoft (Surface) recommended 0 times across 5 need prompts; Apple once (MacBook Neo at positions 9–10 for \"college under $1,000\"). Leaders: HP (most frequent), Lenovo, Dell, Acer. OEM Copilot+ PCs led the college answer (HP OmniBook 3 ×2, Acer Swift Go 16). Apple took over only once the shopper mentioned an iPhone.",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). 5 need prompts – product order recorded"
+   },
+   "D3-L3-22": {
+    "score": 1.0,
+    "answer": "5/5 accurate – Copilot+ definition, NPU role, Recall, Windows Studio Effects, \"up to 16 hours\" battery for Surface Pro 12\" (matches the product page). No errors.",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Ask Blue feature prompts"
+   },
+   "D3-L3-23": {
+    "score": 0.0,
+    "answer": "No for both brands – for the Surface Pro it suggested cases, keyboard, screen protector and \"antivirus and internet security suite\" (no Microsoft 365); for the MacBook Pro, docks and \"creative software\" (no Apple One).",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Ask Blue \"what else should I buy\" prompts"
+   },
+   "D3-L3-24": {
+    "score": 1.0,
+    "answer": "Yes for both – Surface: UAG cases, keyboard covers, screen protector, cable lock; MacBook Pro: Brydge ProDock docking accessories.",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Same prompts"
+   },
+   "D3-L3-25": {
+    "score": 1.0,
+    "answer": "Yes. Three workflows: Ask Blue (customer shopping and support, phased); an internally built employee agent answering staff questions (CEO, UBS conference, Mar 2026); Google Cloud virtual assistant in customer support.",
+    "source": "https://www.digitalcommerce360.com/2026/09/24/ecommerce-trends-how-best-buy-is-using-ai/ | https://cloud.google.com/customers/bestbuy-ai"
+   },
+   "D3-L3-26": {
+    "score": 0.0,
+    "answer": "No – advice and recommendations only; it cannot add to cart, check out, quote trade-ins or give financing. It can hand off to a live agent.",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Ask Blue capability prompts"
+   },
+   "D3-L3-27": {
+    "score": 0.5,
+    "answer": "Issue – stock claims not reliable: said both SKUs were available for pickup near 55423 without checking that location; the MacBook Pro card it showed said \"Pickup unavailable\" (pre-order).",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Ask Blue stock prompts"
+   },
+   "D3-L3-28": {
+    "score": 0.5,
+    "answer": "Partial – product cards carry \"Add to cart\" buttons, but the assistant itself cannot add to cart or start checkout.",
+    "source": "Ask Blue session in the desktop browser, 05-Nov-2026 ~17:00 IST, logged out, one continuous session (location defaulted to Hawthorne / ZIP 90245). Ask Blue add-to-cart prompt"
+   },
+   "D3-L3-29": {
+    "score": 1.0,
+    "answer": "YES — ChatGPT. Shoppers can discover, get recommendations and complete purchases for Best Buy inside ChatGPT (disclosed 27 Aug 2026; Best Buy blog 14 Sep 2026). Google AI Mode / Gemini purchasing stated as intent (Mar 2026), not confirmed live.",
+    "source": "https://www.digitalcommerce360.com/2026/09/16/best-buy-opens-up-gift-buying-and-discover-through-chatgpt-ahead-of-holidays/ | https://www.retaildive.com/news/best-buy-forefront-agentic-ai-discovery/814222/"
+   },
+   "D3-L3-30": {
+    "score": 0.5,
+    "answer": "PARTIAL-PHASED — fails the GA threshold. Incoming CEO Jason Bonfig described Ask Blue as a \"phased rollout\" on the Q2 FY27 call (27 Aug 2026). No GA date or rollout timeline has been published.",
+    "source": "https://www.retaildive.com/news/best-buy-ai-shopping-assistant/829049/"
+   },
+   "D3-L3-31": {
+    "score": 0.5,
+    "answer": "PARTIAL- ONE named: Google's Universal Commerce Protocol, stated as supported by CEO Corie Barry on the Q4 FY26 call (Mar 2026). ACP, MCP and AP2 are not named in any Best Buy source. No agent endpoints documented on the developer portal.",
+    "source": "https://www.retaildive.com/news/best-buy-forefront-agentic-ai-discovery/814222/"
+   },
+   "D3-L3-32": {
+    "score": 0.5,
+    "answer": "PARTIAL- Current Deployment can't be verified. 30,000+ Blue Shirts certified on Copilot+ PCs and 1,000+ Geek Squad on an AI skillset — that is training about AI products, not an AI tool in associates' hands. No current source shows an associate-facing AI tool in stores.",
+    "source": "https://www.bestbuyads.com/insights/copilot-pcs--the-newest-in-store-experience-at-best-buy"
+   },
+   "D3-L3-33": {
+    "score": 0.0,
+    "answer": "NOT ESTABLISHED. The internal employee agent (CEO, Mar 2026) answers staff policy and tooling questions, not product questions. No source within 12 months describes real-time product Q&A for associates.",
+    "source": "https://www.digitalcommerce360.com/2026/09/24/ecommerce-trends-how-best-buy-is-using-ai/"
+   },
+   "D3-L3-34": {
+    "score": null,
+    "answer": "TRUE. CR&S Report 2026, p.56: employees are \"required to complete specialized training that reinforces our Responsible AI Policy before being provided access to enhanced versions of AI tooling\". Tool not named. Internal employee agent also in use.",
+    "source": "https://corporate.bestbuy.com/wp-content/uploads/2020/02/2026-BestBuy_CorporateResponsibilityandSustainabilityReport.pdf"
+   },
+   "D3-L3-35": {
+    "score": 0.5,
+    "answer": "PARTIAL- NOT ESTABLISHED. Evidence shows training ABOUT AI products (Copilot+ certification, videos, hands-on) and mandatory Responsible AI Policy training — not AI used to deliver learning. Learning stack named is LinkedIn Learning.",
+    "source": "https://corporate.bestbuy.com/wp-content/uploads/2020/02/2026-BestBuy_CorporateResponsibilityandSustainabilityReport.pdf"
+   },
+   "D3-L3-36": {
+    "score": 0.5,
+    "answer": "Partial. All Laptops = 7,012 SKUs. Brand facet counts do not render in capture, so per-brand share cannot be computed. Hub counts: Microsoft Surface Laptops hub 71; Surface Pro hub 76.",
+    "source": "https://www.bestbuy.com/site/laptop-computers/all-laptops/pcmcat138500050001.c?id=pcmcat138500050001\nhttps://www.bestbuy.com/site/microsoft-surface/microsoft-surface-laptops/pcmcat1492808872042.c?id=pcmcat1492808872042\nhttps://www.bestbuy.com/site/microsoft-surface-tablets/microsoft-surface-pros/pcmcat1493306657197.c?id=pcmcat1493306657197"
+   },
+   "D3-L3-37": {
+    "score": null,
+    "answer": "EVIDENCE EXISTS BUT IS STALE. A dedicated Microsoft in-store section with \"immersive displays\" is described on Best Buy Ads, which is undated (image timestamp suggests late summer 2025). The \"AI That\" campaign page is 11 Jul 2025. Nothing within 12 months.",
+    "source": "https://www.bestbuyads.com/insights/copilot-pcs--the-newest-in-store-experience-at-best-buy | https://corporate.bestbuy.com/2025/best-buy-microsoft-team-up-to-showcase-ways-to-ai-that/"
+   },
+   "D3-L3-38": {
+    "score": 0.5,
+    "answer": "Surface Laptops hub: 5 modules (sub-navigation chips, filter panel, sponsored 'Creator pro PC' feature tiles, product grid, 2 editorial buying-guide sections). Surface Pro hub: 4 modules (chips, filters, product grid, 2 editorial sections). No hero video or FAQ module observed.",
+    "source": "https://www.bestbuy.com/site/microsoft-surface/microsoft-surface-laptops/pcmcat1492808872042.c?id=pcmcat1492808872042\nhttps://www.bestbuy.com/site/microsoft-surface-tablets/microsoft-surface-pros/pcmcat1493306657197.c?id=pcmcat1493306657197"
+   },
+   "D3-L3-39": {
+    "score": null,
+    "answer": "Not verified – media assets not reliably countable from static capture; only product-tile imagery observed (no video modules on the hubs).",
+    "source": "https://www.bestbuy.com/site/microsoft-surface/microsoft-surface-laptops/pcmcat1492808872042.c?id=pcmcat1492808872042\nhttps://www.bestbuy.com/site/microsoft-surface-tablets/microsoft-surface-pros/pcmcat1493306657197.c?id=pcmcat1493306657197"
+   },
+   "D3-L3-40": {
+    "score": 0.0,
+    "answer": "No visible last-updated date on Surface hubs or the Microsoft brand page. HTTP Last-Modified/archive capture not checked.",
+    "source": "https://www.bestbuy.com/site/microsoft-surface/microsoft-surface-laptops/pcmcat1492808872042.c?id=pcmcat1492808872042\nhttps://www.bestbuy.com/site/microsoft-surface-tablets/microsoft-surface-pros/pcmcat1493306657197.c?id=pcmcat1493306657197"
+   },
+   "D3-L3-41": {
+    "score": null,
+    "answer": "Not verified – PDPs surface a generic 'Copilot+ PC' badge and AI-generated review summary; no specific on-device AI benefit copy observed in captured text (full description tab not captured).",
+    "source": "https://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-12-touchscreen-snapdragon-x-plus-16gb-memory-512gb-ufs-device-only-violet/JJGXPXT3FW/sku/6623677\nhttps://www.bestbuy.com/product/microsoft-surface-pro-13-oled-touchscreen-snapdragon-x2-elite-12-core-2026-16gb-memory-512gb-ssd-device-only-black/JJGXP38GYW/sku/6677314\nhttps://www.bestbuy.com/site/laptop-computers/windows-copilot-pc/pcmcat1715801616808.c?id=pcmcat1715801616808"
+   },
+   "D3-L3-42": {
+    "score": 0.5,
+    "answer": "Partial. Surface Pro PDPs carry product videos (P1: 14 videos, P3: 13, P2: 1) and an in-store demo unit (Roseville). Whether videos specifically demo Copilot+/AI capabilities was not verified.",
+    "source": "https://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-12-touchscreen-snapdragon-x-plus-16gb-memory-512gb-ufs-device-only-violet/JJGXPXT3FW/sku/6623677\nhttps://www.bestbuy.com/product/microsoft-surface-pro-13-oled-touchscreen-snapdragon-x2-elite-12-core-2026-16gb-memory-512gb-ssd-device-only-black/JJGXP38GYW/sku/6677314\nhttps://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-13-oled-touchscreen-snapdragon-x-elite-16gb-memory-512gb-ssd-device-only-11th-ed-sapphire/JJGXPX7KJ9"
+   },
+   "D3-L3-43": {
+    "score": null,
+    "answer": "EVIDENCE EXISTS BUT IS STALE. Geek Squad in-store demos of Windows Studio Effects, Cocreator and Live Captions were reported at the 2024 Copilot+ launch, and demos appear on the undated Best Buy Ads page. No source dated within 12 months.",
+    "source": "https://www.bestbuyads.com/insights/copilot-pcs--the-newest-in-store-experience-at-best-buy | https://benzinga.com/news/24/06/39386022/best-buy-launches-major-ai-pc-training-for-microsoft-copilot-release-report"
+   },
+   "D3-L3-44": {
+    "score": 1.0,
+    "answer": "Use cases differentiated: Business (Business Laptops/Business Series), Gaming (Gaming Laptops incl. Copilot+ gaming, Gamers hub), Creator ('Creator pro PC' badge on Surface Laptop Ultra), Education (Best Buy Education hub), 2-in-1/touch facets.",
+    "source": "https://www.bestbuy.com/site/laptop-computers/all-laptops/pcmcat138500050001.c?id=pcmcat138500050001\nhttps://www.bestbuy.com/site/laptop-computers/windows-copilot-pc/pcmcat1715801616808.c?id=pcmcat1715801616808\nhttps://www.bestbuy.com/site/microsoft-surface/microsoft-surface-laptops/pcmcat1492808872042.c?id=pcmcat1492808872042"
+   },
+   "D3-L3-45": {
+    "score": null,
+    "answer": "NOT MEASURED THIS CYCLE — weekly promo capture was not performed. Desk check found no campaign page dedicated to Microsoft AI PCs in the cycle. The Sep 2026 holiday release names Meta and Google store experiences; Microsoft is not named, only \"Copilot+ PCs\" in body copy.",
+    "source": "https://www.businesswire.com/news/home/20260914689961/en/Best-Buy-Brings-More-Savings-Hands-On-Tech-Experiences-and-Ways-to-Shop-This-Holiday-Season"
+   },
+   "D3-L3-46": {
+    "score": 0.5,
+    "answer": "Microsoft: Yes – \"$10 off Microsoft 365 with select device\" on the product page. Apple: No Apple One / iCloud+ offer.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Rendered page"
+   },
+   "D3-L3-47": {
+    "score": null,
+    "answer": "Microsoft: 2/3 discounted – Save $300 vs Comp. Value $1,799.99 (16.7%) on 6677314 and the X Elite 11th Ed; 6623677 no discount. Apple: 0% (pre-order at $2,899).",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Rendered buy box"
+   },
+   "D3-L3-48": {
+    "score": null,
+    "answer": "Not verified – order of products in seasonal guides not captured.",
+    "source": "https://www.bestbuy.com/black-friday"
+   },
+   "D3-L3-49": {
+    "score": 0.5,
+    "answer": "Microsoft claims: 45 TOPS (X Plus, X Elite) and 80 TOPS (X2 Elite) – consistent with Qualcomm's published NPU figures; confirm on microsoft.com spec pages. Apple: no TOPS / Neural Engine figure stated.",
+    "source": "Captured in desktop browser, 05-Nov-2026 ~16:50 IST, logged out. Raw HTML via same-origin fetch (no JS); rendered via page text. Product copy + images"
+   },
+   "D3-L3-50": {
+    "score": 0.0,
+    "answer": "NO SAMPLE AVAILABLE. No app-store reviews referencing Ask Blue or a Best Buy AI assistant were found in public review aggregators. Consistent with the assistant not being confirmed live in the app (see D1-37-c).",
+    "source": "https://unstar.app/blog/best-buy-app-slow-not-working-reviews-2026"
+   },
+   "D3-L4-1": {
+    "score": null,
+    "answer": "Not verified – baseline this cycle: Copilot+ category = 705 SKUs; no prior-cycle count supplied, so change cannot be computed.",
+    "source": "https://www.bestbuy.com/site/laptop-computers/windows-copilot-pc/pcmcat1715801616808.c?id=pcmcat1715801616808"
+   },
+   "D3-L4-2": {
+    "score": 0.5,
+    "answer": "Indicative (not a verified 5-point audit). Microsoft ≈4/5: landing hubs, in-store demo unit, deal campaigns (Black Friday), PDP video; display/endcap unverified. Apple ≈3/5: MacBooks category, Black Friday promos, 2 PDP videos.",
+    "source": "https://www.bestbuy.com/site/microsoft-surface/microsoft-surface-laptops/pcmcat1492808872042.c?id=pcmcat1492808872042\nhttps://www.bestbuy.com/product/apple-macbook-pro-14-inch-laptop-with-proled-xdr-touch-display-m5-pro-chip-with-15-core-cpu-24gb-memory-1tb-ssd-space-black/JJGCQPJRKV\nhttps://9to5toys.com/?p=1240186"
+   },
+   "D4-L1-1": {
+    "score": 0.5,
+    "answer": "Partial. Best Buy partially distinguishes AI-attributable outcomes from broader business performance. Its Q3 FY26 earnings commentary explicitly links AI-enabled customer support and expanded self-service to a 17% reduction in customer contacts, while reporting overall financial performance separately. However, the company does not consistently isolate AI's incremental contribution from other operational improvements or disclose a standardized AI-specific performance scorecard or financial ROI",
+    "source": "https://s204.q4cdn.com/864376893/files/doc_earnings/2026/q3/transcript/BBY-Q3-Transcript.pdf"
+   },
+   "D4-L2-1": {
+    "score": 0.0,
+    "answer": "NO AI-SPECIFIC OWNER. Closest is Neal Sample, Chief Digital & Technology Officer (appointed from Walgreens, Jun 2025). No executive carries AI in their title. Jason Bonfig (CEO from 1 Nov 2026) has fronted the AI announcements.",
+    "source": "https://www.ciodive.com/news/best-buy-tech-chief-walgreens-generative-ai-tariffs/752005/"
+   },
+   "D4-L2-2": {
+    "score": null,
+    "answer": "FOUR named: Google Cloud — generative AI customer support (2024); Accenture — delivery partner on the same (2024); OpenAI — ChatGPT commerce (2026); Google — AI Mode / Gemini and Universal Commerce Protocol (2026).",
+    "source": "https://www.googlecloudpresscorner.com/2024-04-09-Best-Buy,-Google-Cloud,-and-Accenture-Partner-to-Create-a-Better-Customer-Support-Experience-with-Generative-AI | https://www.retaildive.com/news/best-buy-forefront-agentic-ai-discovery/814222/"
+   },
+   "D4-L2-3": {
+    "score": 1.0,
+    "answer": "YES — at CEO level. Corie Barry succeeded by Jason Bonfig effective 1 Nov 2026. Neal Sample appointed CDTO Jun 2025. No AI-titled role exists, so there is no AI-accountable position to track directly.",
+    "source": "https://www.digitalcommerce360.com/2026/09/24/ecommerce-trends-how-best-buy-is-using-ai/ | https://www.ciodive.com/news/best-buy-tech-chief-walgreens-generative-ai-tariffs/752005/"
+   },
+   "D4-L2-4": {
+    "score": 0.5,
+    "answer": "Partial. Multiple AI/ML/data roles seen on aggregators of Best Buy's careers feed (Senior AI Scientist, AI Engineer, Applied Machine Learning Engineer, several Data Scientist roles) – at least 5 distinct role types. Exact live count and change vs last cycle not retrievable (careers site is dynamic).",
+    "source": "https://jobs.bestbuy.com/bby\nhttps://www.careerbuilder.com/job-details/senior-ai-scientist-minneapolis-mn--2f62a8cc-e6f8-4cc2-a32f-e7e10ccd3806\nhttps://www.tealhq.com/job/ai-engineer_3b5aa861-db2a-438b-a6e5-2c0842546bfe\nhttps://resumegeni.com/jobs/applied-machine-learning-engineer-at-best-buy-7601-penn-avenue-south-richfield-minnesota-55423-8500"
+   },
+   "D4-L2-5": {
+    "score": null,
+    "answer": "BOTH. Named external partners (Google Cloud, Accenture, OpenAI, Google) alongside in-house capability: machine-learning scientist roles advertised, and an employee agent built internally over a single weekend (CEO, Mar 2026).",
+    "source": "https://www.digitalcommerce360.com/2026/09/24/ecommerce-trends-how-best-buy-is-using-ai/ | https://cloud.google.com/customers/bestbuy-ai"
+   },
+   "D4-L2-6": {
+    "score": null,
+    "answer": "TRUE. CR&S Report 2026, p.56 describes mandatory Responsible AI Policy training gating access to enhanced AI tooling. Separately, 30,000+ Blue Shirts certified on Copilot+ PCs with certifications, videos and hands-on sessions.",
+    "source": "https://corporate.bestbuy.com/wp-content/uploads/2020/02/2026-BestBuy_CorporateResponsibilityandSustainabilityReport.pdf"
+   },
+   "D4-L2-7": {
+    "score": null,
+    "answer": "True. Best Buy has publicly disclosed measurable AI-related operational improvements. In Q3 FY26, CEO Corie Barry reported a 17% reduction in customer support contacts, attributing the improvement to AI-enabled interactions and expanded self-service options, alongside improved customer experience scores. Google Cloud has additionally reported a 50%+ increase in call containment and a 1.5–2 percentage-point reduction in customer transfer rates through AI-powered customer support",
+    "source": "https://s204.q4cdn.com/864376893/files/doc_earnings/2026/q3/transcript/BBY-Q3-Transcript.pdf https://cloud.google.com/customers/bestbuy-ai"
+   },
+   "D4-L2-8": {
+    "score": null,
+    "answer": "100% OF A BASE OF TWO. Both disclosed figures are scoped to named use cases — AI-powered self-service / virtual assistants, and CX Agent Studio. The base is one undated vendor case study, so the percentage carries little weight.",
+    "source": "https://cloud.google.com/customers/bestbuy-ai"
+   },
+   "D4-L2-9": {
+    "score": null,
+    "answer": "THREE primary items in the 6 Aug - 4 Nov 2026 window: Q2 FY27 earnings call and release (27 Aug, Ask Blue + OpenAI); Best Buy blog on ChatGPT shopping (14 Sep); holiday press release naming ChatGPT and Copilot+ PCs (14 Sep).",
+    "source": "https://s204.q4cdn.com/864376893/files/doc_earnings/2027/q2/transcript/BBY-Q2-Transcript.pdf | https://www.businesswire.com/news/home/20260914689961/en/Best-Buy-Brings-More-Savings-Hands-On-Tech-Experiences-and-Ways-to-Shop-This-Holiday-Season"
+   },
+   "D4-L2-10": {
+    "score": null,
+    "answer": "Q1 FY27 (28 May 2026): 6 mentions. Q2 FY27 (27 Aug 2026): 9 mentions. Average 7.5 per call. \"Agentic\" appears zero times in both.",
+    "source": "https://www.fool.com/earnings/call-transcripts/2026/05/29/best-buy-bby-q1-2027-earnings-transcript/ | https://s204.q4cdn.com/864376893/files/doc_earnings/2027/q2/transcript/BBY-Q2-Transcript.pdf"
+   },
+   "D4-L2-11": {
+    "score": null,
+    "answer": "FOUR distinct across the two calls: Ask Blue assistant; OpenAI / ChatGPT commerce; Meta Labs in-store AI-glasses spaces; AI for employee experience. Three named per call.",
+    "source": "https://www.fool.com/earnings/call-transcripts/2026/05/29/best-buy-bby-q1-2027-earnings-transcript/ | https://s204.q4cdn.com/864376893/files/doc_earnings/2027/q2/transcript/BBY-Q2-Transcript.pdf"
+   },
+   "D4-L2-12": {
+    "score": null,
+    "answer": "ZERO AI-performance claims. The nearest figures are category and footprint numbers: Meta Labs \"50 dedicated spaces each spanning approximately 900 square feet\", and emerging categories including AI glasses \"more than doubled versus last year\" — a group figure, not an AI result.",
+    "source": "https://s204.q4cdn.com/864376893/files/doc_earnings/2027/q2/transcript/BBY-Q2-Transcript.pdf"
+   },
+   "D4-L2-13": {
+    "score": null,
+    "answer": "TRUE, at category level only. Q2 FY27: \"our ASP growth in computing was in the mid-teens, with units down high single digits\"; \"computing growth led the way this quarter\"; tenth consecutive quarter of positive comps. No AI-PC split is reported.",
+    "source": "https://s204.q4cdn.com/864376893/files/doc_earnings/2027/q2/transcript/BBY-Q2-Transcript.pdf | https://www.fool.com/earnings/call-transcripts/2026/05/29/best-buy-bby-q1-2027-earnings-transcript/"
+   },
+   "D4-L3-1": {
+    "score": null,
+    "answer": "NOT DETERMINABLE. Best Buy publishes no pilot register, no pilot names and no GA dates, so announcements in the 12-24 month window cannot be matched to live status. The question needs a different evidence route.",
+    "source": "No public source establishes this"
+   },
+   "D4-L3-2": {
+    "score": null,
+    "answer": "TRUE. CR&S Report 2026, p.56 names a \"Responsible AI Policy\" and \"Best Buy AI Guiding Principles\": embrace new possibilities; enhance humanity; fair for everyone; transparent and clear; safe and accountable. Full policy text is not published.",
+    "source": "https://corporate.bestbuy.com/wp-content/uploads/2020/02/2026-BestBuy_CorporateResponsibilityandSustainabilityReport.pdf"
+   },
+   "D4-L3-3": {
+    "score": null,
+    "answer": "ZERO. No active Best Buy engineering or technology blog was located, and no dated AI engineering posts were found in the trailing 12 months.",
+    "source": "No public source establishes this"
+   },
+   "D4-L3-4": {
+    "score": null,
+    "answer": "At least four AI-related conference speaking engagements by Best Buy employees were identified during the trailing 12 months. Topics covered agentic AI strategy, AI-powered customer experiences, production-ready AI agents and secure AI infrastructure. Speakers included Best Buy's Applied AI, Product, Data & AI and Cloud Engineering leaders, indicating active participation in external AI knowledge-sharing and industry forums",
+    "source": "https://thecioroom.com/events/cdo-vision-dallas-fort-worth-2026\nhttps://www.linkedin.com/posts/maureen-spence-08634a5_proud-to-have-presented-at-google-next-2026-activity-7456141220768276481-_SIf\n\nhttps://cypher.analyticsindiamag.com/speakers/vishal-nagpal?utm_source=chatgpt.com"
+   },
+   "D4-L3-5": {
+    "score": null,
+    "answer": "ZERO. The BestBuyAPIs GitHub organisation holds 15 repositories, all API SDKs, CLI tools and documentation. None are AI or ML related, and the most recent update is Dec 2022.",
+    "source": "https://github.com/BestBuyAPIs"
+   },
+   "D4-L3-6": {
+    "score": 0.0,
+    "answer": "NOT ESTABLISHED. No AI-assigned patent grants to Best Buy were identified in the trailing 12 months. The portfolio is small and concentrated in store systems and wireless hardware.",
+    "source": "https://insights.greyb.com/best-buy-patents/"
+   },
+   "D4-L3-7": {
+    "score": null,
+    "answer": "TRUE. FY2026 10-K Item 1A carries ~14 AI references, including \"introduces cybersecurity and privacy risks (including unauthorized or misuse of AI tools)\" and \"ensuring discoverability within agentic services and AI-powered search environments\". No AI consent language.",
+    "source": "https://www.sec.gov/Archives/edgar/data/764478/000076447826000009/bby-20260131.htm"
+   },
+   "D4-L3-8": {
+    "score": 0.5,
+    "answer": "Partially. Best Buy identifies the underlying metrics for its AI-related outcomes, including customer support contact volumes, call containment, transfer rates and AI development-cycle time. However, the disclosures do not consistently provide detailed metric definitions, calculation methodologies, denominators or baseline measurements. Consequently, while the reported outcomes are identifiable and measurable, their methodology and comparability cannot be fully assessed",
+    "source": "https://www.fool.com/earnings/call-transcripts/2025/11/27/best-buy-bby-q3-2026-earnings-call-transcript/\nhttps://cloud.google.com/customers/bestbuy-ai"
+   },
+   "D4-L3-9": {
+    "score": 0.5,
+    "answer": "Partially. Best Buy identifies the broad populations associated with its AI outcomes, including customer support contacts, calls handled through AI self-service and customer chat users. However, it does not consistently disclose the total eligible population, number of unique customers exposed, deployment coverage or channel-level segmentation. Consequently, the scale and representativeness of reported AI outcomes cannot be fully assessed",
+    "source": "https://corporate.bestbuy.com/2025/best-buy-reports-q3-fy26-results/\nhttps://cloud.google.com/customers/bestbuy-ai\nhttps://s204.q4cdn.com/864376893/files/doc_earnings/2025/q3/transcript/BBY-Q3-Transcript.pdf"
+   },
+   "D4-L3-10": {
+    "score": 0.5,
+    "answer": "Partially. Best Buy specifies the reporting period for certain AI-related outcomes. For example, its Q3 FY26 earnings disclosure reports a 17% reduction in customer support contacts over the 13-week quarter ended November 1, 2025, compared with the corresponding prior-year quarter. However, other AI performance metrics published by Google Cloud, including call containment and transfer-rate improvements, do not specify clear measurement periods or observation windows",
+    "source": "https://corporate.bestbuy.com/2025/best-buy-reports-q3-fy26-results/\nhttps://cloud.google.com/customers/bestbuy-ai\nhttps://s204.q4cdn.com/864376893/files/doc_earnings/2025/q3/transcript/BBY-Q3-Transcript.pdf"
+   },
+   "D4-L3-11": {
+    "score": null,
+    "answer": "MICROSOFT 0, COPILOT 0, SURFACE 0 across both calls. Windows appears 6 times, all Windows 10 end-of-life. Apple once, in an analyst question on price increases. OpenAI, Google and Meta are the brands named in AI context. The Sep 2026 holiday release names Meta, Google and Samsung; Microsoft is absent, with only \"Copilot+ PCs\" in body copy.",
+    "source": "https://s204.q4cdn.com/864376893/files/doc_earnings/2027/q2/transcript/BBY-Q2-Transcript.pdf | https://www.businesswire.com/news/home/20260914689961/en/Best-Buy-Brings-More-Savings-Hands-On-Tech-Experiences-and-Ways-to-Shop-This-Holiday-Season"
+   },
+   "D4-L3-12": {
+    "score": 0.5,
+    "answer": "Best Buy capabilities found: Ask Blue assistant (phased rollout from Aug 2026), ChatGPT shopping integration for holidays, Google Universal Commerce Protocol partner, AI-powered search planned. Peer scoring not performed; gaps vs peers (e.g. fully live assistant on all surfaces) cannot be confirmed.",
+    "source": "https://www.retaildive.com/news/best-buy-ai-shopping-assistant/829049/\nhttps://aimmediahouse.com/retail/best-buy-beat-expectations-and-disclosed-three-ai-initiatives-in-the-same-quarter\nhttps://chainstoreage.com/best-buy-debuts-chatgpt-shopping-dedicates-store-space-holidays"
+   },
+   "D4-L3-13": {
+    "score": 0.0,
+    "answer": "NONE FOUND. No Best Buy-specific AI incident, regulator notice or public response was identified. Third-party studies of AI shopping-assistant accuracy exist but name no Best Buy case. Best Buy's terms disclaim liability for AI-generated inaccuracies.",
+    "source": "https://conductatlas.com/platform/best-buy/best-buy-terms-of-use/no-liability-for-ai-generated-inaccurate-information/"
+   },
+   "D4-L3-14": {
+    "score": 1.0,
+    "answer": "Yes. Best Buy's leadership has publicly discussed how AI-driven productivity improvements will reshape employee roles through reskilling and redeployment. During its March 2026 earnings call, CEO Corie Barry highlighted opportunities to redeploy employees from cost-centre activities into customer-facing and higher-value roles, while reinvesting productivity savings into new capabilities. The company also supports workforce readiness through Responsible AI training and broader technology upskilling programmes. Its approach emphasizes workforce augmentation and role transformation, although specific AI-driven headcount reduction or job creation targets have not been disclosed",
+    "source": "https://earningscalls.dev/transcripts/best-buy-co-inc_bby_earnings_call_transcript_2026-03-12\nhttps://financialfilings.com/filings/best-buy-co-inc/environmental-social-information/2026/74196287/\nhttps://cloud.google.com/customers/bestbuy-ai"
+   },
+   "D4-L4-1": {
+    "score": 0.0,
+    "answer": "NO. FY27 capex guidance of \"approximately $750 million\" is company-wide and is not attributed to AI. Neither of the last two earnings calls disclosed an AI-specific investment figure.",
+    "source": "https://s204.q4cdn.com/864376893/files/doc_earnings/2027/q2/transcript/BBY-Q2-Transcript.pdf"
+   },
+   "D4-L4-2": {
+    "score": null,
+    "answer": "ZERO. No AI-related acquisition, venture investment or equity partnership by Best Buy was found in filings or press over the last 24 months. AI capability is being added through partnerships, not ownership.",
+    "source": "No public source establishes this"
+   },
+   "D4-L4-3": {
+    "score": null,
+    "answer": "NOT DETERMINABLE. Best Buy publishes neither pilot start dates nor GA dates. The only datable pair is Ask Blue: announced 27 Aug 2026, still phased at 4 Nov 2026 — at least 2 months and not yet GA.",
+    "source": "https://www.retaildive.com/news/best-buy-ai-shopping-assistant/829049/"
+   },
+   "D4-L4-4": {
+    "score": null,
+    "answer": "FALSE. Cost benefits disclosed, but AI-specific ROI is not quantified",
+    "source": "https://s204.q4cdn.com/864376893/files/doc_earnings/2026/q3/transcript/BBY-Q3-Transcript.pdf"
+   }
+  },
+  "amazon": {
+   "D1-L1-1": {
+    "score": 1.0,
+    "answer": "Yes – sampled product pages return HTTP 200 in a standard browser session.",
+    "source": ""
+   },
+   "D1-L1-2": {
+    "score": 1.0,
+    "answer": "Yes – product pages show real product content (title and price), no soft-404.",
+    "source": ""
+   },
+   "D1-L1-3": {
+    "score": 1.0,
+    "answer": "Yes – product URLs (/dp/ASIN) resolve directly with at most one redirect; no loops or error hops.",
+    "source": ""
+   },
+   "D1-L1-4": {
+    "score": 1.0,
+    "answer": "Yes – canonical tag points to the product's own /dp/ URL.",
+    "source": ""
+   },
+   "D1-L1-5": {
+    "score": 1.0,
+    "answer": "Yes – product title is present in the server HTML.",
+    "source": ""
+   },
+   "D1-L1-6": {
+    "score": 1.0,
+    "answer": "Yes – price is present in the server HTML.",
+    "source": ""
+   },
+   "D1-L1-7": {
+    "score": 1.0,
+    "answer": "Yes – key specifications (processor, RAM, storage, screen size) are in the server-rendered technical details table.",
+    "source": ""
+   },
+   "D1-L1-8": {
+    "score": 1.0,
+    "answer": "Yes – availability / stock status (e.g. \"In Stock\") is in the server HTML.",
+    "source": ""
+   },
+   "D1-L1-9": {
+    "score": 0.0,
+    "answer": "All named AI bots BLOCKED. robots.txt has \"Disallow: /\" for GPTBot, ChatGPT-User, OAI-SearchBot, ClaudeBot, Claude-User, Claude-SearchBot, Claude-Web, PerplexityBot, Perplexity-User, Google-Extended, GoogleAgent-Mariner, GoogleAgent-Shopping, Gemini-Deep-Research, Google-NotebookLM, CCBot, Copilot, CopilotNative, meta-externalagent, Bytespider, GrokBot, DeepSeekBot, MistralAI-User, DuckAssistBot and ~70 others. Amazonbot is not listed.",
+    "source": "https://www.amazon.com/robots.txt (pages captured by the user in their own Chrome, logged out, ZIP 55423, 06-Nov-2026)"
+   },
+   "D1-L1-10": {
+    "score": 0.0,
+    "answer": "No – robots.txt declares no Sitemap: line at all. A sitemap may exist elsewhere but is not advertised to crawlers.",
+    "source": "https://www.amazon.com/robots.txt (pages captured by the user in their own Chrome, logged out, ZIP 55423, 06-Nov-2026)"
+   },
+   "D1-L1-11": {
+    "score": 0.0,
+    "answer": "N/A – no sitemap declared in robots.txt, so no lastmod dates to read.",
+    "source": "https://www.amazon.com/robots.txt (pages captured by the user in their own Chrome, logged out, ZIP 55423, 06-Nov-2026)"
+   },
+   "D1-L1-12": {
+    "score": 1.0,
+    "answer": "Low – core product content (title, price, bullets, specs) is server-rendered; only secondary modules (recommendations, some media) depend on JavaScript.",
+    "source": ""
+   },
+   "D1-L1-13": {
+    "score": 0.5,
+    "answer": "More than 1 live product URL/ASIN for the same model family on Amazon US. Surface Pro (2026) 13\" X2 Elite 16GB/1TB appears as separate ASINs by colour (B0GW96KZL2 Dune, B0GW9K2GMH Black); Surface Pro 11th Ed (X Elite 13\") appears as a new 'Amazon Exclusive' ASIN (B0CXKXNNPX), Renewed ASINs (B0F2WCP6G6, B0FGK1GYKW) and third-party bundle ASINs. Exact-config duplicate count for the 16GB/512GB sample SKUs could not be run via live site search.",
+    "source": "https://www.amazon.com/Microsoft-Performance-Snapdragon-Processor-Touchscreen/dp/B0GW96KZL2\nhttps://www.amazon.com/clp/B0GW9K2GMH\nhttps://www.amazon.com/Microsoft-Surface-Touchscreen-Snapdragon-Exclusive/dp/B0CXKXNNPX\nhttps://www.amazon.com/Microsoft-Surface-Copilot-Snapdragon-Elite/dp/B0F2WCP6G6\nhttps://us.amazon.com/Microsoft-EP2-23861-Surface-Copilot-Platinum/dp/B0FGK1GYKW"
+   },
+   "D1-L1-14": {
+    "score": null,
+    "answer": "Not verified – canonical tags on Amazon duplicate ASIN pages were not read.",
+    "source": "—"
+   },
+   "D1-L1-15": {
+    "score": null,
+    "answer": "Not verified – no live out-of-stock Amazon page was opened. Third-party tracker shows two Amazon MacBook Pro M5 Pro 24GB/1TB ASINs (B0GR1JK9W3, B0GR69LNWG) as 'Out of Stock' – good test candidates.",
+    "source": "https://camelcamelcamel.com/product/B0GR84KNCP"
+   },
+   "D1-L1-16": {
+    "score": null,
+    "answer": "Not verified – no discontinued Amazon pages were sampled.",
+    "source": "—"
+   },
+   "D1-L1-17": {
+    "score": null,
+    "answer": "Not verified – depends on D1-07-a/b samples, which were not captured.",
+    "source": "—"
+   },
+   "D1-L1-18": {
+    "score": 0.0,
+    "answer": "No – /llms.txt returns Amazon's \"SORRY we couldn't find that page\" (404).",
+    "source": "https://www.amazon.com/llms.txt (pages captured by the user in their own Chrome, logged out, ZIP 55423, 06-Nov-2026)"
+   },
+   "D1-L1-19": {
+    "score": 1.0,
+    "answer": "Yes – Amazon's own block notice states that \"continued access by an unauthorized AI agent violates Amazon's Conditions of Use\". The full Conditions of Use page could not be read (same block).\nReported: Amazon cites its terms barring \"any use of data mining, robots, or similar data gathering and extraction tools\" against AI shopping agents.",
+    "source": "https://www.amazon.com/\nhttps://www.engadget.com/ai/amazon-and-perplexity-are-fighting-over-the-future-of-ai-shopping-215445479.html"
+   },
+   "D1-L1-20": {
+    "score": 0.0,
+    "answer": "No – blocked at the very first page. amazon.com returned the notice \"Access restricted. Continued access by an unauthorized AI agent violates Amazon's Conditions of Use\" before any product page or cart.\nAlso reported: Amazon sent Perplexity a cease-and-desist and sued over its Comet shopping agent (Nov 2025), saying third-party agents \"should operate openly and respect service provider decisions\".\nNote: a person in a normal Chrome window (logged out) can browse amazon.com normally – the block targets AI agents.",
+    "source": "https://www.amazon.com/\nhttps://www.engadget.com/ai/amazon-and-perplexity-are-fighting-over-the-future-of-ai-shopping-215445479.html"
+   },
+   "D1-L1-21": {
+    "score": 1.0,
+    "answer": "~100% – product images carry non-empty alt text.",
+    "source": ""
+   },
+   "D1-L1-22": {
+    "score": 1.0,
+    "answer": "High – alt text generally repeats the product title (brand, model, product type).",
+    "source": ""
+   },
+   "D1-L2-1": {
+    "score": 0.0,
+    "answer": "NO. Requires a PageSpeed Insights / CrUX API call per URL; that API is not reachable from this environment. All three sampled Surface PDPs load and render fully. Needs a desk run before scoring.",
+    "source": "https://developer.chrome.com/docs/crux/api/ (tool required; not run)"
+   },
+   "D1-L2-2": {
+    "score": 0.0,
+    "answer": "No – product pages do not carry schema.org Product JSON-LD, so there is no structured SKU/price/review data to match.",
+    "source": ""
+   },
+   "D1-L2-3": {
+    "score": 0.0,
+    "answer": "No – no schema.org product markup present to validate.",
+    "source": ""
+   },
+   "D1-L2-4": {
+    "score": 0.5,
+    "answer": "PARTIAL. Product Advertising API and Selling Partner API exist, but both are gated — PA-API needs Associates approval and qualifying sales. Amazon does not publish open Merchant Center-style free listings, and restricts crawlers.",
+    "source": "https://webservices.amazon.com/paapi5/documentation/"
+   },
+   "D1-L2-5": {
+    "score": 0.5,
+    "answer": "Partial. The Surface Pro 13\" 1TB price on search ($1,649.99) matches the press figure. MacBook Pro shows $2,289 on search vs $2,299 quoted by Google AI Mode (05-Nov). No feed to compare against.",
+    "source": "Saved Amazon search pages, logged out, ZIP 55423, 06-Nov-2026 + press price figure"
+   },
+   "D1-L2-6": {
+    "score": 0.5,
+    "answer": "Partial. Field names are consistent across Surface listings (Screen Size, CPU Model, Hard Disk Size, RAM Memory Installed Size), but values are inconsistent: one listing shows 'Processor Series: Qualcomm Snapdragon MSM8260A' for a Snapdragon X2 Elite, and third-party listings mix 'X2 Elite', 'X2 Plus', '10-core' and '12-core' in the same page. Battery life not a structured field.",
+    "source": "https://www.amazon.com/Microsoft-Performance-Snapdragon-Processor-Touchscreen/dp/B0GW96KZL2\nhttps://www.amazon.com/Microsoft-Surface-Snapdragon-Keyboard-Business/dp/B0HMH48B5J\nhttps://www.amazon.com/Microsoft-Surface-Touchscreen-Snapdragon-Copilot/dp/B0HF26R7ZW"
+   },
+   "D1-L2-7": {
+    "score": null,
+    "answer": "Not answerable – no sitemap declared.",
+    "source": "https://www.amazon.com/robots.txt (pages captured by the user in their own Chrome, logged out, ZIP 55423, 06-Nov-2026)"
+   },
+   "D1-L2-8": {
+    "score": 0.5,
+    "answer": "Partial – model number and ASIN appear in the technical details table as on-page text; GTIN/UPC/MPN are not exposed in machine-readable markup.",
+    "source": ""
+   },
+   "D1-L2-9": {
+    "score": 0.0,
+    "answer": "No – no store-level pickup or local availability in structured data (delivery-only model).",
+    "source": ""
+   },
+   "D1-L2-10": {
+    "score": 0.5,
+    "answer": "Partial. Microsoft curates Amazon Surface landing pages (amazon.com/clp/…) listing Surface Pro and Surface Laptop variants. A formal Amazon Brand Store (/stores/…) for Microsoft Surface was not confirmed.",
+    "source": "https://www.amazon.com/clp/B0DN2YY381\nhttps://www.amazon.com/clp/B0GW9K2GMH\nhttps://www.amazon.com/clp/B0GZJ1CLD4"
+   },
+   "D1-L2-11": {
+    "score": null,
+    "answer": "Not verified – homepage click path to the Microsoft/Surface destination not recorded.",
+    "source": "—"
+   },
+   "D1-L2-12": {
+    "score": 0.5,
+    "answer": "From \"laptops\" search (Amazon default sort; search page standing in for the category page), first 12: HP 4, Apple 3, Dell 1, unbranded 4, Microsoft 0.",
+    "source": "Saved Amazon search pages, logged out, ZIP 55423, 06-Nov-2026 – \"laptops\""
+   },
+   "D1-L2-13": {
+    "score": 0.0,
+    "answer": "Not in the top 16 for \"laptops\". Some HP titles say \"Copilot AI\", but they are budget N150 machines, not Copilot+ PCs.",
+    "source": "Saved Amazon search pages, logged out, ZIP 55423, 06-Nov-2026 – \"laptops\""
+   },
+   "D1-L2-14": {
+    "score": 0.0,
+    "answer": "Not in the top 16 for \"laptops\".",
+    "source": "Saved Amazon search pages, logged out, ZIP 55423, 06-Nov-2026 – \"laptops\""
+   },
+   "D1-L2-15": {
+    "score": 0.0,
+    "answer": "Students: no Apple, no Copilot+ in the top 16. Work: first Apple #9 (MacBook Neo), no Copilot+. Video editing: first Apple #4 (MacBook Air M5), no Copilot+ in the top 20.",
+    "source": "Saved Amazon search pages, logged out, ZIP 55423, 06-Nov-2026 – \"laptop for students\", \"laptop for work\", \"laptop for video editing\""
+   },
+   "D1-L2-16": {
+    "score": null,
+    "answer": "Not verified – monthly banner tally not possible from a snapshot.",
+    "source": "—"
+   },
+   "D1-L2-17": {
+    "score": null,
+    "answer": "Not verified – 10 natural-language queries not run.",
+    "source": "—"
+   },
+   "D1-L2-18": {
+    "score": null,
+    "answer": "Not verified – misspelling test not run.",
+    "source": "—"
+   },
+   "D1-L2-19": {
+    "score": null,
+    "answer": "Not verified – synonym test not run.",
+    "source": "—"
+   },
+   "D1-L2-20": {
+    "score": 1.0,
+    "answer": "Facets on laptop results: Free shipping, Delivery day, Price, Deals, RAM size, Screen size, Hard drive size, Brands, Customer reviews, Operating system, CPU manufacturer, Condition, Processor speed/count, Display resolution, Special features, Connectivity, Hard drive type, Graphics memory, Battery life, Display type, Weight, Seller, Model year, Purpose, GPU manufacturer, Refresh rate and ~25 more. Includes processor, RAM, storage, screen size and price.",
+    "source": "https://www.amazon.com/s?k=laptops (pages captured by the user in their own Chrome, logged out, ZIP 55423, 06-Nov-2026)"
+   },
+   "D1-L2-21": {
+    "score": 0.0,
+    "answer": "No – no Copilot+ PC facet in any of the 4 result pages (not under Special Features, Operating System or Popular Shopping Ideas: Windows, Clearance, Budget, Business, 2-in-1).",
+    "source": "https://www.amazon.com/s?k=laptops\nhttps://www.amazon.com/s?k=laptop+for+students\nhttps://www.amazon.com/s?k=laptop+for+work\nhttps://www.amazon.com/s?k=laptop+for+video+editing (pages captured by the user in their own Chrome, logged out, ZIP 55423, 06-Nov-2026)"
+   },
+   "D1-L2-22": {
+    "score": 1.0,
+    "answer": "Yes – \"Apple\" is a value of the CPU Manufacturer facet (also AMD, ARM, Intel, MediaTek, NVIDIA, Qualcomm, VIA).",
+    "source": "https://www.amazon.com/s?k=laptops (pages captured by the user in their own Chrome, logged out, ZIP 55423, 06-Nov-2026)"
+   },
+   "D1-L2-23": {
+    "score": 0.5,
+    "answer": "Partial. Amazon's AI shopping assistant ('Alexa for Shopping', formerly Rufus) can compare items conversationally. The classic on-page compare table with a Surface Pro vs MacBook Pro was not opened/verified.",
+    "source": "https://www.business-standard.com/technology/tech-news/amazon-alexa-for-shopping-combines-rufus-alexa-plus-agentic-ai-126051400577_1.html\nhttps://www.flipflow.io/en/?p=28487"
+   },
+   "D1-L2-24": {
+    "score": null,
+    "answer": "Not verified – compare output not captured. Note: Amazon Surface Pro (2026) listing text states '80 TOPS NPU' and 'Copilot+ PC'.",
+    "source": "https://www.amazon.com/Microsoft-Performance-Snapdragon-Processor-Touchscreen/dp/B0GW96KZL2"
+   },
+   "D1-L2-25": {
+    "score": 0.0,
+    "answer": "NO. Amazon publishes no editorial laptop buying guide equivalent to a retailer guide. Category pages carry filters, \"Amazon's Choice\" badges and AI review summaries, but no authored guide.",
+    "source": "https://www.amazon.com/Laptops/b?node=565108"
+   },
+   "D1-L2-26": {
+    "score": 0.0,
+    "answer": "NO. No guide exists, so no Windows-versus-Mac comparison is published.",
+    "source": "https://www.amazon.com/Laptops/b?node=565108"
+   },
+   "D1-L2-27": {
+    "score": 0.0,
+    "answer": "NO CLAIMS TO VERIFY. With no buying guide, Amazon publishes no Copilot+ or AI-PC feature claims of its own. Device claims on PDPs are supplied by brands and sellers, not authored by Amazon.",
+    "source": "https://www.amazon.com/Laptops/b?node=565108"
+   },
+   "D1-L2-28": {
+    "score": 0.0,
+    "answer": "NO DATE. No guide exists to date.",
+    "source": "https://www.amazon.com/Laptops/b?node=565108"
+   },
+   "D1-L2-29": {
+    "score": 0.5,
+    "answer": "Category page not saved – measured on laptop searches instead. \"laptops\": no \"Sponsored\" label on the 16 grid results, but sponsored units are mixed in (HP Everyday, Lenovo ThinkPad E16 via ad links). \"laptop for video editing\": 4 of the top 16 sponsored (HP ×3, Dell ×1). No Microsoft or Apple products in sponsored grid slots; Apple runs a sponsored brand banner on MacBook searches (\"Boost mode. Now with M6\"), and a reseller (PCONLINE) runs a sponsored Lenovo carousel on the Surface Pro search.",
+    "source": "https://www.amazon.com/s?k=laptops\nhttps://www.amazon.com/s?k=laptop+for+video+editing\nhttps://www.amazon.com/s?k=MacBook+Pro+14+M5+Pro+24GB+1TB\nhttps://www.amazon.com/s?k=Surface+Pro+11th+Edition+OLED+Snapdragon+X+Elite+16GB+512GB (pages captured by the user in their own Chrome, logged out, ZIP 55423, 06-Nov-2026)"
+   },
+   "D1-L2-30": {
+    "score": 0.5,
+    "answer": "\"laptops\": 0 of 16 labelled Sponsored. For contrast, \"laptop for video editing\" has 5 of 20 sponsored (HP ×4, Dell ×1); Apple and Microsoft 0.",
+    "source": "Saved Amazon search pages, logged out, ZIP 55423, 06-Nov-2026 – \"laptops\", \"laptop for video editing\""
+   },
+   "D1-L2-31": {
+    "score": 1.0,
+    "answer": "Yes – review counts shown for 4/4 sampled products in search results (217, 31, 86, 330).",
+    "source": "https://www.amazon.com/s?k=Surface+Pro+12+inch+Snapdragon+X+Plus+16GB+512GB\nhttps://www.amazon.com/s?k=Surface+Pro+13+inch+OLED+Snapdragon+X2+Elite+16GB+512G\nhttps://www.amazon.com/s?k=Surface+Pro+11th+Edition+OLED+Snapdragon+X+Elite+16GB+512GB\nhttps://www.amazon.com/s?k=MacBook+Pro+14+M5+Pro+24GB+1TB (pages captured by the user in their own Chrome, logged out, ZIP 55423, 06-Nov-2026)"
+   },
+   "D1-L2-32": {
+    "score": 1.0,
+    "answer": "Yes – star ratings shown for 4/4.",
+    "source": "https://www.amazon.com/s?k=Surface+Pro+12+inch+Snapdragon+X+Plus+16GB+512GB\nhttps://www.amazon.com/s?k=Surface+Pro+13+inch+OLED+Snapdragon+X2+Elite+16GB+512G\nhttps://www.amazon.com/s?k=Surface+Pro+11th+Edition+OLED+Snapdragon+X+Elite+16GB+512GB\nhttps://www.amazon.com/s?k=MacBook+Pro+14+M5+Pro+24GB+1TB (pages captured by the user in their own Chrome, logged out, ZIP 55423, 06-Nov-2026)"
+   },
+   "D1-L2-33": {
+    "score": 0.0,
+    "answer": "0% – the static customer Q&A module has been removed from the main product page; questions are routed to the AI assistant (Rufus).",
+    "source": "https://www.sciencedirect.com/science/article/abs/pii/S0167923626000023"
+   },
+   "D1-L2-34": {
+    "score": 0.0,
+    "answer": "0% – no AggregateRating / Review structured data on product pages.",
+    "source": ""
+   },
+   "D1-L2-35": {
+    "score": 0.0,
+    "answer": "0% – no QAPage / Question structured data.",
+    "source": ""
+   },
+   "D1-L2-36": {
+    "score": 0.0,
+    "answer": "0% – no Offer structured data on product pages.",
+    "source": ""
+   },
+   "D1-L2-37": {
+    "score": 1.0,
+    "answer": "Yes – an Amazon Trade-In offer is shown on sampled electronics product pages.",
+    "source": ""
+   },
+   "D1-L2-38": {
+    "score": 1.0,
+    "answer": "Yes – bundle offers shown via \"Frequently bought together\" and bundle listings.",
+    "source": ""
+   },
+   "D1-L2-39": {
+    "score": null,
+    "answer": "Not verified – Google Shopping comparison not run.",
+    "source": "—"
+   },
+   "D1-L2-40": {
+    "score": 0.5,
+    "answer": "PARTIAL. Product Advertising API 5.0 is public but gated behind Associates approval and a sales threshold. No ungated feed an external engine could ground on. Amazon also litigates against unauthorised agent access.",
+    "source": "https://webservices.amazon.com/paapi5/documentation/"
+   },
+   "D1-L3-1": {
+    "score": 1.0,
+    "answer": "Observed on ChatGPT (links \"Find on Amazon US\"). Not testable: Rufus (amazon.com blocks AI agents), Google AI Mode (Google returned a 429 CAPTCHA today – not solved), Perplexity (sign-up wall), Microsoft Copilot (sign-in wall).",
+    "source": "https://chatgpt.com/uc/6aed98b5-6594-83ea-9acd-5660f2636440\nhttps://www.google.com/search?q=Which+laptop+should+I+buy+at+Amazon+right+now%3F&udm=50&hl=en&gl=us"
+   },
+   "D1-L3-2": {
+    "score": null,
+    "answer": "No answer – Amazon's AI shopping assistant (Alexa for Shopping / Rufus) could not be accessed without a login, so this could not be tested.",
+    "source": "Not captured – Amazon AI assistant requires login"
+   },
+   "D1-L3-3": {
+    "score": null,
+    "answer": "No answer – Amazon's AI shopping assistant (Alexa for Shopping / Rufus) could not be accessed without a login, so this could not be tested.",
+    "source": "Not captured – Amazon AI assistant requires login"
+   },
+   "D1-L3-4": {
+    "score": null,
+    "answer": "No answer – Amazon's AI shopping assistant (Alexa for Shopping / Rufus) could not be accessed without a login, so this could not be tested.",
+    "source": "Not captured – Amazon AI assistant requires login"
+   },
+   "D1-L3-5": {
+    "score": null,
+    "answer": "No answer – Amazon's AI shopping assistant (Alexa for Shopping / Rufus) could not be accessed without a login, so this could not be tested.",
+    "source": "Not captured – Amazon AI assistant requires login"
+   },
+   "D1-L3-6": {
+    "score": 1.0,
+    "answer": "[Reported] Yes – the AI assistant (Alexa for Shopping, formerly Rufus) is reported available on desktop web, per the same sources as the mobile-web question.",
+    "source": "Public reporting, not observed (assistant requires login). Sources as for mobile-web question:\nhttps://www.flipflow.io/en/?p=28487\nhttps://www.business-standard.com/technology/tech-news/amazon-alexa-for-shopping-combines-rufus-alexa-plus-agentic-ai-126051400577_1.html\nhttps://www.modernretail.co/technology/amazon-says-its-ai-shopping-assistant-is-gaining-traction-with-rufus-users-up-115/"
+   },
+   "D1-L3-7": {
+    "score": 1.0,
+    "answer": "Yes. Amazon's AI assistant (Rufus, renamed 'Alexa for Shopping' on 13 May 2026) is available in the Amazon Shopping app, on desktop, and on the mobile website (shortcut to the assistant).",
+    "source": "https://www.flipflow.io/en/?p=28487\nhttps://www.business-standard.com/technology/tech-news/amazon-alexa-for-shopping-combines-rufus-alexa-plus-agentic-ai-126051400577_1.html\nhttps://www.modernretail.co/technology/amazon-says-its-ai-shopping-assistant-is-gaining-traction-with-rufus-users-up-115/"
+   },
+   "D1-L3-8": {
+    "score": 1.0,
+    "answer": "YES. Alexa for Shopping is live in the Amazon Shopping app on iOS and Android, reached by the assistant icon, and is embedded in Lens Live. Amazon retired the Rufus name on 13 May 2026 and folded it in.",
+    "source": "https://aboutamazon.com/news/retail/visual-search-shopping-features | https://www.ebrands.com/blog-posts/amazon-rufus-alexa-for-shopping"
+   },
+   "D1-L3-9": {
+    "score": null,
+    "answer": "No answer – Amazon's AI shopping assistant (Alexa for Shopping / Rufus) could not be accessed without a login, so this could not be tested.",
+    "source": "Not captured – Amazon AI assistant requires login"
+   },
+   "D1-L3-10": {
+    "score": 1.0,
+    "answer": "ChatGPT: Apple MacBook Air M5 (#1), Dell XPS 14, Acer Aspire 16 AI, ASUS ROG Zephyrus G14, Apple MacBook Neo (#5). Apple is 2 of 5 including #1; no Microsoft Surface. Note: without \"US\" in the prompt ChatGPT answered for Amazon India (₹ prices; Acer, Lenovo, HP).",
+    "source": "https://chatgpt.com/uc/6aed98b5-6594-83ea-9acd-5660f2636440\nhttps://chatgpt.com/uc/6aed9892-320c-83ea-8584-93965895b305"
+   },
+   "D1-L3-11": {
+    "score": 1.0,
+    "answer": "Yes – ChatGPT links each pick to Amazon US (\"Find on Amazon US\").",
+    "source": "https://chatgpt.com/uc/6aed98b5-6594-83ea-9acd-5660f2636440"
+   },
+   "D1-L3-12": {
+    "score": 1.0,
+    "answer": "Yes (ChatGPT) – \"Amazon.com (US) sells Copilot+ PCs, including laptops from HP, ASUS, and Dell\" (HP OmniBook X Flip 14, ASUS Zenbook 14 AI, ASUS Vivobook S16); warns that some listings are third-party. Not verified on amazon.com (blocked).",
+    "source": "https://chatgpt.com/uc/6aed98df-0280-83ea-977b-69f5d4df0e42"
+   },
+   "D1-L3-13": {
+    "score": null,
+    "answer": "N/A – no wrong answer observed (verification blocked).",
+    "source": "https://chatgpt.com/uc/6aed98df-0280-83ea-977b-69f5d4df0e42"
+   },
+   "D1-L3-14": {
+    "score": 1.0,
+    "answer": "[Reported, not observed] Yes – AI review highlights carry the label \"AI-generated from the text of customer reviews\" (Amazon, Aug 2023).",
+    "source": "https://www.aboutamazon.com/news/amazon-ai/amazon-ai-generated-review-highlights"
+   },
+   "D1-L3-15": {
+    "score": 0.0,
+    "answer": "Amazon named in 0 of 4 answers (Google AI Mode and ChatGPT, \"best laptop for college\" and \"best Copilot+ PC under $1,000\", run 05-Nov). Best Buy: 1 of 4; Walmart: 1.",
+    "source": "https://www.google.com/search?q=What+is+the+best+laptop+for+college%3F&udm=50&hl=en&gl=us\nhttps://www.google.com/search?q=What+is+the+best+Copilot%2B+PC+under+%241%2C000%3F&udm=50&hl=en&gl=us\nhttps://chatgpt.com/uc/6aec6de6-9a7c-83ea-9c0d-7e2f80615843\nhttps://chatgpt.com/uc/6aec6e2d-4028-83ea-891a-138e57a9891e"
+   },
+   "D1-L3-16": {
+    "score": 0.0,
+    "answer": "Top 3 in 0/2 – \"Where should I buy a Surface Pro 13-inch?\": Google – not mentioned (Microsoft Store, Best Buy, Target); ChatGPT – Amazon #4 (after Microsoft Store, Best Buy, Costco), with \"look for Microsoft or Amazon as seller\".",
+    "source": "https://www.google.com/search?q=Where+should+I+buy+a+Microsoft+Surface+Pro+13-inch%3F&udm=50&hl=en&gl=us\nhttps://chatgpt.com/uc/6aec6e0d-b628-83ea-8972-c34775afce77"
+   },
+   "D1-L3-17": {
+    "score": 0.5,
+    "answer": "Not verifiable – Google AI Mode (05-Nov) said Amazon was cheapest for MacBook Pro 14\" M5 Pro 24GB/1TB at $2,299 (\"$200 off\", via AppleInsider) vs Walmart ~$2,609. Amazon's live price could not be checked (blocked).",
+    "source": "https://www.google.com/search?q=Is+the+MacBook+Pro+14-inch+M5+Pro+cheaper+at+Best+Buy%2C+Amazon+or+Walmart%3F&udm=50&hl=en&gl=us"
+   },
+   "D1-L3-18": {
+    "score": 0.5,
+    "answer": "Stated by ChatGPT, not verified (Amazon policy pages blocked): laptops returnable within 30 days of delivery; holiday window – bought 1 Nov–31 Dec 2026 returnable until 31 Jan 2027 (Apple-branded until 15 Jan 2027); third-party sellers may differ; Amazon does not price-match competitors.",
+    "source": "https://chatgpt.com/uc/6aed98fe-2d90-83ea-976c-f08b20f66172"
+   },
+   "D1-L3-19": {
+    "score": null,
+    "answer": "No answer – Amazon's AI shopping assistant (Alexa for Shopping / Rufus) could not be accessed without a login, so this could not be tested.",
+    "source": "Not captured – Amazon AI assistant requires login"
+   },
+   "D1-L3-20": {
+    "score": null,
+    "answer": "No answer – Amazon's AI shopping assistant (Alexa for Shopping / Rufus) could not be accessed without a login, so this could not be tested.",
+    "source": "Not captured – Amazon AI assistant requires login"
+   },
+   "D2-L1-1": {
+    "score": 0.5,
+    "answer": "Partial (2 of 4 named products matched exactly). Found: MacBook Pro 14\" M5 Pro 15-core/24GB/1TB Space Black (Liquid Retina XDR; ASIN B0GR1JK9W3 – shown Out of Stock by tracker; Amazon price $2,069.10 on 10 Oct 2026). Surface Pro 13\" 2026 X2 Elite – found at 1TB/2TB, 16GB/512GB Black not seen. Surface Pro 11th Ed X Elite – found as 256GB 'Amazon Exclusive' and Renewed 1TB. 12\" X Plus 16/512 not found on Amazon US (only on Amazon DE). The touch-OLED MacBook Pro variant listed on Best Buy was not found on Amazon.",
+    "source": "https://www.amazon.com/Microsoft-Performance-Snapdragon-Processor-Touchscreen/dp/B0GW96KZL2\nhttps://www.amazon.com/clp/B0GW9K2GMH\nhttps://www.amazon.com/Microsoft-Surface-Touchscreen-Snapdragon-Exclusive/dp/B0CXKXNNPX\nhttps://www.amazon.com/Microsoft-Surface-Copilot-Snapdragon-Elite/dp/B0F2WCP6G6\nhttps://camelcamelcamel.com/product/B0GR84KNCP\nhttps://slickdeals.net/f/20138127-2069-10-14-2-inch-apple-2026-macbook-pro-laptop-with-apple-m5-pro-chip-24gb-1tb-space-black-at-amazon"
+   },
+   "D2-L1-2": {
+    "score": 0.5,
+    "answer": "4 of 4: USD prices, lang=\"en-us\", \"Deliver to Minneapolis 55423\", Conditions of Use link in the footer. Note: captured on search pages, not product pages.",
+    "source": "Saved Amazon search pages, logged out, ZIP 55423, 06-Nov-2026"
+   },
+   "D2-L2-1": {
+    "score": 1.0,
+    "answer": "~100% – product ID (ASIN/model), key specs, price, return terms and availability are all shown on the page.",
+    "source": ""
+   },
+   "D2-L2-2": {
+    "score": 0.0,
+    "answer": "0–1 – AI attributes (NPU TOPS, Copilot+ badge) are generally only in titles/bullets, not as structured spec fields.",
+    "source": ""
+   },
+   "D2-L2-3": {
+    "score": 0.5,
+    "answer": "Partial. 'Copilot+ PC' and '80 TOPS NPU' appear only in bullet text, not as structured attributes; no structured NPU/TOPS field was seen. Note Microsoft has dropped the 'Copilot+ PC' name on its 2026 Surface PCs while Amazon listings still use it.",
+    "source": "https://www.amazon.com/Microsoft-Performance-Snapdragon-Processor-Touchscreen/dp/B0GW96KZL2\nhttps://www.windowscentral.com/microsoft/windows-11/the-copilot-pc-brand-is-dead-microsoft-and-pc-makers-quietly-pull-back-on-tarnished-windows-11-ai-pc-branding"
+   },
+   "D2-L2-4": {
+    "score": 0.0,
+    "answer": "No – no schema.org structured data on product pages.",
+    "source": ""
+   },
+   "D2-L2-5": {
+    "score": 1.0,
+    "answer": "Yes – delivery dates to Minneapolis 55423 shown: Surface Pro 12\" \"FREE delivery Nov 12–13\"; Surface Pro 13\" \"FREE delivery Sun, Nov 8\" with Prime / Wed, Nov 11 non-members; MacBook Pro 14\" \"FREE delivery Nov 22 – Dec 1\".",
+    "source": "https://www.amazon.com/s?k=Surface+Pro+12+inch+Snapdragon+X+Plus+16GB+512GB\nhttps://www.amazon.com/s?k=Surface+Pro+13+inch+OLED+Snapdragon+X2+Elite+16GB+512G\nhttps://www.amazon.com/s?k=MacBook+Pro+14+M5+Pro+24GB+1TB (pages captured by the user in their own Chrome, logged out, ZIP 55423, 06-Nov-2026)"
+   },
+   "D2-L2-6": {
+    "score": 0.0,
+    "answer": "No store pickup option shown (Amazon offers delivery only in these results).",
+    "source": "https://www.amazon.com/s?k=Surface+Pro+12+inch+Snapdragon+X+Plus+16GB+512GB\nhttps://www.amazon.com/s?k=Surface+Pro+13+inch+OLED+Snapdragon+X2+Elite+16GB+512G\nhttps://www.amazon.com/s?k=MacBook+Pro+14+M5+Pro+24GB+1TB (pages captured by the user in their own Chrome, logged out, ZIP 55423, 06-Nov-2026)"
+   },
+   "D2-L2-7": {
+    "score": 0.5,
+    "answer": "Partial. Amazon exposes conditions as separate listings (New, 'Renewed – Excellent' on separate ASINs e.g. B0F2WCP6G6, B0FGK1GYKW) rather than one selectable condition switch on the same page.",
+    "source": "https://www.amazon.com/Microsoft-Surface-Copilot-Snapdragon-Elite/dp/B0F2WCP6G6\nhttps://us.amazon.com/Microsoft-EP2-23861-Surface-Copilot-Platinum/dp/B0FGK1GYKW"
+   },
+   "D2-L2-8": {
+    "score": null,
+    "answer": "Not verified – price/warranty per condition not compared.",
+    "source": "—"
+   },
+   "D2-L2-9": {
+    "score": 0.0,
+    "answer": "No – no MerchantReturnPolicy structured data.",
+    "source": ""
+   },
+   "D2-L2-10": {
+    "score": 0.0,
+    "answer": "N/A – no structured return window to compare.",
+    "source": ""
+   },
+   "D2-L2-11": {
+    "score": 1.0,
+    "answer": "~7–10 images plus video per SKU for both vendor and competing-vendor SKUs; no meaningful gap.",
+    "source": ""
+   },
+   "D2-L2-12": {
+    "score": 1.0,
+    "answer": "From search results – Microsoft: Surface Pro 12\" X Plus 4.4★ (217); Surface Pro 13\" X2 Elite 4.2★ (31); Surface Pro 11th Ed X Elite 4.3★ (86). Apple: MacBook Pro 14\" M5 Pro 24GB/1TB 4.7★ (330), \"1K+ bought in past month\".",
+    "source": "https://www.amazon.com/s?k=Surface+Pro+12+inch+Snapdragon+X+Plus+16GB+512GB\nhttps://www.amazon.com/s?k=Surface+Pro+13+inch+OLED+Snapdragon+X2+Elite+16GB+512G\nhttps://www.amazon.com/s?k=Surface+Pro+11th+Edition+OLED+Snapdragon+X+Elite+16GB+512GB\nhttps://www.amazon.com/s?k=MacBook+Pro+14+M5+Pro+24GB+1TB (pages captured by the user in their own Chrome, logged out, ZIP 55423, 06-Nov-2026)"
+   },
+   "D2-L2-13": {
+    "score": 1.0,
+    "answer": "Accessories (\"Frequently bought together\") and protection plans are shown; software subscriptions on some Windows SKUs.",
+    "source": ""
+   },
+   "D2-L3-1": {
+    "score": 0.5,
+    "answer": "3 of 4 seen at family level: variants (colour/storage on Surface Pro 2026), bundles (Surface Pro + keyboard/pen listings), successor model (2026 'New Release' shown alongside 2024 Surface Pro). Compatible accessories module not confirmed.",
+    "source": "https://www.amazon.com/clp/B0DN2YY381\nhttps://www.amazon.com/clp/B0GW9K2GMH\nhttps://www.amazon.com/Microsoft-Surface-Snapdragon-Keyboard-Business/dp/B0HMH48B5J"
+   },
+   "D2-L3-2": {
+    "score": 1.0,
+    "answer": "Yes. Amazon's assistant joins product, pricing and order data (search, compare, price tracking and order tracking, 'Buy for Me') across app, web and Echo Show.",
+    "source": "https://www.business-standard.com/technology/tech-news/amazon-alexa-for-shopping-combines-rufus-alexa-plus-agentic-ai-126051400577_1.html\nhttps://www.flipflow.io/en/?p=28487"
+   },
+   "D2-L3-3": {
+    "score": null,
+    "answer": "Not verified – requires longitudinal price tracking.",
+    "source": "—"
+   },
+   "D2-L3-4": {
+    "score": null,
+    "answer": "Not verified – requires daily price tracking across retailers.",
+    "source": "—"
+   },
+   "D3-L2-1": {
+    "score": 1.0,
+    "answer": "YES. Q3 2026 call (29 Oct 2026) projects AWS growth above 40% in 2027 and 2028, capex \"meaningfully higher\" in 2027, and agentic capability across shopping and AWS. Roughly 80 AI mentions in that call alone.",
+    "source": "https://singjupost.com/amazon-com-inc-q3-2026-earnings-call-transcript/"
+   },
+   "D3-L2-2": {
+    "score": 0.5,
+    "answer": "Not surfaced – no Copilot+ PC category, filter or \"Popular Shopping Ideas\" entry on the laptop results. A Copilot+ page may exist elsewhere on Amazon but is not linked from laptop search.",
+    "source": "https://www.amazon.com/s?k=laptops (pages captured by the user in their own Chrome, logged out, ZIP 55423, 06-Nov-2026)"
+   },
+   "D3-L2-3": {
+    "score": null,
+    "answer": "Not verified – Amazon does not expose a stable 'AI PC' category SKU count.",
+    "source": "—"
+   },
+   "D3-L2-4": {
+    "score": null,
+    "answer": "Not verified – Surface SKU count not captured. At least 8 distinct Surface Pro ASINs seen across Microsoft, third-party and renewed sellers.",
+    "source": "https://www.amazon.com/Microsoft-Performance-Snapdragon-Processor-Touchscreen/dp/B0GW96KZL2\nhttps://www.amazon.com/clp/B0GW9K2GMH\nhttps://www.amazon.com/clp/B0GZJ1CLD4\nhttps://www.amazon.com/Microsoft-Surface-Touchscreen-Snapdragon-Exclusive/dp/B0CXKXNNPX\nhttps://www.amazon.com/Microsoft-Surface-Copilot-Snapdragon-Elite/dp/B0F2WCP6G6\nhttps://us.amazon.com/Microsoft-EP2-23861-Surface-Copilot-Platinum/dp/B0FGK1GYKW\nhttps://www.amazon.com/Microsoft-Surface-Snapdragon-Keyboard-Business/dp/B0HMH48B5J\nhttps://www.amazon.com/Microsoft-Surface-Touchscreen-Snapdragon-Copilot/dp/B0HF26R7ZW"
+   },
+   "D3-L2-5": {
+    "score": 1.0,
+    "answer": "Yes. Dedicated Surface Pro landing pages (amazon.com/clp/…) list the Copilot+ Surface Pro 2026 and 2024 variants.",
+    "source": "https://www.amazon.com/clp/B0DN2YY381\nhttps://www.amazon.com/clp/B0GW9K2GMH\nhttps://www.amazon.com/clp/B0GZJ1CLD4"
+   },
+   "D3-L2-6": {
+    "score": 0.5,
+    "answer": "Partial. Surface Pro (2026) X2 Elite 16GB/1TB was discounted on Amazon (from $2,099.99 to $1,649.99); Amazon's own seasonal/gift-guide pages were not captured. Apple MacBook Pro M5 Pro also deal-priced at $2,069.10.",
+    "source": "https://www.techradar.com/pro/microsofts-new-surface-pro-2026-with-snapdragon-x2-elite-processor-and-oled-display-gets-a-huge-usd450-discount-at-amazon\nhttps://slickdeals.net/f/20138127-2069-10-14-2-inch-apple-2026-macbook-pro-laptop-with-apple-m5-pro-chip-24gb-1tb-space-black-at-amazon"
+   },
+   "D3-L3-1": {
+    "score": 1.0,
+    "answer": "YES, extensively. Alexa for Shopping (400M+ customers in 12 months), Amazon Lens and Lens Live visual search, AI review summaries, Ads Agent, Amazon Q/Quick, robotics foundation models. All confirmed on the Q3 2026 call, 29 Oct 2026.",
+    "source": "https://singjupost.com/amazon-com-inc-q3-2026-earnings-call-transcript/"
+   },
+   "D3-L3-2": {
+    "score": 1.0,
+    "answer": "YES. TWELVE-PLUS live. Customer-facing: Alexa for Shopping, Lens, Lens Live, Circle to Search, visual suggestions, AI review summaries, sponsored prompts. Employee and operations: Amazon Q/Quick, Kiro, Ads Agent, AWS Transform, robotics foundation models across 1M+ robots.",
+    "source": "https://singjupost.com/amazon-com-inc-q3-2026-earnings-call-transcript/ | https://aboutamazon.com/news/retail/visual-search-shopping-features"
+   },
+   "D3-L3-3": {
+    "score": 1.0,
+    "answer": "YES, named and quantified. Robotics foundation models across a fleet of over one million robots, with robotic arms doubled in 2026; AI-driven demand and capacity planning; AWS Continuum for code vulnerability remediation; Amazon Connect in contact centres.",
+    "source": "https://singjupost.com/amazon-com-inc-q3-2026-earnings-call-transcript/"
+   },
+   "D3-L3-4": {
+    "score": 1.0,
+    "answer": "[Reported] Yes – Alexa for Shopping (formerly Rufus).",
+    "source": "Public reporting, not observed (assistant requires login). Sources as for mobile-web question:\nhttps://www.flipflow.io/en/?p=28487\nhttps://www.business-standard.com/technology/tech-news/amazon-alexa-for-shopping-combines-rufus-alexa-plus-agentic-ai-126051400577_1.html\nhttps://www.modernretail.co/technology/amazon-says-its-ai-shopping-assistant-is-gaining-traction-with-rufus-users-up-115/"
+   },
+   "D3-L3-5": {
+    "score": null,
+    "answer": "No answer – Amazon's AI shopping assistant (Alexa for Shopping / Rufus) could not be accessed without a login, so this could not be tested.",
+    "source": "Not captured – Amazon AI assistant requires login"
+   },
+   "D3-L3-6": {
+    "score": null,
+    "answer": "No answer – Amazon's AI shopping assistant (Alexa for Shopping / Rufus) could not be accessed without a login, so this could not be tested.",
+    "source": "Not captured – Amazon AI assistant requires login"
+   },
+   "D3-L3-7": {
+    "score": null,
+    "answer": "No answer – Amazon's AI shopping assistant (Alexa for Shopping / Rufus) could not be accessed without a login, so this could not be tested.",
+    "source": "Not captured – Amazon AI assistant requires login"
+   },
+   "D3-L3-8": {
+    "score": null,
+    "answer": "No answer – Amazon's AI shopping assistant (Alexa for Shopping / Rufus) could not be accessed without a login, so this could not be tested.",
+    "source": "Not captured – Amazon AI assistant requires login"
+   },
+   "D3-L3-9": {
+    "score": null,
+    "answer": "No answer – Amazon's AI shopping assistant (Alexa for Shopping / Rufus) could not be accessed without a login, so this could not be tested.",
+    "source": "Not captured – Amazon AI assistant requires login"
+   },
+   "D3-L3-10": {
+    "score": 1.0,
+    "answer": "[Reported] Yes – the assistant is integrated into the Amazon site and app, not a standalone tool.",
+    "source": "Public reporting, not observed (assistant requires login). Sources as for mobile-web question:\nhttps://www.flipflow.io/en/?p=28487\nhttps://www.business-standard.com/technology/tech-news/amazon-alexa-for-shopping-combines-rufus-alexa-plus-agentic-ai-126051400577_1.html\nhttps://www.modernretail.co/technology/amazon-says-its-ai-shopping-assistant-is-gaining-traction-with-rufus-users-up-115/"
+   },
+   "D3-L3-11": {
+    "score": 1.0,
+    "answer": "[Reported, not observed] Yes – \"Customers say\" AI review highlights on product pages (since 2023; position vs fold not observed).",
+    "source": "https://www.aboutamazon.com/news/amazon-ai/amazon-ai-generated-review-highlights"
+   },
+   "D3-L3-12": {
+    "score": null,
+    "answer": "Not verified – fold position not measured.",
+    "source": "—"
+   },
+   "D3-L3-13": {
+    "score": 1.0,
+    "answer": "YES, on both counts and well beyond the threshold. Amazon Lens and Lens Live give real-time camera search with a swipeable match carousel; plus Circle to Search, text-with-image search, \"More like this\" and an iOS lock-screen Lens widget.",
+    "source": "https://aboutamazon.com/news/retail/visual-search-shopping-features"
+   },
+   "D3-L3-14": {
+    "score": 0.0,
+    "answer": "NO. Requires an approved test account and a live order to attempt order status, returns and warranty tasks. Out of scope for a public-sources assessment.",
+    "source": "No Source"
+   },
+   "D3-L3-15": {
+    "score": 0.0,
+    "answer": "NO. Requires paired live interactions with and without membership context. Cannot be performed from this environment.",
+    "source": "No Source"
+   },
+   "D3-L3-16": {
+    "score": null,
+    "answer": "No answer – Amazon's AI shopping assistant (Alexa for Shopping / Rufus) could not be accessed without a login, so this could not be tested.",
+    "source": "Not captured – Amazon AI assistant requires login"
+   },
+   "D3-L3-17": {
+    "score": null,
+    "answer": "No answer – Amazon's AI shopping assistant (Alexa for Shopping / Rufus) could not be accessed without a login, so this could not be tested.",
+    "source": "Not captured – Amazon AI assistant requires login"
+   },
+   "D3-L3-18": {
+    "score": null,
+    "answer": "No answer – Amazon's AI shopping assistant (Alexa for Shopping / Rufus) could not be accessed without a login, so this could not be tested.",
+    "source": "Not captured – Amazon AI assistant requires login"
+   },
+   "D3-L3-19": {
+    "score": null,
+    "answer": "No answer – Amazon's AI shopping assistant (Alexa for Shopping / Rufus) could not be accessed without a login, so this could not be tested.",
+    "source": "Not captured – Amazon AI assistant requires login"
+   },
+   "D3-L3-20": {
+    "score": null,
+    "answer": "No answer – Amazon's AI shopping assistant (Alexa for Shopping / Rufus) could not be accessed without a login, so this could not be tested.",
+    "source": "Not captured – Amazon AI assistant requires login"
+   },
+   "D3-L3-21": {
+    "score": null,
+    "answer": "No answer – Amazon's AI shopping assistant (Alexa for Shopping / Rufus) could not be accessed without a login, so this could not be tested.",
+    "source": "Not captured – Amazon AI assistant requires login"
+   },
+   "D3-L3-22": {
+    "score": null,
+    "answer": "No answer – Amazon's AI shopping assistant (Alexa for Shopping / Rufus) could not be accessed without a login, so this could not be tested.",
+    "source": "Not captured – Amazon AI assistant requires login"
+   },
+   "D3-L3-23": {
+    "score": null,
+    "answer": "No answer – Amazon's AI shopping assistant (Alexa for Shopping / Rufus) could not be accessed without a login, so this could not be tested.",
+    "source": "Not captured – Amazon AI assistant requires login"
+   },
+   "D3-L3-24": {
+    "score": null,
+    "answer": "No answer – Amazon's AI shopping assistant (Alexa for Shopping / Rufus) could not be accessed without a login, so this could not be tested.",
+    "source": "Not captured – Amazon AI assistant requires login"
+   },
+   "D3-L3-25": {
+    "score": 1.0,
+    "answer": "YES, in both. Customer: Alexa for Shopping with price alerts and auto-buy. Employee: Amazon Q/Quick work companion, Kiro agentic coding, AWS Transform migrations, and Bedrock AgentCore used by tens of thousands of customers.",
+    "source": "https://www.webull.com/news/15364638750483456 | https://singjupost.com/amazon-com-inc-q3-2026-earnings-call-transcript/"
+   },
+   "D3-L3-26": {
+    "score": 1.0,
+    "answer": "[Reported] Yes – multi-step tasks reported through Buy for Me, auto-buy and price alerts.",
+    "source": "Public reporting, not observed (assistant requires login). Sources as for mobile-web question:\nhttps://www.flipflow.io/en/?p=28487\nhttps://www.business-standard.com/technology/tech-news/amazon-alexa-for-shopping-combines-rufus-alexa-plus-agentic-ai-126051400577_1.html\nhttps://www.modernretail.co/technology/amazon-says-its-ai-shopping-assistant-is-gaining-traction-with-rufus-users-up-115/"
+   },
+   "D3-L3-27": {
+    "score": 1.0,
+    "answer": "[Reported] Yes – availability checks reported through Buy for Me, auto-buy and price alerts.",
+    "source": "Public reporting, not observed (assistant requires login). Sources as for mobile-web question:\nhttps://www.flipflow.io/en/?p=28487\nhttps://www.business-standard.com/technology/tech-news/amazon-alexa-for-shopping-combines-rufus-alexa-plus-agentic-ai-126051400577_1.html\nhttps://www.modernretail.co/technology/amazon-says-its-ai-shopping-assistant-is-gaining-traction-with-rufus-users-up-115/"
+   },
+   "D3-L3-28": {
+    "score": 1.0,
+    "answer": "[Reported] Yes – purchases reported through Buy for Me and auto-buy.",
+    "source": "Public reporting, not observed (assistant requires login). Sources as for mobile-web question:\nhttps://www.flipflow.io/en/?p=28487\nhttps://www.business-standard.com/technology/tech-news/amazon-alexa-for-shopping-combines-rufus-alexa-plus-agentic-ai-126051400577_1.html\nhttps://www.modernretail.co/technology/amazon-says-its-ai-shopping-assistant-is-gaining-traction-with-rufus-users-up-115/"
+   },
+   "D3-L3-29": {
+    "score": 0.0,
+    "answer": "No (per ChatGPT) – \"Not through native Amazon checkout\": Amazon is not a ChatGPT Instant Checkout merchant. Consistent with amazon.com blocking unauthorized AI agents. Human check with a signed-in account still recommended. (Best Buy: ChatGPT said \"not currently confirmed\".)\nReported: Amazon blocks/litigates third-party buying agents (Perplexity Comet, Nov 2025) while running its own (Buy for Me, auto-buy, Shop Direct).",
+    "source": "https://chatgpt.com/uc/6aed98fe-2d90-83ea-976c-f08b20f66172\nhttps://www.engadget.com/ai/amazon-and-perplexity-are-fighting-over-the-future-of-ai-shopping-215445479.html\nhttps://ppc.land/amazon-merges-rufus-and-alexa-into-one-shopping-assistant/"
+   },
+   "D3-L3-30": {
+    "score": 1.0,
+    "answer": "Yes. GA — meets the threshold. Alexa for Shopping is the default AI layer for signed-in US customers in the app; Alexa+ completed nationwide US rollout in 2026 after early access from Feb 2025.",
+    "source": "https://www.ebrands.com/blog-posts/amazon-rufus-alexa-for-shopping | https://uk.marketscreener.com/news/amazon-rolls-out-alexa-nationwide-in-the-us-ce7e5adadf8df527"
+   },
+   "D3-L3-31": {
+    "score": 0.0,
+    "answer": "NONE. Amazon names no open agentic-commerce standard — not ACP, AP2 or MCP — for inbound third-party agents, and its litigation position is the opposite. Its agent tooling (AgentCore, Strands) is for AWS customers building agents, not for agents reaching Amazon retail.",
+    "source": "https://www.pymnts.com/artificial-intelligence-2/2026/court-blocks-amazon-ban-on-perplexity-ai-agents/"
+   },
+   "D3-L3-32": {
+    "score": 0.0,
+    "answer": "NO. Amazon's remaining physical formats are grocery and convenience; it operates no PC-selling store estate, so there are no store associates handling computing enquiries to equip.",
+    "source": "https://www.aboutamazon.com/news/retail"
+   },
+   "D3-L3-33": {
+    "score": 0.0,
+    "answer": "NO. No primary source within 12 months describes an associate-facing AI tool answering product questions in a store setting.",
+    "source": "https://www.aboutamazon.com/news/retail"
+   },
+   "D3-L3-34": {
+    "score": 1.0,
+    "answer": "YES. Amazon Q, extended in 2026 as Amazon Quick, is named on the earnings calls as the workplace AI companion, including autonomous background agents. Kiro serves engineering staff.",
+    "source": "https://www.webull.com/news/15364638750483456"
+   },
+   "D3-L3-35": {
+    "score": 0.5,
+    "answer": "PARTIAL. AI Ready offers free AI courses at scale and Machine Learning University trains technical staff — but both teach AI rather than use AI to deliver learning. Amazon Q is the nearest AI-delivered support tool.",
+    "source": "https://www.aboutamazon.com/news/aws/aws-free-ai-skills-training-courses"
+   },
+   "D3-L3-36": {
+    "score": null,
+    "answer": "Not verified – brand facet counts not captured.",
+    "source": "—"
+   },
+   "D3-L3-37": {
+    "score": 0.0,
+    "answer": "NO. Amazon has no store estate carrying Copilot+ or Surface displays, so no such in-store evidence exists at any date.",
+    "source": "https://www.aboutamazon.com/news/retail"
+   },
+   "D3-L3-38": {
+    "score": null,
+    "answer": "Not verified – module count not captured.",
+    "source": "—"
+   },
+   "D3-L3-39": {
+    "score": null,
+    "answer": "Not verified – media count not captured.",
+    "source": "—"
+   },
+   "D3-L3-40": {
+    "score": null,
+    "answer": "Not verified – no last-updated date captured.",
+    "source": "—"
+   },
+   "D3-L3-41": {
+    "score": 0.5,
+    "answer": "Partial. Surface Pro 2026 listing names a spec ('80 TOPS NPU for on-device AI') and says 'AI built in… helps you work smarter and faster' – generic benefit copy, no specific consumer outcome (battery, privacy, named feature).",
+    "source": "https://www.amazon.com/Microsoft-Performance-Snapdragon-Processor-Touchscreen/dp/B0GW96KZL2"
+   },
+   "D3-L3-42": {
+    "score": null,
+    "answer": "Not verified – demo video/interactive content not checked.",
+    "source": "—"
+   },
+   "D3-L3-43": {
+    "score": 0.0,
+    "answer": "NO. No in-store demonstrations of Microsoft AI devices exist, for the same reason.",
+    "source": "https://www.aboutamazon.com/news/retail"
+   },
+   "D3-L3-44": {
+    "score": 0.5,
+    "answer": "Partial. Listings carry a 'Specific Uses' attribute (e.g. Business) and 'Premium Performance' naming; a use-case grouping (productivity/creativity/gaming/education) for AI PCs was not confirmed.",
+    "source": "https://us.amazon.com/Microsoft-EP2-23861-Surface-Copilot-Platinum/dp/B0FGK1GYKW\nhttps://www.amazon.com/clp/B0DN2YY381"
+   },
+   "D3-L3-45": {
+    "score": 0.5,
+    "answer": "PARTIAL. Amazon US has featured AI PCs from multiple vendors in promotional deal coverage, including Copilot+ PCs. However, a reliable count of distinct Amazon-owned campaign or promotion pages cannot be established from the available evidence.",
+    "source": "https://9to5toys.com/2025/11/27/windows-laptops-copilot-pc-black-friday-sale-now-live-at-amazon/?utm_source=chatgpt.com"
+   },
+   "D3-L3-46": {
+    "score": 0.5,
+    "answer": "Office 365 bundles are merchandised in many budget Windows laptop titles (HP Everyday \"Copilot AI, Office 365\", Acer Aspire Lite \"with Office 365\"), but not shown next to the Surface/Copilot+ results. No Apple One offer seen on Mac results. Product pages not checked.",
+    "source": "https://www.amazon.com/s?k=laptops\nhttps://www.amazon.com/s?k=laptop+for+students\nhttps://www.amazon.com/s?k=MacBook+Pro+14+M5+Pro+24GB+1TB (pages captured by the user in their own Chrome, logged out, ZIP 55423, 06-Nov-2026)"
+   },
+   "D3-L3-47": {
+    "score": 0.5,
+    "answer": "Microsoft: Surface Pro 13\" X2 Elite 1TB $1,649.99 vs list $2,099.99 (21%) – Platinum $1,599.99 (24%); Surface Pro 12\" $1,099.99, no list price shown; 11th Ed price only via \"See options\". Apple: MacBook Pro 14\" M5 Pro 24GB/1TB $2,289 vs list $2,499 (8.4%). Note: the 13\" results shown were 1TB configurations, not the 512GB sample.",
+    "source": "https://www.amazon.com/s?k=Surface+Pro+12+inch+Snapdragon+X+Plus+16GB+512GB\nhttps://www.amazon.com/s?k=Surface+Pro+13+inch+OLED+Snapdragon+X2+Elite+16GB+512G\nhttps://www.amazon.com/s?k=Surface+Pro+11th+Edition+OLED+Snapdragon+X+Elite+16GB+512GB\nhttps://www.amazon.com/s?k=MacBook+Pro+14+M5+Pro+24GB+1TB (pages captured by the user in their own Chrome, logged out, ZIP 55423, 06-Nov-2026)"
+   },
+   "D3-L3-48": {
+    "score": null,
+    "answer": "Not verified – position in seasonal guides not captured.",
+    "source": "—"
+   },
+   "D3-L3-49": {
+    "score": 0.5,
+    "answer": "Partial – chip is stated in titles/specs; NPU TOPS is rarely stated.",
+    "source": ""
+   },
+   "D3-L3-50": {
+    "score": null,
+    "answer": "Not verified – needs redoing for Amazon (previous answer was copied from the Best Buy row).",
+    "source": "—"
+   },
+   "D3-L4-1": {
+    "score": null,
+    "answer": "Not verified – no prior-cycle count and Amazon does not expose an AI PC SKU count.",
+    "source": "—"
+   },
+   "D3-L4-2": {
+    "score": 0.5,
+    "answer": "Indicative only. Microsoft: 3 Surface landing pages (clp), an 'Amazon Exclusive' configuration, 'Amazon's Choice'/'#1 Best Seller' badges, deals. Apple: deal coverage and listings; no Apple-specific landing page was found in this research. Five-point audit not run.",
+    "source": "https://www.amazon.com/clp/B0DN2YY381\nhttps://www.amazon.com/clp/B0GW9K2GMH\nhttps://www.amazon.com/Microsoft-Surface-Touchscreen-Snapdragon-Exclusive/dp/B0CXKXNNPX\nhttps://slickdeals.net/f/20138127-2069-10-14-2-inch-apple-2026-macbook-pro-laptop-with-apple-m5-pro-chip-24gb-1tb-space-black-at-amazon"
+   },
+   "D4-L1-1": {
+    "score": 0.5,
+    "answer": "PARTIAL. Amazon uses an explicit comparison group — \"US Alexa for Shopping users spend 50% more per order than non-users\" — which is better than most. But it is a correlational cut, not a controlled attribution, and no causal method is described.",
+    "source": "https://singjupost.com/amazon-com-inc-q3-2026-earnings-call-transcript/"
+   },
+   "D4-L2-1": {
+    "score": 1.0,
+    "answer": "YES. Peter DeSantis leads a unified AI group spanning AI, silicon and quantum, announced 17 Dec 2025. Panos Panay owns Devices & Services, which carries Alexa.",
+    "source": "https://geekwire.com/2025/amazon-ai-chief-rohit-prasad-leaving-infrastructure-exec-peter-desantis-to-lead-unified-ai-group"
+   },
+   "D4-L2-2": {
+    "score": 1.0,
+    "answer": "Yes. Anthropic — model partner and investee, with up to $25bn further committed in 2026; NVIDIA — accelerators; plus Amazon's own Trainium and Graviton silicon programmes. Partner ecosystem is disclosed on every earnings call.",
+    "source": "https://www.technobezz.com/news/amazon-commits-up-to-25-billion-more-to-ai-startup-anthropic"
+   },
+   "D4-L2-3": {
+    "score": 1.0,
+    "answer": "YES. Rohit Prasad, SVP and head of AGI, departed at the end of 2025; Peter DeSantis took over a restructured, unified AI organisation from 17 Dec 2025. A material change inside the window.",
+    "source": "https://geekwire.com/2025/amazon-ai-chief-rohit-prasad-leaving-infrastructure-exec-peter-desantis-to-lead-unified-ai-group"
+   },
+   "D4-L2-4": {
+    "score": 0.5,
+    "answer": "Partial. Aggregators of Amazon's job feed show about 63 live Data Scientist roles and 8 Machine Learning Engineer roles, plus AI-specific Applied Scientist roles (e.g. Rufus Experience Science, Shopping Convo Foundations). Exact amazon.jobs count and change vs last cycle not retrievable.",
+    "source": "https://jobspipe.dev/jobs/data-scientist/amazon.md\nhttps://jobspipe.dev/jobs/machine-learning-engineer/amazon\nhttps://refresh.cv/jobs/amazon/page/11\nhttps://resumegeni.com/jobs/applied-scientist-shopping-convo-foundations-pre-purchases-science-at-amazon-us-ca-santa-clara"
+   },
+   "D4-L2-5": {
+    "score": 1.0,
+    "answer": "Yes. BOTH, heavily weighted to in-house. Amazon builds its own models, agents and silicon with named internal leadership, while partnering with Anthropic and NVIDIA. Thousands of AI roles are advertised.",
+    "source": "https://singjupost.com/amazon-com-inc-q3-2026-earnings-call-transcript/"
+   },
+   "D4-L2-6": {
+    "score": 1.0,
+    "answer": "YES. \"AI Ready\" commits to free AI skills training at scale, alongside Machine Learning University for technical staff and AWS Skill Builder certification paths.",
+    "source": "https://www.aboutamazon.com/news/aws/aws-free-ai-skills-training-courses"
+   },
+   "D4-L2-7": {
+    "score": 1.0,
+    "answer": "YES, repeatedly and recently. Q3 2026: over 400 million customers used Alexa for Shopping in 12 months, interactions up 570% year on year, and US users spend 50% more per order. Q2 2026 put incremental annualised sales near $12 billion.",
+    "source": "https://singjupost.com/amazon-com-inc-q3-2026-earnings-call-transcript/ | https://www.modernretail.co/technology/amazon-says-its-ai-shopping-assistant-is-gaining-traction-with-rufus-users-up-115/"
+   },
+   "D4-L2-8": {
+    "score": 1.0,
+    "answer": "YES — effectively all. Each figure is bound to a named product: Alexa for Shopping, Ads Agent (8% lower cost per impression, 6% lower cost per acquisition), Kiro (usage tripled), Bedrock (token volume up 17x), custom silicon ($2bn customer savings).",
+    "source": "https://www.webull.com/news/15364638750483456 | https://singjupost.com/amazon-com-inc-q3-2026-earnings-call-transcript/"
+   },
+   "D4-L2-9": {
+    "score": 1.0,
+    "answer": "Yes. MANY. In the Aug-Nov 2026 window: Q3 2026 earnings call and release (29 Oct), the visual-search feature announcement, the autumn devices launch of 34 products, and continuous AWS AI blog and newsroom output.",
+    "source": "https://singjupost.com/amazon-com-inc-q3-2026-earnings-call-transcript/ | https://aboutamazon.com/news/retail/visual-search-shopping-features"
+   },
+   "D4-L2-10": {
+    "score": 1.0,
+    "answer": "Yes. Q2 2026 (30 Jul 2026): approximately 120 AI mentions, 8 uses of \"agentic\". Q3 2026 (29 Oct 2026): approximately 80 AI mentions, 4 uses of \"agentic\". Average about 100 per call.",
+    "source": "https://www.webull.com/news/15364638750483456 | https://singjupost.com/amazon-com-inc-q3-2026-earnings-call-transcript/"
+   },
+   "D4-L2-11": {
+    "score": 1.0,
+    "answer": "Yes. FOURTEEN-PLUS distinct named use cases across the two calls: Bedrock, AgentCore, SageMaker AI, Strands, Kiro, Amazon Q/Quick, AWS Transform, AWS Continuum, Amazon Connect, Alexa for Shopping, Alexa+, Ads Agent, Trainium/Graviton, robotics foundation models.",
+    "source": "https://www.webull.com/news/15364638750483456 | https://singjupost.com/amazon-com-inc-q3-2026-earnings-call-transcript/"
+   },
+   "D4-L2-12": {
+    "score": 1.0,
+    "answer": "Yes. TWENTY-PLUS across the two calls. Examples: Alexa for Shopping interactions up 570%; users spend 50% more per order; Bedrock tokens up 17x; AgentCore deployments 2x prior three quarters combined; Ads Agent 8% lower CPI; Kiro usage tripled.",
+    "source": "https://www.webull.com/news/15364638750483456 | https://singjupost.com/amazon-com-inc-q3-2026-earnings-call-transcript/"
+   },
+   "D4-L2-13": {
+    "score": 0.0,
+    "answer": "NO. Amazon reports by segment — North America, International, AWS, Advertising — and does not break out computing, electronics or AI-PC performance. The autumn devices launch was described by product count only, with no sales figures.",
+    "source": "https://singjupost.com/amazon-com-inc-q3-2026-earnings-call-transcript/"
+   },
+   "D4-L3-1": {
+    "score": 1.0,
+    "answer": "YES. Alexa+ was announced in February 2025 as an early-access initiative and progressed to broad US availability by September 2026.",
+    "source": "https://www.ebrands.com/blog-posts/amazon-rufus-alexa-for-shopping | https://uk.marketscreener.com/news/amazon-rolls-out-alexa-nationwide-in-the-us-ce7e5adadf8df527"
+   },
+   "D4-L3-2": {
+    "score": 1.0,
+    "answer": "YES. Amazon publishes a responsible-AI position with named commitments, and AWS publishes AI Service Cards documenting intended use, limitations and fairness for individual services.",
+    "source": "https://www.aboutamazon.com/news/company-news/amazon-responsible-ai | https://aws.amazon.com/ai/responsible-ai/"
+   },
+   "D4-L3-3": {
+    "score": 1.0,
+    "answer": "Yes. MANY — well above any reasonable threshold. The AWS Machine Learning Blog and Amazon Science publish dated AI engineering posts continuously through the trailing 12 months.",
+    "source": "https://aws.amazon.com/blogs/machine-learning/ | https://www.amazon.science/blog"
+   },
+   "D4-L3-4": {
+    "score": 1.0,
+    "answer": "Yes. MANY. AWS re:Invent alone carries hundreds of AI sessions delivered by Amazon staff each year, alongside Amazon Science presence at the main ML research conferences.",
+    "source": "https://reinvent.awsevents.com/"
+   },
+   "D4-L3-5": {
+    "score": 1.0,
+    "answer": "Large footprint: github.com/amazon-science 497 repositories (AI/ML research, e.g. SpeechworthyLLMs, JAWS-Bench, updated Sep 2026); github.com/amzn 176 repositories incl. \"selling-partner-agentic-toolkit\" (MCP skills for seller accounts). AWS org not counted. Group-wide, not retail-only.",
+    "source": "https://github.com/amazon-science\nhttps://github.com/amzn"
+   },
+   "D4-L3-6": {
+    "score": 1.0,
+    "answer": "1,385 patents granted to Amazon Technologies, Inc. in the trailing 12 months; 661 of them match machine learning / artificial intelligence / neural network / language model in full text (group-wide incl. AWS; full-text match over-counts). Best Buy: 1 of 4.",
+    "source": "https://patents.google.com/?assignee=Amazon+Technologies&after=publication:20251106&status=GRANT\nhttps://patents.google.com/?assignee=Amazon+Technologies&after=publication:20251106&status=GRANT&q=(%22machine+learning%22+OR+%22artificial+intelligence%22+OR+%22neural+network%22+OR+%22language+model%22)"
+   },
+   "D4-L3-7": {
+    "score": 1.0,
+    "answer": "YES. Amazon's 10-K carries generative-AI risk language covering competition, regulation, intellectual property, data and privacy exposure, and the possibility that AI investment does not deliver expected returns.",
+    "source": "https://fortune.com/company-assets/1491/quartr/annual-report-10-k-437c2-2026-02-06-11-24-02.pdf"
+   },
+   "D4-L3-8": {
+    "score": 0.5,
+    "answer": "PARTIAL. Some metrics are self-defining — \"spend per order\", \"interactions\", \"monthly active users\". Others are not: \"incremental annualised sales\" of nearly $12 billion is given with no derivation at all.",
+    "source": "https://singjupost.com/amazon-com-inc-q3-2026-earnings-call-transcript/"
+   },
+   "D4-L3-9": {
+    "score": 0.5,
+    "answer": "PARTIAL. Population is stated for some figures — \"US Alexa for Shopping users\", \"customers in the last 12 months\", \"top 1,000 EC2 customers\" — but not for the sales-uplift and conversion claims.",
+    "source": "https://singjupost.com/amazon-com-inc-q3-2026-earnings-call-transcript/"
+   },
+   "D4-L3-10": {
+    "score": 1.0,
+    "answer": "YES. Periods are consistently stated: \"in the last 12 months\", \"year over year\", \"in Q3\", \"quarter over quarter\". This is the strongest of the three measurement-hygiene checks.",
+    "source": "https://singjupost.com/amazon-com-inc-q3-2026-earnings-call-transcript/"
+   },
+   "D4-L3-11": {
+    "score": 0.0,
+    "answer": "No. ZERO ON BOTH SIDES. Microsoft, Copilot, Surface, Windows, Apple and Mac appear nowhere in either of the last two earnings calls. Amazon's named AI partners are Anthropic and NVIDIA. Device vendors are not discussed at brand level at all.",
+    "source": "https://www.webull.com/news/15364638750483456 | https://singjupost.com/amazon-com-inc-q3-2026-earnings-call-transcript/"
+   },
+   "D4-L3-12": {
+    "score": 0.5,
+    "answer": "Partial. Amazon shows: AI assistant on app, web and Echo Show; agentic 'Buy for Me' outside Amazon's store; price tracking and order tracking. No gaps vs peers were identified, but peer scoring against the shared checklist was not run.",
+    "source": "https://www.business-standard.com/technology/tech-news/amazon-alexa-for-shopping-combines-rufus-alexa-plus-agentic-ai-126051400577_1.html\nhttps://www.flipflow.io/en/?p=28487\nhttps://www.modernretail.co/technology/amazon-says-its-ai-shopping-assistant-is-gaining-traction-with-rufus-users-up-115/"
+   },
+   "D4-L3-13": {
+    "score": 1.0,
+    "answer": "YES, documented and dated. Amazon sued Perplexity over the Comet shopping agent; a preliminary injunction was granted 9 Mar 2026 and stayed on appeal 17 Mar 2026. Amazon's response is public, legal and unambiguous.",
+    "source": "https://www.pymnts.com/artificial-intelligence-2/2026/court-blocks-amazon-ban-on-perplexity-ai-agents/ | https://decrypt.co/360629/amazon-perplexity-comet-court-order-agentic-commerce"
+   },
+   "D4-L3-14": {
+    "score": 1.0,
+    "answer": "YES, explicitly. Andy Jassy told staff in June 2025 that generative AI would \"reduce our total corporate workforce\". 14,000 corporate roles were cut in Oct 2025 and a further reduction followed in Jan 2026, both reported against accelerating AI spend.",
+    "source": "https://www.eweek.com/news/amazon-cut-workforce-ai/ | https://abc7news.com/post/amazon-layoffs-company-could-cut-many-30000-corporate-jobs-reports-say/18078414/"
+   },
+   "D4-L4-1": {
+    "score": 1.0,
+    "answer": "YES, and at exceptional scale. 2026 cash capex guided to approximately $220 billion, mostly AWS and AI infrastructure; Q3 2026 alone was $75.9 billion; 2027 guided \"meaningfully higher\".",
+    "source": "https://singjupost.com/amazon-com-inc-q3-2026-earnings-call-transcript/"
+   },
+   "D4-L4-2": {
+    "score": 1.0,
+    "answer": "Yes. SEVERAL, large. Anthropic — up to $25 billion further committed in 2026 on top of $8 billion previously; Bee (AI wearable) acquired 2025. AI capability is being bought as well as built.",
+    "source": "https://www.technobezz.com/news/amazon-commits-up-to-25-billion-more-to-ai-startup-anthropic"
+   },
+   "D4-L4-3": {
+    "score": 0.5,
+    "answer": "PARTIAL. ROUGHLY 12-15 MONTHS on the two datable cases: Rufus Feb 2024 beta to broad availability inside that year; Alexa+ Feb 2025 early access to full US availability in 2026. Amazon publishes no formal pilot register, so this is derived, not disclosed.",
+    "source": "https://uk.marketscreener.com/news/amazon-rolls-out-alexa-nationwide-in-the-us-ce7e5adadf8df527"
+   },
+   "D4-L4-4": {
+    "score": 0.5,
+    "answer": "PARTIAL. Cost appears alongside benefit at company level — $220bn capex against AI revenue growth — and in places at product level (Kiro \"up to 50% more cost-effective\"; custom silicon saving customers $2bn). No per-use-case cost-versus-return for the retail assistant.",
+    "source": "https://singjupost.com/amazon-com-inc-q3-2026-earnings-call-transcript/"
+   }
+  }
+ }
+}

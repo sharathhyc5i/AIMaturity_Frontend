@@ -1,0 +1,249 @@
+/* AI Maturity Score card in the Account assessment hero: figure and stage pill, the score, and the
+   Run / Walk / Crawl key. Stages use three blues, darkest for Run. */
+.overall {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-areas:
+    "left title stages"
+    "left value stages"
+    "left note stages";
+  align-items: center;
+  gap: 4px 20px;
+  padding: 16px 20px;
+  border-radius: var(--r-xl, 16px);
+  border: 1px solid #dbe7f3;
+  background: linear-gradient(180deg, #fbfdff, #f2f7fc);
+  box-shadow: 0 1px 2px rgba(15, 30, 60, 0.06);
+}
+
+.overall--click {
+  cursor: pointer;
+  transition: box-shadow 0.18s, border-color 0.18s, transform 0.18s;
+}
+
+.overall--click:hover {
+  box-shadow: 0 8px 24px rgba(15, 30, 60, 0.12);
+  transform: translateY(-1px);
+}
+
+.overall--click:focus-visible {
+  outline: 2px solid var(--band);
+  outline-offset: 2px;
+}
+
+/* Selected: the stage colour at 7%, as on the dimension cards */
+.overall.is-on {
+  background: color-mix(in srgb, var(--band) 7%, #fff);
+  border-color: var(--band);
+}
+
+.overall__left {
+  grid-area: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  line-height: 0;
+}
+
+/* The title and score share the middle column; contents lets each take its own grid area */
+.overall__mid {
+  display: contents;
+}
+
+.overall__title {
+  grid-area: title;
+  margin: 0;
+  font: 600 var(--t-subtitle) var(--font-display);
+  color: var(--ink-2);
+  text-align: center;
+  align-self: end;
+  white-space: nowrap;
+}
+
+.overall__stages {
+  grid-area: stages;
+}
+
+.overall__note {
+  grid-area: note;
+  margin: 0;
+  max-width: 34ch;
+  justify-self: center;
+  font: var(--t-caption) var(--font);
+  color: var(--muted);
+  text-align: center;
+}
+
+.overall__pill {
+  display: inline-block;
+  min-width: 56px;
+  padding: 2px 12px;
+  border-radius: 999px;
+  font: 600 var(--t-body) var(--font);
+  line-height: 20px;
+  text-align: center;
+  background: var(--pill);
+  color: #fff;
+}
+
+.overall__pill--run { --pill: #0f3e6e; }
+.overall__pill--walk { --pill: #0f6cbd; }
+/* A shade deeper than the Crawl blue so white text stays readable (about 4.5:1) */
+.overall__pill--crawl { --pill: #2b7bc6; }
+
+/* Narrow: title across the top, figure and score side by side, the key underneath */
+@media (max-width: 1180px) {
+  .overall {
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-areas:
+      "title title"
+      "left value"
+      "note note"
+      "stages stages";
+  }
+  .overall .overall__stages {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 16px;
+  }
+}
+.overall-fig {
+  overflow: visible;
+  stroke: var(--band, #0e700e);
+  stroke-width: 5;
+  stroke-linecap: round;
+  fill: none;
+}
+.overall-fig__head {
+  fill: var(--band, #0e700e);
+  stroke: none;
+}
+.overall-fig__ground {
+  stroke: var(--line, #d6d6d6);
+  stroke-width: 3;
+}
+.overall-fig__frame {
+  transform-box: view-box;
+  transform-origin: 60px 50px;
+}
+.overall-fig__limb {
+  transform-box: view-box;
+}
+
+/* Stage motion. Limb a and limb b swing in opposite phase; --amp is the swing angle. */
+@keyframes overall-swing {
+  0%, 100% { transform: rotate(calc(var(--amp) * -1)); }
+  50% { transform: rotate(var(--amp)); }
+}
+/* Uses the separate translate property so it does not replace the frame's rotate */
+@keyframes overall-bob {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -3px; }
+}
+
+/* Crawl: on hands and knees, small slow steps with a gentle rock */
+.overall-fig--crawl {
+  stroke-linejoin: round;
+}
+.overall-fig--crawl .overall-fig__frame {
+  animation: overall-bob 1.6s ease-in-out infinite;
+}
+.overall-fig--crawl .overall-fig__limb {
+  --amp: 14deg;
+  animation: overall-swing 1.6s ease-in-out infinite;
+}
+.overall-fig--crawl .overall-fig__limb--b {
+  animation-delay: -0.8s;
+}
+
+/* Walk: upright, steady pace */
+.overall-fig--walk .overall-fig__limb {
+  --amp: 28deg;
+  animation: overall-swing 1s ease-in-out infinite;
+}
+.overall-fig--walk .overall-fig__limb--b {
+  animation-delay: -0.5s;
+}
+
+/* Run: leaning forward, quick strides and a bounce */
+.overall-fig--run .overall-fig__frame {
+  transform: rotate(12deg);
+  animation: overall-bob 0.45s ease-in-out infinite;
+}
+.overall-fig--run .overall-fig__limb {
+  --amp: 50deg;
+  animation: overall-swing 0.45s ease-in-out infinite;
+}
+.overall-fig--run .overall-fig__limb--b {
+  animation-delay: -0.225s;
+}
+
+.overall__value {
+  grid-area: value;
+  align-self: start;
+  text-align: center;
+  margin: 0;
+  font: 600 var(--t-large) var(--font-display);
+  color: #242424;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* Run, Walk and Crawl with the levels each covers; the current stage stands out */
+.overall__stages {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font: var(--t-body) var(--font);
+  color: var(--muted, #6b6b6b);
+}
+
+/* Each stage as an outlined pill: its name and the score range it covers */
+.overall__range {
+  display: grid;
+  grid-template-columns: 48px auto;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 12px;
+  border-radius: 999px;
+  border: 2px solid var(--range);
+  background: #fff;
+  color: var(--range);
+}
+
+.overall__range b {
+  font: 600 var(--t-body2) var(--font);
+}
+
+.overall__range span {
+  font: var(--t-body) var(--font);
+  font-variant-numeric: tabular-nums;
+  color: color-mix(in srgb, var(--range) 80%, #fff);
+}
+
+/* Each stage always shows in its own colour, on a white pill: Run navy, Walk blue, Crawl light blue */
+.overall__range--run { --range: #0a354f; }
+.overall__range--walk { --range: #0b62b2; }
+.overall__range--crawl { --range: #76aae3; }
+
+/* Inside the Account assessment hero */
+.hero__read .overall {
+  max-width: 100%;
+}
+
+/* Stage colours for the figure (and the Scoring simulator's overall line): the three blues */
+.overall--crawl { --band: #3d8bd3; }
+.overall--walk { --band: #0f6cbd; }
+.overall--run { --band: #0f3e6e; }
+
+@media (prefers-reduced-motion: reduce) {
+  .overall-fig__frame,
+  .overall-fig__limb {
+    animation: none !important;
+  }
+}

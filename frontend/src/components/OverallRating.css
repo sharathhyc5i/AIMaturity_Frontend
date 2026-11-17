@@ -241,9 +241,3 @@
 .overall--walk { --band: #0f6cbd; }
 .overall--run { --band: #0f3e6e; }
 
-@media (prefers-reduced-motion: reduce) {
-  .overall-fig__frame,
-  .overall-fig__limb {
-    animation: none !important;
-  }
-}
